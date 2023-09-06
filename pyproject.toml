@@ -13,6 +13,7 @@ importlib-metadata = "^4.8.0"
 agent-smith-ai = "^0.13.0"
 csvkit = "^1.1.1"
 chardet = "^5.2.0"
+pandas = "^2.1.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = {version = ">=7.1.2"}
@@ -30,7 +31,7 @@ sphinx-click = {version = ">=4.3.0"}
 myst-parser = {version = ">=0.18.1"}
 
 [tool.poetry.scripts]
-oai-plugin-evals = "oai_plugin_evals.cli:main"
+main = "oai_plugin_evals.main:main"
 
 [tool.poetry-dynamic-versioning]
 enable = true
