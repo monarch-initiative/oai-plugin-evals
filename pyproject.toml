@@ -11,6 +11,8 @@ python = "^3.9"
 click = "*"
 importlib-metadata = "^4.8.0"
 agent-smith-ai = "^0.13.0"
+csvkit = "^1.1.1"
+chardet = "^5.2.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = {version = ">=7.1.2"}
