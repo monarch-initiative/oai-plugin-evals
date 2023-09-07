@@ -1,6 +1,7 @@
 # oai-plugin-evals
 
-Evaluations for the Monarch OpenAI Plugin/Monarch Assistant against benchmarks.
+Evaluations for the Monarch OpenAI Plugin/Monarch Assistant against benchmarks. Work in progress: set OPENAI_API_KEY in `.env`, and
+run `make`. Currently only tests the disease -> gene association test from the GeneTuring benchmark, using an automated evaluation of agent answers provided by a `DiseaseGenesEvalAgent`.
 
 # Acknowledgements
 
