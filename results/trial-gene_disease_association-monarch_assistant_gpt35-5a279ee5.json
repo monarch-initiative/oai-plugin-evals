@@ -1,0 +1,85 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Vascular malformation?",
+    "goldstandard": "ELMO2",
+    "agent_name": "Monarch Assistant GPT35",
+    "agent_answer": "The gene EPHB4 is related to Vascular malformation. You can find more information about this gene [here](https://monarchinitiative.org/gene/EPHB4).",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Vascular malformation",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0024291\", \"name\": \"vascular malformation\", \"categories\": [\"biolink:Disease\"], \"description\": \"A non-neoplastic disorder that is the result of defects of vascular morphogenesis.\"}, {\"id\": \"MONDO:0016230\", \"name\": \"simple vascular malformation\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0024287\", \"name\": \"congenital vascular malformation\", \"categories\": [\"biolink:Disease\"], \"description\": \"A congenital abnormality of the arteries and veins, lymph vessels or veins and lymph vessels.\"}, {\"id\": \"MONDO:0018721\", \"name\": \"obsolete rare combined vascular malformation\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0700080\", \"name\": \"EPHB4-associated vascular malformation spectrum\", \"categories\": [\"biolink:Disease\"], \"description\": \"Any vascular malformation in which the cause of the disease is a variation in the EPHB4 gene.\"}, {\"id\": \"MONDO:0016235\", \"name\": \"obsolete complex vascular malformation with associated anomalies\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0018723\", \"name\": \"obsolete rare vascular malformation of major vessels\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0020182\", \"name\": \"obsolete palpebral tumor with a vascular malformation\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0011744\", \"name\": \"primary intraosseous venous malformation\", \"categories\": [\"biolink:Disease\"], \"description\": \"Primary intraosseous venous malformation is a rare, genetic vascular anomaly characterized by severe blood vessel expansion (most frequently within the craniofacial bones) with painless bone enlargement (usually of mandibule, maxilla and/or orbital, nasal, and frontal bones), typically resulting in facial asymmetry and contour deformation. Midline abnormalities, such as diastasis recti, supraumbilical raphe, and hiatus hernia, are commonly associated. Additional features reported include gingival bleeding, ectopic tooth eruption, exophthalmos, loss of vision, nausea, and vomiting.\"}, {\"id\": \"MONDO:0033927\", \"name\": \"obsolete genetic complex vascular malformation with associated anomalies\", \"categories\": [\"biolink:Disease\"], \"description\": null}], \"total\": 12}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0024291"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:3395\", \"label\": \"EPHB4\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:3395\", \"label\": \"EPHB4\"}}], \"total\": 2, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "ELMO2"
+                ],
+                "agent_answer": [
+                    "EPHB4"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}
