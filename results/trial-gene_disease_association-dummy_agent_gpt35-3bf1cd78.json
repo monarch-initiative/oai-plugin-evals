@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Split-foot malformation with mesoaxial polydactyly?",
+    "goldstandard": "MAP3K20",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Split-foot malformation with mesoaxial polydactyly is a rare genetic disorder characterized by the presence of split feet and additional fingers in the middle of the hand. Several genes have been associated with this condition. Here are some of the genes related to Split-foot malformation with mesoaxial polydactyly:\n\n1. WNT10B: Mutations in the WNT10B gene have been found to cause Split-foot malformation with mesoaxial polydactyly. This gene provides instructions for producing a protein that is involved in the development and maintenance of various tissues, including the limbs.\n\n2. LMBR1: Mutations in the LMBR1 gene have also been associated with Split-foot malformation with mesoaxial polydactyly. This gene plays a role in limb development and is involved in the formation of the apical ectodermal ridge (AER), which is critical for limb outgrowth.\n\n3. SHH: The SHH gene is another gene that has been linked to Split-foot malformation with mesoaxial polydactyly. This gene provides instructions for producing a protein called Sonic Hedgehog, which is involved in the development of many tissues and organs, including the limbs.\n\nIt's important to note that these are just a few examples of the genes associated with Split-foot malformation with mesoaxial polydactyly. There may be other genes involved in this condition as well, and further research is needed to fully understand the genetic basis of the disorder.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "MAP3K20"
+                ],
+                "agent_answer": [
+                    "WNT10B",
+                    "LMBR1",
+                    "SHH"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

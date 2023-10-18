@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Sensorineural deafness with mild renal dysfunction?",
+    "goldstandard": "BSND",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Sensorineural deafness with mild renal dysfunction is a genetic disorder that can be caused by mutations in several genes. Some of the genes associated with this condition include:\n\n1. COQ6: Mutations in the COQ6 gene have been found to cause sensorineural deafness with mild renal dysfunction. This gene provides instructions for making an enzyme that is involved in the production of coenzyme Q10, which is important for energy production in cells.\n\n2. ATP6V1B1: Mutations in the ATP6V1B1 gene can also lead to sensorineural deafness with mild renal dysfunction. This gene provides instructions for making a protein that is part of a complex involved in acidifying the urine and maintaining the balance of ions in the kidneys.\n\n3. BSND: Mutations in the BSND gene can cause Bartter syndrome with sensorineural deafness, which is characterized by sensorineural deafness and kidney abnormalities. This gene provides instructions for making a protein that is involved in the regulation of ion channels in the kidneys.\n\nIt's important to note that these are just a few examples of the genes associated with sensorineural deafness with mild renal dysfunction. There may be other genes that can also contribute to this condition. Genetic testing and consultation with a healthcare professional or genetic counselor can provide more specific information based on an individual's genetic profile.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "BSND"
+                ],
+                "agent_answer": [
+                    "COQ6",
+                    "ATP6V1B1",
+                    "BSND"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

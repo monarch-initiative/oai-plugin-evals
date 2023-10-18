@@ -1,0 +1,92 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Multiple system atrophy?",
+    "goldstandard": "COQ2",
+    "agent_name": "Monarch Assistant GPT35",
+    "agent_answer": "The genes related to Multiple system atrophy are:\n\n1. [NUP62](https://monarchinitiative.org/gene/HGNC:8066)\n2. [PDE8B](https://monarchinitiative.org/gene/HGNC:8794)\n3. [PDE10A](https://monarchinitiative.org/gene/HGNC:8772)\n4. [VAC14](https://monarchinitiative.org/gene/HGNC:25507)\n5. [NUP54](https://monarchinitiative.org/gene/HGNC:17359)\n6. [ADAR](https://monarchinitiative.org/gene/HGNC:225)\n7. [MT-ATP6](https://monarchinitiative.org/gene/HGNC:7414)\n8. [COQ2](https://monarchinitiative.org/gene/HGNC:25223)\n\nYou can click on the gene names to learn more about each gene in the Monarch Initiative knowledge graph.",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Multiple system atrophy",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0007803\", \"name\": \"multiple system atrophy\", \"categories\": [\"biolink:Disease\"], \"description\": \"Multiple system atrophy (MSA) is a neurodegenerative disorder characterized by autonomic failure (cardiovascular and/or urinary), parkinsonism, cerebellar impairment and corticospinal signs with a median survival of 6-9 years.\"}, {\"id\": \"MONDO:0003123\", \"name\": \"obsolete multiple system atrophy\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0016418\", \"name\": \"multiple system atrophy, cerebellar type\", \"categories\": [\"biolink:Disease\"], \"description\": \"Multiple system atrophy, cerebellar type (MSA-c) is a form of multiple system atrophy (MSA) with predominant cerebellar features (gait and limb ataxia, oculomotor dysfunction, and dysarthria).\"}, {\"id\": \"MONDO:0020352\", \"name\": \"multiple system atrophy, parkinsonian type\", \"categories\": [\"biolink:Disease\"], \"description\": \"Multiple system atrophy, parkinsonian type (MSA-p) is a form of multiple system atrophy (MSA) with predominant parkinsonian features (bradykinesia, rigidity, irregular jerky postural tremor, and postural instability).\"}, {\"id\": \"MONDO:0020715\", \"name\": \"multiple system atrophy 1, susceptibility to\", \"categories\": [\"biolink:Disease\"], \"description\": null}], \"total\": 5}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0007803"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:8066\", \"label\": \"NUP62\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:8794\", \"label\": \"PDE8B\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:8772\", \"label\": \"PDE10A\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:25507\", \"label\": \"VAC14\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:8794\", \"label\": \"PDE8B\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:17359\", \"label\": \"NUP54\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:225\", \"label\": \"ADAR\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:7414\", \"label\": \"MT-ATP6\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:8066\", \"label\": \"NUP62\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:25507\", \"label\": \"VAC14\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:25223\", \"label\": \"COQ2\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:25223\", \"label\": \"COQ2\"}}], \"total\": 12, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "COQ2"
+                ],
+                "agent_answer": [
+                    "NUP62",
+                    "PDE8B",
+                    "PDE10A",
+                    "VAC14",
+                    "NUP54",
+                    "ADAR",
+                    "MT-ATP6",
+                    "COQ2"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

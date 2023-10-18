@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to EDICT syndrome?",
+    "goldstandard": "MIR184",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "EDICT syndrome is a rare genetic disorder characterized by ectodermal dysplasia, ectrodactyly, and cleft lip/palate. The exact genes related to EDICT syndrome have not been identified yet. However, several genes have been associated with ectodermal dysplasia and cleft lip/palate, which are two of the main features of EDICT syndrome. Some of these genes include:\n\n1. TP63: Mutations in the TP63 gene are associated with ectrodactyly-ectodermal dysplasia-clefting (EEC) syndrome, which shares some similarities with EDICT syndrome.\n\n2. IRF6: Mutations in the IRF6 gene are associated with Van der Woude syndrome, which is characterized by cleft lip/palate. Variants in IRF6 have also been found in individuals with isolated cleft lip/palate.\n\n3. MSX1: Mutations in the MSX1 gene have been associated with ectodermal dysplasia and cleft lip/palate.\n\nIt is important to note that these genes are not directly linked to EDICT syndrome, but they are associated with some of the individual features seen in EDICT syndrome. Further research is needed to identify the specific genes responsible for EDICT syndrome.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "MIR184"
+                ],
+                "agent_answer": [
+                    "TP63",
+                    "IRF6",
+                    "MSX1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

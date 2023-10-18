@@ -1,0 +1,45 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Medullary thyroid carcinoma?",
+    "goldstandard": "RET",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Medullary thyroid carcinoma (MTC) is a type of thyroid cancer that arises from the parafollicular cells, also known as C cells, of the thyroid gland. MTC is often associated with genetic mutations that can be inherited or occur sporadically. The most common genetic alteration associated with MTC is a mutation in the RET proto-oncogene. Other genes that have been implicated in MTC include:\n\n1. RET proto-oncogene: Mutations in the RET gene are the most common cause of hereditary MTC. These mutations can be found in multiple endocrine neoplasia type 2 (MEN2) syndromes, including MEN2A and MEN2B.\n\n2. RAS genes: Mutations in RAS genes, including HRAS, KRAS, and NRAS, have been found in a small percentage of sporadic MTC cases.\n\n3. CDKN2A gene: Alterations in the CDKN2A gene, which encodes the p16 protein, have been observed in some cases of sporadic MTC.\n\n4. TP53 gene: Mutations in the TP53 gene, which is involved in cell cycle regulation and DNA repair, have been reported in a subset of MTC cases.\n\n5. MEN1 gene: Mutations in the MEN1 gene, which is associated with multiple endocrine neoplasia type 1 (MEN1) syndrome, have been rarely implicated in MTC.\n\nIt's important to note that not all cases of MTC are associated with these genetic alterations. Additionally, the presence of these mutations can vary depending on whether the MTC is hereditary or sporadic. Genetic testing can help identify these mutations and guide treatment decisions for individuals with MTC.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "RET"
+                ],
+                "agent_answer": [
+                    "RET",
+                    "HRAS",
+                    "KRAS",
+                    "NRAS",
+                    "CDKN2A",
+                    "TP53",
+                    "MEN1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

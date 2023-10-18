@@ -1,0 +1,40 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Otofaciocervical syndrome?",
+    "goldstandard": "EYA1, PAX1",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Otofaciocervical syndrome (also known as Otofaciocervical syndrome type 1 or OFC1) is a rare genetic disorder characterized by abnormalities of the ears, face, and neck. It is caused by mutations in the gene known as EYA1 (Eyes Absent 1).\n\nThe EYA1 gene provides instructions for making a protein that is involved in the development of several tissues and organs during embryonic development, including the ears, face, and neck. Mutations in this gene can disrupt the normal development of these structures, leading to the characteristic features of Otofaciocervical syndrome.\n\nIt is important to note that Otofaciocervical syndrome is a complex disorder, and other genes or genetic factors may also contribute to its development. However, mutations in the EYA1 gene are the primary known cause of this condition.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "EYA1",
+                    "PAX1"
+                ],
+                "agent_answer": [
+                    "EYA1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.5",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.5
+}

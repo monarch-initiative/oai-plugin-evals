@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Lichtenstein-Knorr syndrome?",
+    "goldstandard": "SLC9A1",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Lichtenstein-Knorr syndrome is a rare genetic disorder characterized by intellectual disability, distinctive facial features, and skeletal abnormalities. It is caused by mutations in the KDM1A gene.\n\nThe KDM1A gene provides instructions for making an enzyme called lysine-specific histone demethylase 1A. This enzyme is involved in the regulation of gene expression, which is the process by which instructions in DNA are converted into functional proteins.\n\nMutations in the KDM1A gene can disrupt the normal function of the enzyme, leading to the signs and symptoms of Lichtenstein-Knorr syndrome. However, it is important to note that not all individuals with Lichtenstein-Knorr syndrome have identified mutations in the KDM1A gene, suggesting that there may be other genes involved in the development of this condition.\n\nIt is always recommended to consult with a healthcare professional or a geneticist for more specific and up-to-date information about the genes related to Lichtenstein-Knorr syndrome.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "SLC9A1"
+                ],
+                "agent_answer": [
+                    "KDM1A"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

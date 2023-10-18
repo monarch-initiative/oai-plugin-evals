@@ -1,0 +1,42 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Immunodeficiency due to defect in MAPBP-interacting protein?",
+    "goldstandard": "LAMTOR2",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Immunodeficiency due to defect in MAPBP-interacting protein is a rare genetic disorder that affects the immune system. It is caused by mutations in the MAPBP-interacting protein (MAPBPIP) gene. The exact function of this gene in the immune system is not fully understood, but it is believed to play a role in regulating immune cell function and response to infection.\n\nMutations in the MAPBPIP gene can lead to a variety of immune system abnormalities, including decreased production of certain immune cells, impaired immune cell function, and increased susceptibility to infections. Some of the specific genes and proteins that may be affected by mutations in MAPBPIP include:\n\n1. MAPBPIP: Mutations in this gene are directly responsible for immunodeficiency due to defect in MAPBP-interacting protein.\n\n2. MAPK signaling pathway genes: MAPBPIP is known to interact with proteins involved in the MAPK signaling pathway, which is important for regulating immune cell activation and response to infection. Mutations in MAPBPIP may disrupt this pathway and impair immune cell function.\n\n3. Cytokine genes: Cytokines are small proteins that play a crucial role in immune system regulation. Mutations in MAPBPIP may affect the production or function of certain cytokines, leading to immune system dysfunction.\n\n4. Immune cell receptor genes: MAPBPIP may interact with immune cell receptors, such as T-cell receptors or B-cell receptors, which are important for recognizing and responding to foreign pathogens. Mutations in MAPBPIP may disrupt these interactions and impair immune cell activation.\n\nIt is important to note that the specific genes and mechanisms involved in immunodeficiency due to defect in MAPBP-interacting protein may vary among individuals, as there can be different mutations in the MAPBPIP gene. Genetic testing and consultation with a medical geneticist or immunologist are necessary to determine the specific genetic abnormalities associated with this condition in an individual case.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "LAMTOR2"
+                ],
+                "agent_answer": [
+                    "MAPBPIP",
+                    "MAPK signaling pathway genes",
+                    "Cytokine genes",
+                    "Immune cell receptor genes"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

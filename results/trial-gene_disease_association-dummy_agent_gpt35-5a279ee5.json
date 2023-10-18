@@ -1,0 +1,44 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Vascular malformation?",
+    "goldstandard": "ELMO2",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "There are several genes that have been found to be related to vascular malformation. Some of these genes include:\n\n1. ENG (Endoglin): Mutations in the ENG gene are associated with hereditary hemorrhagic telangiectasia (HHT), a disorder characterized by abnormal blood vessel formation.\n\n2. ACVRL1 (Activin A receptor type II-like 1): Mutations in the ACVRL1 gene are also associated with hereditary hemorrhagic telangiectasia (HHT).\n\n3. KRIT1 (Krev interaction trapped 1): Mutations in the KRIT1 gene are associated with cerebral cavernous malformations (CCMs), which are abnormal clusters of blood vessels in the brain.\n\n4. CCM2 (Cerebral cavernous malformations 2): Mutations in the CCM2 gene are also associated with cerebral cavernous malformations (CCMs).\n\n5. PDCD10 (Programmed cell death 10): Mutations in the PDCD10 gene are associated with cerebral cavernous malformations (CCMs).\n\n6. TEK (Tie2 receptor tyrosine kinase): Mutations in the TEK gene are associated with hereditary venous malformations.\n\nIt's important to note that these genes are just a few examples, and there may be other genes that are also associated with vascular malformation. Additionally, the presence of a mutation in one of these genes does not guarantee the development of a vascular malformation, as other factors may also play a role.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "ELMO2"
+                ],
+                "agent_answer": [
+                    "ENG",
+                    "ACVRL1",
+                    "KRIT1",
+                    "CCM2",
+                    "PDCD10",
+                    "TEK"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

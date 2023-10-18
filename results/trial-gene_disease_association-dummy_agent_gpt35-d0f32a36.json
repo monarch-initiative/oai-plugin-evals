@@ -1,0 +1,43 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Neurodevelopmental disorder with gait disturbance?",
+    "goldstandard": "TCEAL1",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "There are several genes that have been found to be related to neurodevelopmental disorders with gait disturbance. Some of these genes include:\n\n1. ARX (Aristaless Related Homeobox): Mutations in the ARX gene have been associated with a variety of neurodevelopmental disorders, including intellectual disability, epilepsy, and gait disturbance.\n\n2. MECP2 (Methyl-CpG Binding Protein 2): Mutations in the MECP2 gene are primarily associated with Rett syndrome, a neurodevelopmental disorder that affects girls. Gait disturbance is one of the common symptoms of Rett syndrome.\n\n3. SLC6A1 (Solute Carrier Family 6 Member 1): Mutations in the SLC6A1 gene have been linked to a range of neurodevelopmental disorders, including epilepsy, intellectual disability, and gait disturbance.\n\n4. TUBA1A (Tubulin Alpha 1A): Mutations in the TUBA1A gene have been associated with a spectrum of neurodevelopmental disorders, including lissencephaly (smooth brain), intellectual disability, and gait disturbance.\n\n5. STXBP1 (Syntaxin Binding Protein 1): Mutations in the STXBP1 gene have been found in individuals with early-onset epileptic encephalopathy, which is often characterized by intellectual disability, movement disorders, and gait disturbance.\n\nIt's important to note that these genes are just a few examples, and there may be other genes that are also associated with neurodevelopmental disorders with gait disturbance. Additionally, the presence of a mutation in one of these genes does not guarantee the development of a neurodevelopmental disorder, as other genetic and environmental factors can also play a role.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "TCEAL1"
+                ],
+                "agent_answer": [
+                    "ARX",
+                    "MECP2",
+                    "SLC6A1",
+                    "TUBA1A",
+                    "STXBP1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

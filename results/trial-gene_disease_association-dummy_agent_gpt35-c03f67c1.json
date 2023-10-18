@@ -1,0 +1,43 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Intracranial hemorrhage in brain cerebrovascular malformations?",
+    "goldstandard": "IL6",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "There are several genes that have been found to be related to intracranial hemorrhage in brain cerebrovascular malformations. Some of these genes include:\n\n1. ENG (Endoglin): Mutations in the ENG gene have been associated with hereditary hemorrhagic telangiectasia (HHT), a condition characterized by abnormal blood vessel formation. HHT can lead to intracranial hemorrhage in some cases.\n\n2. ACVRL1 (Activin A receptor type II-like 1): Mutations in the ACVRL1 gene have also been linked to hereditary hemorrhagic telangiectasia (HHT) and can contribute to the development of intracranial hemorrhage.\n\n3. NOTCH3: Mutations in the NOTCH3 gene are associated with cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy (CADASIL), a condition that can lead to intracranial hemorrhage.\n\n4. COL3A1 (Collagen type III alpha 1 chain): Mutations in the COL3A1 gene are associated with vascular Ehlers-Danlos syndrome (vEDS), a connective tissue disorder that can cause weakness in blood vessels and increase the risk of intracranial hemorrhage.\n\n5. KRIT1 (Krev interaction trapped 1): Mutations in the KRIT1 gene are associated with cerebral cavernous malformations (CCMs), which are abnormal clusters of blood vessels in the brain. CCMs can lead to intracranial hemorrhage.\n\nIt's important to note that these genes are just a few examples and there may be other genes that are also associated with intracranial hemorrhage in brain cerebrovascular malformations. Additionally, the presence of a gene mutation does not guarantee the development of intracranial hemorrhage, as other factors such as environmental and lifestyle factors can also play a role.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "IL6"
+                ],
+                "agent_answer": [
+                    "ENG",
+                    "ACVRL1",
+                    "NOTCH3",
+                    "COL3A1",
+                    "KRIT1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

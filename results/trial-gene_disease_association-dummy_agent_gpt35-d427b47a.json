@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Meesmann corneal dystrophy?",
+    "goldstandard": "KRT12, KRT3",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Meesmann corneal dystrophy is a genetic disorder that affects the cornea, the clear front surface of the eye. It is caused by mutations in the genes KRT3 and KRT12, which provide instructions for making proteins called keratins. Keratins are important for the structure and function of the cornea.\n\nMutations in the KRT3 and KRT12 genes lead to the production of abnormal keratins, which can cause the cornea to become fragile and easily damaged. This can result in symptoms such as blurred vision, eye irritation, and sensitivity to light.\n\nIt is important to note that Meesmann corneal dystrophy is a rare condition, and not all individuals with mutations in the KRT3 and KRT12 genes will develop the disorder. The exact relationship between specific gene mutations and the development and severity of Meesmann corneal dystrophy is still being studied.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "KRT12",
+                    "KRT3"
+                ],
+                "agent_answer": [
+                    "KRT3",
+                    "KRT12"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

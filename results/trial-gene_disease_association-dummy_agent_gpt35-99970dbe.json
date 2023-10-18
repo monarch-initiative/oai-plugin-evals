@@ -1,0 +1,40 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Immunodeficiency with inflammatory disease and congenital thrombocytopenia?",
+    "goldstandard": "ARPC1B",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Immunodeficiency with inflammatory disease and congenital thrombocytopenia is a rare genetic disorder. The specific genes associated with this condition are:\n\n1. PLCG2: Mutations in the PLCG2 gene have been found to cause immunodeficiency with inflammatory disease and congenital thrombocytopenia. This gene provides instructions for making an enzyme called phospholipase C gamma 2, which is involved in immune system function.\n\n2. VPS45: Mutations in the VPS45 gene have also been associated with this condition. The VPS45 gene provides instructions for making a protein that is involved in the transport of molecules within cells.\n\nIt's important to note that these are just a few of the genes that have been identified in relation to immunodeficiency with inflammatory disease and congenital thrombocytopenia. There may be other genes that are also involved in the development of this condition.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "ARPC1B"
+                ],
+                "agent_answer": [
+                    "PLCG2",
+                    "VPS45"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

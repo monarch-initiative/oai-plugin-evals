@@ -1,0 +1,43 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures?",
+    "goldstandard": "DLL1",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "There are several genes that have been associated with neurodevelopmental disorders with nonspecific brain abnormalities and with or without seizures. Some of these genes include:\n\n1. ARX (Aristaless Related Homeobox): Mutations in the ARX gene have been linked to a variety of neurodevelopmental disorders, including X-linked lissencephaly with abnormal genitalia (XLAG), Partington syndrome, and West syndrome.\n\n2. CDKL5 (Cyclin-Dependent Kinase-Like 5): Mutations in the CDKL5 gene are associated with a severe neurodevelopmental disorder called CDKL5 deficiency disorder. This disorder is characterized by early-onset seizures, intellectual disability, and developmental regression.\n\n3. STXBP1 (Syntaxin Binding Protein 1): Mutations in the STXBP1 gene have been found in individuals with early-onset epileptic encephalopathy, which is characterized by seizures and developmental delay.\n\n4. SCN1A (Sodium Voltage-Gated Channel Alpha Subunit 1): Mutations in the SCN1A gene are associated with a spectrum of neurodevelopmental disorders, including Dravet syndrome, which is characterized by seizures, cognitive impairment, and behavioral problems.\n\n5. MECP2 (Methyl-CpG Binding Protein 2): Mutations in the MECP2 gene are responsible for Rett syndrome, a neurodevelopmental disorder that primarily affects females. Rett syndrome is characterized by loss of purposeful hand skills, seizures, and intellectual disability.\n\nIt's important to note that these genes are just a few examples, and there are likely many other genes that can contribute to neurodevelopmental disorders with nonspecific brain abnormalities and seizures. Additionally, the presence of a mutation in one of these genes does not guarantee the development of a neurodevelopmental disorder, as other genetic and environmental factors can also play a role.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "DLL1"
+                ],
+                "agent_answer": [
+                    "ARX",
+                    "CDKL5",
+                    "STXBP1",
+                    "SCN1A",
+                    "MECP2"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}
