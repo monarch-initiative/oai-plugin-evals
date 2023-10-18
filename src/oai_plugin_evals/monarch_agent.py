@@ -17,7 +17,7 @@ dotenv.load_dotenv()
 ## A UtilityAgent can call API endpoints and local methods
 class MonarchAgent(UtilityAgent):
 
-    def __init__(self, name):
+    def __init__(self, name, model = "gpt-3.5-turbo-0613"):
         
         ## define a system message
         system_message = textwrap.dedent(f"""
@@ -32,7 +32,7 @@ class MonarchAgent(UtilityAgent):
         
         super().__init__(name,                                             # Name of the agent
                          system_message,                                   # Openai system message
-                         model = "gpt-3.5-turbo-0613",                     # Openai model name
+                         model = model,                                    # Openai model name
                          openai_api_key = os.environ["OPENAI_API_KEY"],    # API key; will default to OPENAI_API_KEY env variable
                          auto_summarize_buffer_tokens = 500,               # Summarize and clear the history when fewer than this many tokens remains in the context window. Checked prior to each message sent to the model.
                          summarize_quietly = False,                        # If True, do not alert the user when a summarization occurs

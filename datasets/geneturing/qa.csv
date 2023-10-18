@@ -1,0 +1,601 @@
+Module,Question,Goldstandard
+Gene alias,What is the official gene symbol of LMP10?,PSMB10
+Gene alias,What is the official gene symbol of SNAT6?,SLC38A6
+Gene alias,What is the official gene symbol of IMD20?,FCGR3A
+Gene alias,What is the official gene symbol of C20orf195?,FNDC11
+Gene alias,What is the official gene symbol of CXorf40B?,EOLA2
+Gene alias,What is the official gene symbol of QSCN6L1?,QSOX2
+Gene alias,What is the official gene symbol of OR11-86?,OR10A2
+Gene alias,What is the official gene symbol of NPAP60L?,NUP50
+Gene alias,What is the official gene symbol of AF10?,MLLT10
+Gene alias,What is the official gene symbol of bMRP63?,MRPL57
+Gene alias,What is the official gene symbol of HsT1192?,SYT4
+Gene alias,What is the official gene symbol of ZNF482?,ZBTB6
+Gene alias,What is the official gene symbol of PTH1?,PTH
+Gene alias,What is the official gene symbol of AGTIL?,ASIP
+Gene alias,What is the official gene symbol of LEP9?,LCE2A
+Gene alias,What is the official gene symbol of SEP3?,SEPTIN3
+Gene alias,What is the official gene symbol of FFDD3?,TWIST2
+Gene alias,What is the official gene symbol of C6orf186?,METTL24
+Gene alias,What is the official gene symbol of hCAP?,RNGTT
+Gene alias,What is the official gene symbol of CKBBP1?,RNF7
+Gene alias,What is the official gene symbol of TFA?,F3
+Gene alias,What is the official gene symbol of BMSC-MCP?,SLC25A33
+Gene alias,What is the official gene symbol of PCH3?,PCLO
+Gene alias,What is the official gene symbol of OR11-75?,OR56A1
+Gene alias,What is the official gene symbol of RBAP1?,E2F1
+Gene alias,What is the official gene symbol of DCSCRIPT?,ZNF366
+Gene alias,What is the official gene symbol of 15-LOX?,ALOX15
+Gene alias,What is the official gene symbol of CT116?,LYPD6B
+Gene alias,What is the official gene symbol of PKCL?,PRKCH
+Gene alias,What is the official gene symbol of SGEF?,ARHGEF26
+Gene alias,What is the official gene symbol of CTGLF6?,AGAP9
+Gene alias,What is the official gene symbol of FAP9?,IFT22
+Gene alias,What is the official gene symbol of MPS4B?,GLB1
+Gene alias,What is the official gene symbol of LSDMCA2?,COX7B
+Gene alias,What is the official gene symbol of PLK-5?,PLK5
+Gene alias,What is the official gene symbol of C20orf86?,ANKRD60
+Gene alias,What is the official gene symbol of GalNAc-T4?,POC1B-GALNT4
+Gene alias,What is the official gene symbol of NEDCHS?,INTS8
+Gene alias,What is the official gene symbol of PCPB?,CPB2
+Gene alias,What is the official gene symbol of PFDN3?,VBP1
+Gene alias,What is the official gene symbol of TSH2B?,H2BC1
+Gene alias,What is the official gene symbol of RSG1?,CPLANE2
+Gene alias,What is the official gene symbol of M12.219?,ADAMDEC1
+Gene alias,What is the official gene symbol of beta3Gn-T8?,B3GNT8
+Gene alias,What is the official gene symbol of ASV?,SRC
+Gene alias,What is the official gene symbol of C11orf27?,UBTFL1
+Gene alias,What is the official gene symbol of GCS1?,MOGS
+Gene alias,What is the official gene symbol of FAM214B?,ATOSB
+Gene alias,What is the official gene symbol of CTTNBP1?,SHANK2
+Gene alias,What is the official gene symbol of PTP-SL?,PTPRR
+Gene disease association,What are genes related to Hemolytic anemia due to phosphofructokinase deficiency?,PFKL
+Gene disease association,What are genes related to Distal renal tubular acidosis?,"SLC4A1, ATP6V0A4"
+Gene disease association,What are genes related to Pseudohypoparathyroidism Ic?,GNAS
+Gene disease association,What are genes related to Glycine N-methyltransferase deficiency?,GNMT
+Gene disease association,What are genes related to Meesmann corneal dystrophy?,"KRT12, KRT3"
+Gene disease association,What are genes related to Chronic atrial and intestinal dysrhythmia?,SGO1
+Gene disease association,What are genes related to Sensorineural deafness with mild renal dysfunction?,BSND
+Gene disease association,What are genes related to Bile acid malabsorption?,"SLC10A2, SLC51B"
+Gene disease association,What are genes related to Immunodeficiency due to defect in MAPBP-interacting protein?,LAMTOR2
+Gene disease association,What are genes related to Currarino syndrome?,MNX1
+Gene disease association,What are genes related to Intervertebral disc disease?,COL9A3
+Gene disease association,What are genes related to Otofaciocervical syndrome?,"EYA1, PAX1"
+Gene disease association,What are genes related to Brody myopathy?,ATP2A1
+Gene disease association,What are genes related to Neurodevelopmental disorder with gait disturbance?,TCEAL1
+Gene disease association,What are genes related to Mitochondrial DNA depletion syndrome 4A Alpers type?,POLG
+Gene disease association,What are genes related to Nephropathy due to CFHR5 deficiency?,CFHR5
+Gene disease association,What are genes related to Achromatopsia?,"CNGA3, CNGB3, GNAT2, PDE6H, ATF6"
+Gene disease association,What are genes related to Hyperphenylalaninemia?,"PTS, GCH1, QDPR, PCBD1, DNAJC12, PAH"
+Gene disease association,What are genes related to EDICT syndrome?,MIR184
+Gene disease association,What are genes related to Gastrointestinal defects and immunodeficiency syndrome?,"PI4KA, TTC7A"
+Gene disease association,What are genes related to Cleft palate with ankyloglossia?,TBX22
+Gene disease association,What are genes related to Neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures?,DLL1
+Gene disease association,What are genes related to Spondylocarpotarsal synostosis syndrome?,FLNB
+Gene disease association,What are genes related to Haim-Munk syndrome?,CTSC
+Gene disease association,What are genes related to Sialidosis?,NEU1
+Gene disease association,What are genes related to Siddiqi syndrome?,FITM2
+Gene disease association,What are genes related to Corneal fleck dystrophy?,PIKFYVE
+Gene disease association,What are genes related to Liver failure?,TRMU
+Gene disease association,What are genes related to Proteasome-associated autoinflammatory syndrome?,"PSMB9, PSMG2, POMP, PSMB10"
+Gene disease association,What are genes related to Orofaciodigital syndrome XIV?,C2CD3
+Gene disease association,What are genes related to Trichoepithelioma?,CYLD
+Gene disease association,What are genes related to Medullary thyroid carcinoma?,RET
+Gene disease association,What are genes related to Type diabetes mellitus?,"HNF1B, IL6, GPD2, HMGA1, IRS1, NEUROD1, IL6"
+Gene disease association,What are genes related to Buschke-Ollendorff syndrome?,LEMD3
+Gene disease association,What are genes related to Vascular malformation?,ELMO2
+Gene disease association,What are genes related to Acrocallosal syndrome?,KIF7
+Gene disease association,What are genes related to Congenital disorder of deglycosylation?,"NGLY1, MAN2C1"
+Gene disease association,What are genes related to Spinal muscular atrophy with congenital bone fractures?,"TRIP4, ASCC1"
+Gene disease association,What are genes related to B-cell immunodeficiency?,TOP2B
+Gene disease association,What are genes related to Immunodeficiency with inflammatory disease and congenital thrombocytopenia?,ARPC1B
+Gene disease association,What are genes related to Split-foot malformation with mesoaxial polydactyly?,MAP3K20
+Gene disease association,What are genes related to Pigmented nodular adrenocortical disease?,"PRKAR1A, PDE11A, PDE8B"
+Gene disease association,What are genes related to Superoxide dismutase?,SOD3
+Gene disease association,What are genes related to Leukoencephalopathy with dystonia and motor neuropathy?,SCP2
+Gene disease association,What are genes related to Intracranial hemorrhage in brain cerebrovascular malformations?,IL6
+Gene disease association,What are genes related to Multiple system atrophy?,COQ2
+Gene disease association,What are genes related to Cone dystrophy?,"PDE6C, GUCA1A"
+Gene disease association,What are genes related to Holt-Oram syndrome?,TBX5
+Gene disease association,What are genes related to Lichtenstein-Knorr syndrome?,SLC9A1
+Gene disease association,What are genes related to Ablepharon-macrostomia syndrome?,TWIST2
+Gene location,Which chromosome is FAM66D gene located on human genome?,chr8
+Gene location,Which chromosome is TTTY7 gene located on human genome?,chrY
+Gene location,Which chromosome is LA16c-329F2.2 gene located on human genome?,chr16
+Gene location,Which chromosome is RGS16 gene located on human genome?,chr1
+Gene location,Which chromosome is FOXL2NB gene located on human genome?,chr3
+Gene location,Which chromosome is RP11-17A4.3 gene located on human genome?,chr8
+Gene location,Which chromosome is EML3 gene located on human genome?,chr11
+Gene location,Which chromosome is LPAR2 gene located on human genome?,chr19
+Gene location,Which chromosome is ENSG10010137169.1 gene located on human genome?,chr4
+Gene location,Which chromosome is AC018712.2 gene located on human genome?,chr2
+Gene location,Which chromosome is RRS1 gene located on human genome?,chr8
+Gene location,Which chromosome is LINC02599 gene located on human genome?,chr8
+Gene location,Which chromosome is ZNF117 gene located on human genome?,chr7
+Gene location,Which chromosome is RP11-829H16.3 gene located on human genome?,chr14
+Gene location,Which chromosome is RN7SKP265 gene located on human genome?,chr3
+Gene location,Which chromosome is RP11-1102P22.1 gene located on human genome?,chr16
+Gene location,Which chromosome is AC018892.8 gene located on human genome?,chr2
+Gene location,Which chromosome is RP11-255A11.4 gene located on human genome?,chr9
+Gene location,Which chromosome is NPTN gene located on human genome?,chr15
+Gene location,Which chromosome is RP11-123M21.2 gene located on human genome?,chr12
+Gene location,Which chromosome is ZNF574 gene located on human genome?,chr19
+Gene location,Which chromosome is RNU6-1143P gene located on human genome?,chr11
+Gene location,Which chromosome is RP11-303E16.8 gene located on human genome?,chr16
+Gene location,Which chromosome is SCO2 gene located on human genome?,chr22
+Gene location,Which chromosome is ERCC8 gene located on human genome?,chr5
+Gene location,Which chromosome is ENSG10010137820.1 gene located on human genome?,chr2
+Gene location,Which chromosome is RP11-215H18.5 gene located on human genome?,chr11
+Gene location,Which chromosome is RPS26P3 gene located on human genome?,chr9
+Gene location,Which chromosome is RN7SL465P gene located on human genome?,chr6
+Gene location,Which chromosome is TRGC2 gene located on human genome?,chr7
+Gene location,Which chromosome is RN7SL689P gene located on human genome?,chr5
+Gene location,Which chromosome is CTB-180A7.6 gene located on human genome?,chr19
+Gene location,Which chromosome is MTND2P25 gene located on human genome?,chrX
+Gene location,Which chromosome is MTND6P21 gene located on human genome?,chr21
+Gene location,Which chromosome is UBE2D4 gene located on human genome?,chr7
+Gene location,Which chromosome is SRD5A1P1 gene located on human genome?,chrX
+Gene location,Which chromosome is CTD-2272D18.2 gene located on human genome?,chr8
+Gene location,Which chromosome is SNORD4B gene located on human genome?,chr17
+Gene location,Which chromosome is AC006042.8 gene located on human genome?,chr7
+Gene location,Which chromosome is SLAIN2 gene located on human genome?,chr4
+Gene location,Which chromosome is RP11-173H9.2 gene located on human genome?,chr2
+Gene location,Which chromosome is AC093802.1 gene located on human genome?,chr2
+Gene location,Which chromosome is RP4-612B18.1 gene located on human genome?,chr1
+Gene location,Which chromosome is AKIRIN1P2 gene located on human genome?,chrX
+Gene location,Which chromosome is SIGLEC19P gene located on human genome?,chr19
+Gene location,Which chromosome is RP11-179D22.1 gene located on human genome?,chr9
+Gene location,Which chromosome is RPS3AP46 gene located on human genome?,chr14
+Gene location,Which chromosome is IFRD1 gene located on human genome?,chr7
+Gene location,Which chromosome is RP11-1299A16.3 gene located on human genome?,chr4
+Gene location,Which chromosome is OR51H2P gene located on human genome?,chr11
+Gene ontology,"What is the enriched gene ontology term associated with SLC27A5, AKT1, AKT2, ACSL1, SLC27A1, ACSL5, SLC2A1, THBS1, IRS2, CD36?",long chain fatty acid import across plasma membrane
+Gene ontology,"What is the enriched gene ontology term associated with FMR1, FBXL2, TMEM41B, PHB1, DDX56?",modulation by host of viral rna genome replication
+Gene ontology,"What is the enriched gene ontology term associated with GPER1, HRH1, LHCGR, P2RY1, P2RY6?",positive regulation of inositol trisphosphate biosynthetic process
+Gene ontology,"What is the enriched gene ontology term associated with CNTFR, ERBB3, KCNB1, RHOA, NEFL, VPS54, MAP2K7, BAX, RAPSN, BCL2, ROCK1, MAP2K4, MAP3K12, ZPR1, CRLF1?",regulation of motor neuron apoptotic process
+Gene ontology,"What is the enriched gene ontology term associated with ACSM1, ACOT4, CRAT, ACADS, MMUT, PCCA, PCCB, PCK1, PCK2, PHYH, OXSM, THNSL2, TYRP1, ACSS1, MCEE?",short chain fatty acid metabolic process
+Gene ontology,"What is the enriched gene ontology term associated with ADA, NOC2L, FOXP1, IL2, MIR17HG, MIF, PDCD1, SLC39A10, BCL2, BCL6, IRS2, BCL10, AURKB, ORMDL3, CD74?",negative regulation of b cell apoptotic process
+Gene ontology,"What is the enriched gene ontology term associated with CTNNB1, MUSTN1, TCF7L2, SLC2A10, PXYLP1?",positive regulation of proteoglycan biosynthetic process
+Gene ontology,"What is the enriched gene ontology term associated with OSR1, FOXC2, GPR4, NOTCH1, PDGFB, ACTA2?",mesangial cell development
+Gene ontology,"What is the enriched gene ontology term associated with TTC36, GPS2, MIR138-1, UBR5, TRIM44, PPIA, OTUB1, OTUB2, PARP10, TRIP12, PLAA?",negative regulation of protein polyubiquitination
+Gene ontology,"What is the enriched gene ontology term associated with TLR6, MALT1, COPS8, CHI3L1, TIRAP, CARD10, IRAK1, MAS1, MAP3K7, TLR3, TRAF2, TRAF6, CARD14, ZFP91, TNFRSF10B, TNFRSF10A, TRAF4, TNFSF15?",activation of nf kappab inducing kinase activity
+Gene ontology,"What is the enriched gene ontology term associated with EN1, FGF8, SSBP3, GBX2, HES1, WNT1, KDM2B?",midbrain hindbrain boundary development
+Gene ontology,"What is the enriched gene ontology term associated with NKX2-5, FOXC1, FOXC2, CCN1, BMP4, TGFB2, HAND2?",apoptotic process involved in heart morphogenesis
+Gene ontology,"What is the enriched gene ontology term associated with PDGFA, PDGFRA, CBL, CBLB, IFT20, ADIPOQ, PHF14?",platelet derived growth factor receptor alpha signaling pathway
+Gene ontology,"What is the enriched gene ontology term associated with UBQLN1, STIMATE, PLCG2, STIM2, STIM1, PLA2G6, CASQ1, CRACR2A?",regulation of store operated calcium channel activity
+Gene ontology,"What is the enriched gene ontology term associated with ALKBH3, JMJD6, ALKBH5, FTO, ALKBH1?",oxidative rna demethylation
+Gene ontology,"What is the enriched gene ontology term associated with RCL1, TBL3, RPP40, NOP9, RRS1, BOP1, UTP20, ABT1, FCF1, TSR1, RPS21, KRI1, NOL9, UTP23, NOP14, BMS1?",endonucleolytic cleavage involved in rrna processing
+Gene ontology,"What is the enriched gene ontology term associated with GLUL, ASL, LGSN, BAX, BCL2, NR1H4?",nitrogen utilization
+Gene ontology,"What is the enriched gene ontology term associated with MOXD2P, COMT, DBH, DHPS, PAOX, SLC44A1, MOXD1, DMGDH, HNMT, MIR21, MAOA, MAOB, SULT1A4, ATP2B4, ALDH7A1, SMOX, CHDH, SAT1, SLC6A3, SULT1A3?",amine catabolic process
+Gene ontology,"What is the enriched gene ontology term associated with NR1H3, CES1, TTC39B, ABCA1, MIR146A, TREM2, PPARA, PPARD, PPARG, NR1H2, ABCG1?",negative regulation of cholesterol storage
+Gene ontology,"What is the enriched gene ontology term associated with AFMID, ACMSD, IDO2, HAAO, IL4I1, GCDH, IDO1, ATP7A, TDO2, KMO, KYNU?",tryptophan metabolic process
+Gene ontology,"What is the enriched gene ontology term associated with KCNE3, ENSG00000276289, KCNE5, KCNE4, KCNRG, ANK3, KCNE1, MIR1-1, MIR133A1, MTNR1B, SUMO1, KCNAB1, KCNE2?",negative regulation of delayed rectifier potassium channel activity
+Gene ontology,"What is the enriched gene ontology term associated with ADA, CNR1, EDNRB, OXT, OXTR, P2RY1, VIP?",regulation of penile erection
+Gene ontology,"What is the enriched gene ontology term associated with FGF2, FGF4, CCN1, RARA, GDF5?",chondroblast differentiation
+Gene ontology,"What is the enriched gene ontology term associated with PARP2, CITED2, PARP1, CTSB, TCF23, CYP27B1, EPOR, GHSR, GJB2, JUNB, LIF, MEN1, NDP, TPPP3, GHRL, PPARD, ASH1L, PTGS2, PTN, SPP1, STC1, BSG, VDR, STC2, DEDD?",decidualization
+Gene ontology,"What is the enriched gene ontology term associated with RALBP1, RHOV, ABCA1, ABL1, APOA1, APOC3, APOE, RHOJ, SHTN1, RHOU, RIT2, WAS, NRP1, NTN1, CDC42?",cdc42 protein signal transduction
+Gene ontology,"What is the enriched gene ontology term associated with CDH3, GIPC1, MFSD12, CTNS, CYP1A2, DCT, DDT, OPN3, SLC7A11, RAB38, APPL1, SLC24A5, MC1R, ASIP, CITED1, OCA2, SLC45A2, ATP7A, BDH2, PMEL, TRPC1, TYR, TYRP1, WNT5A, RAPGEF2, ZEB2?",secondary metabolite biosynthetic process
+Gene ontology,"What is the enriched gene ontology term associated with HCN4, GJC1, GJA5, ANK2, HCN1, KCNA5, SCN3B, HCN3, HCN2, RYR2, SCN5A, CACNA1D, CACNA1G, TBX18?",sa node cell to atrial cardiac muscle cell communication
+Gene ontology,"What is the enriched gene ontology term associated with JAG1, FGF9, DLL1, HMGN1, HES1, RBPJ, ASCL1, NODAL, NOTCH1, PAX6, SERPINE2, NR2E1?",regulation of development heterochronic
+Gene ontology,"What is the enriched gene ontology term associated with PARP3, APLF, TFIP11, HMGB1, RAD51, XRCC1?",regulation of dna ligation
+Gene ontology,"What is the enriched gene ontology term associated with ADCYAP1R1, IP6K3, PTK2B, FGF2, PPIP5K2, IPMK, GPER1, HRH1, ITPKA, ITPKB, LHCGR, MAS1, NTSR1, P2RY1, P2RY6, IP6K2, CD244, PLCG2, PLEK, AVPR1B, PTAFR, PTH, PTH1R, IPPK, SNCA, ITPKC, PPIP5K1, IP6K1?",inositol phosphate biosynthetic process
+Gene ontology,"What is the enriched gene ontology term associated with SLC24A4, CNGB1, IL4R, MMP14, CFAP69?",response to odorant
+Gene ontology,"What is the enriched gene ontology term associated with TCP11X1, LRRK2, EDNRB, SIRT2, TRIM58, NPPC, NPR2, WEE2, PAEP, BCL11A, RAC3, BCL2, RET, CLEC7A, BNC1, SHB, AURKA, TBX6, TCP11, MAP3K13, KIF14?",regulation of cell maturation
+Gene ontology,"What is the enriched gene ontology term associated with FRS2, PRICKLE1, EGFR, DKK1, HEY2, DLL1, MIR200B, MIR222, SMAD4, SOX6, BMP2, MIR590, FZD7, WNT3A?",negative regulation of cardiocyte differentiation
+Gene ontology,"What is the enriched gene ontology term associated with CDK5, COL3A1, CTNNB1, DAB2IP, DAB1, FOXG1, SYNE2, SUN1, SRGAP2, DISC1, GLI3, LAMB1, PAFAH1B1, RELN, RTN4, ZMIZ1, P2RY12, SRGAP2C, NR2E1, LRP8, MBOAT7, CDK5R1, CDK5R2, BMERB1, ADGRG1?",telencephalon glial cell migration
+Gene ontology,"What is the enriched gene ontology term associated with CRH, ADRA2A, ADRA2B, ADRA2C, SLC29A4, GABBR1, SLC22A1, SLC22A3, VIP, CARTPT?",epinephrine transport
+Gene ontology,"What is the enriched gene ontology term associated with MTOR, PGAM1, TIGAR, RPTOR, MLST8, TP53?",regulation of pentose phosphate shunt
+Gene ontology,"What is the enriched gene ontology term associated with HDAC6, SEMA4D, CRABP2, DCC, DVL1, EFNA5, EPHA7, FGF13, FSTL4, SPART, COBL, LPAR3, IFRD1, APP, NGF, NIN, PTPRS, BDNF, SPP1, WNT3, RND2, ULK1, WNT3A, ULK2, IST1?",collateral sprouting
+Gene ontology,"What is the enriched gene ontology term associated with CTNNB1, EDA, FOXF1, HOXA5, RSPO2, LEF1, HYDIN, MAPK1, MAPK3, MAP2K1, MAP2K2, RARA, RARG, SHH, BMP4, SOX9, SRF, TGFBR2, WNT7B?",trachea development
+Gene ontology,"What is the enriched gene ontology term associated with DIAPH1, DRD2, DRD3, DRD4, GABRB1, GABRB2, GABRB3, GABRG2, AOC1, HRH1, RAB44?",response to histamine
+Gene ontology,"What is the enriched gene ontology term associated with ALDH1L1, ALDH1L2, RPIA, NNT, SHPK, MTOR, G6PD, PGLS, DERA, PGAM1, PGD, PRPS2, TIGAR, RPTOR, RPE, RBKS, MLST8, TALDO1, TKT, TP53, RPEL1, H6PD?",nadph regeneration
+Gene ontology,"What is the enriched gene ontology term associated with NAA30, NAA20, NAA35, NAA16, NAA60, NAA25, NAA15, NAA38?",n terminal peptidyl methionine acetylation
+Gene ontology,"What is the enriched gene ontology term associated with EXOSC8, NT5C3B, EXOSC6, DIS3L2, DCP2, DIS3, EXOSC7, EXOSC2, DCPS, CNOT7, EXOSC3, EXOSC9, POLR2G, EXOSC4, EXOSC5, CNOT6, SKIV2L, CNOT8, TTC37?",nuclear transcribed mrna catabolic process exonucleolytic
+Gene ontology,"What is the enriched gene ontology term associated with DEFA4, IL36RN, LTF, RARRES2, FAM3A?",antifungal humoral response
+Gene ontology,"What is the enriched gene ontology term associated with SLC35B1, SLC35A1, SLC35D2, SLC35A4, SLC35D1, SLC35A3, SLC35D3, SLC35C2, SLC35A5, SLC35C1, SLC35A2, SLC35B4?",nucleotide sugar transmembrane transport
+Gene ontology,"What is the enriched gene ontology term associated with ARID5A, TBX21, IL1B, IL1R1, IL18, XCL1, SLAMF1, IL18R1?",t helper 1 cell cytokine production
+Gene ontology,"What is the enriched gene ontology term associated with TRAP1, PARK7, HGF, MIRLET7B, MIR21, MET, DDR2, PINK1?",negative regulation of hydrogen peroxide mediated programmed cell death
+Gene ontology,"What is the enriched gene ontology term associated with FCRL3, PIK3AP1, SLC15A4, GRAMD4, LILRA4, PTPN22, HMGB1, RAB7B, IRAK1, IRAK4, TLR9, RTN4, EPG5, PTPRS, TNIP2, UNC93B1, HAVCR2, RSAD2, NR1H4?",toll like receptor 9 signaling pathway
+Gene ontology,"What is the enriched gene ontology term associated with ENSG00000274276, CDO1, CTH, AGXT, SLC7A11, GGT1, GCLC, GCLM, MPST, MTHFD1, CSAD, TST, CBS?",cysteine metabolic process
+Gene ontology,"What is the enriched gene ontology term associated with NHLH2, PLXNA1, PLXNA3, UBB, NDNF, NRP2, NRP1, SEMA3E?",hypothalamus gonadotrophin releasing hormone neuron differentiation
+Gene ontology,"What is the enriched gene ontology term associated with TLR6, GBP5, NEK7, PYDC2, DDX3X, NLRC3, CARD8, SIRT2, PYDC1, NLRP2B, USP50, MEFV, MYD88, PLCG2, TREM2, EIF2AK2, DHX33, STMP1, TLR4, ATAT1, CPTP, CD36?",regulation of nlrp3 inflammasome complex assembly
+Human genome DNA aligment,Align the DNA sequence to the human genome:ATTCTGCCTTTAGTAATTTGATGACAGAGACTTCTTGGGAACCACAGCCAGGGAGCCACCCTTTACTCCACCAACAGGTGGCTTATATCCAATCTGAGAAAGAAAGAAAAAAAAAAAAGTATTTCTCT,chr15:91950805-91950932
+Human genome DNA aligment,Align the DNA sequence to the human genome:GGACAGCTGAGATCACATCAAGGATTCCAGAAAGAATTGGCACAGGATCATTCAAGATGCATCTCTCCGTTGCCCCTGTTCCTGGCTTTCCTTCAACTTCCTCAAAGGGGACATCATTTCGGAGTTTGGCTTCCA,chr8:7081648-7081782
+Human genome DNA aligment,Align the DNA sequence to the human genome:AAACGATGTCTTCATTGCCTGGAAATGATGGCGCCCTTGTTCTTTATCCAAAGACTGATGGGGGAAAGAGTAATTCATTTAATAACATGGGGTCCTCATTACAGACTGGCCACCAATATAAAGCTTCGAATTTTTT,chr10:7531973-7532108
+Human genome DNA aligment,Align the DNA sequence to the human genome:AGGCCCTCACCTGGAAATTACTTACTCATGCTTCATGACCCAGTTCAAATTTTGTCACCTCTGTGAAACCTTCCCTGGGCCCCGTTGATCTCCTTGAAGGCA,chr7:71368450-71368551
+Human genome DNA aligment,Align the DNA sequence to the human genome:ATTAAACGCCCCTTAAATTACCCAGCTGTGGCAATCTGCTTCCTTGTGATACCCTGACTGATACGAATTATAAAGTAAATCCTGTGATACTCCCCCTCACCTCAAGCCCATGTTCCTGTAAGGTACAGAGTCATAGA,chr17:30085086-30085222
+Human genome DNA aligment,Align the DNA sequence to the human genome:TTTTTTGAGACGTTGTCTCACCCTGTCGCCCAGGCTGGAGTGCAGTGGTGCAGTCTTGGCTCACTGCAATCCCCACGTCCCAGGTTCAAACGATTCTCCTGCCTCAGTCTCCCAAGCAGCTGGGATTACAGGTGCCT,chr6:25897419-25897555
+Human genome DNA aligment,Align the DNA sequence to the human genome:CCTTAGCTTTGTCATATTAGAGGGCTGGGAGGGCCTGATCCCCTGGAACCTGCCTTTCCAACCTGATTTCCCATACTTCTTCCCATAAGCCAGATCCCATGATTTCTCTCATTTCTCCAAACAGGCCTCTTGATTTTCCACCTTGGAACT,chr22:30683180-30683329
+Human genome DNA aligment,Align the DNA sequence to the human genome:CTTCATACAAAACGAAGAGTTAAGACCTACCGGTTTTCCAAAGCCTCCCTATGAAAAACAGTATTTCTCTTAGTGGCAGGTTTGAGGTATGAGAGTCATTATTACACCTGTGAGCTGGCC,chr21:7642925-7643044
+Human genome DNA aligment,Align the DNA sequence to the human genome:TTGTCAATTTAACTCACAGAGAAAAATTTTAAAATTTGCAGCCTAATTTCTTCATTGACCCAGTGATCATTCAGGAAAATAATGCTTAATTTCTATGTATT,chr21:18084464-18084564
+Human genome DNA aligment,Align the DNA sequence to the human genome:AACATTAACTTATTTTACCCTCATGATACTTCATTGGGGTAAGTAATGTTAATATTCCTAATTGAAAGATGAGAAACTGGAAGATCAGAAGACTAAGTAATTTTTCCAAGA,chr18:41101663-41101773
+Human genome DNA aligment,Align the DNA sequence to the human genome:TGAGAGCACAGTGGTGAGGAGGACCCACATGCCTCCTATCCTTCATAGGAGGAGAAAGGCACAAACCAGAAAACCCCCCCAACACACACACACATACACAT,chr1:234883857-234883957
+Human genome DNA aligment,Align the DNA sequence to the human genome:CTACAAAATGGGCATATTACTCACCTCGTAGGTTATTAATAGATGAGTTAATAAGTGTAAAATACTTAGAACAGTGCATAGCCAGCAGGGCATGGTGGCTCACACCTGT,chr10:96583669-96583777
+Human genome DNA aligment,Align the DNA sequence to the human genome:AACAAACAAACAAAAAAACTGTAAGCCAAAATTTTATATCCTGCCAGAATAAGCTTAATAAATAAAAGAGATATAAAAAATTTCCCAGATAAGCAAACAACGCGGGACTCAGTAGTGAAAAAAAGTAGAAAGATCACAAATTAA,chr7:124923900-124924043
+Human genome DNA aligment,Align the DNA sequence to the human genome:TACAGATAATGCTAATATCAGAGTTACCAGAAATAAAGATAATATTTTGATCACCATATGCCAACTCCTCCTGCCCCCACCCTTCTTTCTCTACTGATTCAAGAATCTGGTGAAGAAACTAGGGCTAGAGAAATGGAAT,chr14:65272135-65272273
+Human genome DNA aligment,Align the DNA sequence to the human genome:TGGGCTCAAGTGATCCTCTTGCCTCAGCCTCCTAAAGTACTGGGATTACAGGTGCGAGCCACCACAACTGGCCTATAATTTTAAGTTTTCTTATAGTCACATTAAAAACATACAGAAGAAACATGAAATTAATTTCATAACATCTTA,chr7:158890075-158890221
+Human genome DNA aligment,Align the DNA sequence to the human genome:TGCAGATGTGCTCTGCGACTATGTGCTCTAGAGGTAAAAAGGAAGACACTACAAAAGATGCTTATATTAACTGGCATTGATTACTAAGTCCTTCACATTAGGAAGAATCTAGAGAAGAATCTTCTA,chr18:45026043-45026168
+Human genome DNA aligment,Align the DNA sequence to the human genome:TGAAATAATGTTTTGGATATAATGAAGTAAAAACATGTATTAATTTCACTGTTCTTTTTAAGGTATCTAATAGAAAATTTTAAATTACAAATGTGGCTTGCATTATATTTCTGTTGGATAGAGCTG,chr3:156536294-156536419
+Human genome DNA aligment,Align the DNA sequence to the human genome:GCATGGCCAACATGGCAAAACACTGTCTCCATTAAAAATACAAAAAAAATTAGCTGGGCGTGGTGGTGCACATCTGTAGTCCCAGCTACTTGGGAGGCTGAGGCAGGGGAATCACTTGAACCCGGGAGGCG,chr19:32322319-32322449
+Human genome DNA aligment,Align the DNA sequence to the human genome:TTCTTTACTGGTTCCTCATCTTCTCTCAAAATTCTCTTTTTAGGGATGCGAGGATGTTGAAAATGTTCTCTATTTTGATCTGGATGGCGGTTACATGGGTGTAGATCTGTGTTAAGATTGTACACTTAAGTTTCTG,chrX:71742848-71742983
+Human genome DNA aligment,Align the DNA sequence to the human genome:ACACAGTAAAGATCATTTATTTATAAACTGACAATGGCTGCTTTAACACTAGTAGAGCAGAGTCAAGTAATTGTGACAAAGACCAACCGGCCCATAAATTTGAAAATTTGTACTCTCTAGTCCTTTGTGTGAGAAGTTTGCTAA,chrX:98833089-98833232
+Human genome DNA aligment,Align the DNA sequence to the human genome:AGCCAAGGCCAGAGGACAAAGGTGAGCTCGCCAATAGGGCCAATACTGGGTCTGGCTGGAAGGGGAGGGTGGACAGAGATGGGTACTAAGAAGTGAAGATGGACAGGCAGGACCAGGTCT,chr22:18817258-18817377
+Human genome DNA aligment,Align the DNA sequence to the human genome:CCACTACACCTGGCCACAACTGTCTTATTTAAAGGAGGACAAAGGTTAGGCTCAAGATTATGTGTTGGATTATATAACATCACACAACTTTTAAATTCAATTCCACAGATCCTACTAGGCTAGG,chr16:23611895-23612018
+Human genome DNA aligment,Align the DNA sequence to the human genome:CAGCTAACAGAGTGGATCCTTTCTTTTTACAGAGCAGCTTTGAAACTCTATTTCTGTGGATTCTGCAAATTGATATTTGGGTTGATTTAACGATATCGATGGAAAAGGGAATATCTT,chr21:12702345-12702461
+Human genome DNA aligment,Align the DNA sequence to the human genome:AGATAACATTAAGGTTTACATTCTCTGTAGAAACCTGTCCCAGGAATTCGTTGATGTTTGCAGCATCCGATTACTCTATAGCCAGAGAAGGCCAAGAGTAGAACCTTCTATTTTTCTTGTTGACCTT,chr6:163903884-163904010
+Human genome DNA aligment,Align the DNA sequence to the human genome:AGGCCGTCTCTGACCCAGCTCTCTTTCTACTCCTCTCATCTCTTGCTCACAGCCTTCCAGCCACACTGGCCTTCTTCTTGTTCCCCTGACTCACTGTGCATGCACTCTGCTAAGAGTCTTAACTCCCTA,chr18:54462342-54462470
+Human genome DNA aligment,Align the DNA sequence to the human genome:ACAACTTGACATCAAGGGACCAGGATGAGAATCTTATTTCAATAACCTACTAGTTAAGTGGTTTTGGTTAAGTTTAATCATTTATCTTTAGTATTTGCAACCATAAATTTGGAATAGTGATATTAGTTGCAGGATT,chr2:34350870-34351005
+Human genome DNA aligment,Align the DNA sequence to the human genome:ATGAACTAAAGACTCATGACTCATTTACTCTCATTTTGACATCGCTTTGACAGTGGTGCCCAGCTTTCAAGGCAGTGACCTCTGCAGGAAGAGGCCCTTAGCTTCTGTGGAATGCTAAGTGC,chr7:32588819-32588940
+Human genome DNA aligment,Align the DNA sequence to the human genome:TAAAATGTTCTGTTGATGACTATTAAGTCAATTTGGTCTAAAGTGAAGTTTAAATCTAATGTTTCTTTCTTAAGTTTCTATTTTGTAGATCTGCCTTATGCTAAGAGTTGACTTTTGAAGTTCTCAAATATTAT,chr14:83950330-83950463
+Human genome DNA aligment,Align the DNA sequence to the human genome:GGCAGCAGTCACGAGAGCTTGTGCAGGGGAATTCTCATTTATAAAACCATTACATCTCATGATACTTATTCACTACCAGGAGAACGGTATGGGAGAAACCACCCCTATGACTCAATTATCTCCACCTGGTCCTTC,chr11:37515333-37515467
+Human genome DNA aligment,Align the DNA sequence to the human genome:AAGCTGGGATTACAGGCGCCCGCCACCACGCCCTGCTAATTTTTGTTTTTTTAGTAGAGACAGGGTTTCACCACGTTGAGGCCAGGCTGGTCTGAAACTACTGACAGGCAATCCGCCCACCTTGGCTTCCCAA,chr19:23003880-23004012
+Human genome DNA aligment,Align the DNA sequence to the human genome:GATGTTTAATTAATTGCAATTACTATCTTCAAAGGAAGCCCAGAGTTGAAAGTTGTTCCTAATTACTGTGTTATGATGTCGACCAGCTACTTAAATTGATTGTGTGAGAATTTCCGATGGAGAA,chr8:141523256-141523379
+Human genome DNA aligment,Align the DNA sequence to the human genome:TTAGTATTCTTTTCAAACTGCAAAGTGACTTTTCAGCAATTGGGGTTGTTGTTTGAAATGTTTTTGAATGGCTTGTCTTCTATCTTTCCCTCATAGGAAAAGAAAAATACGACACAT,chr9:22210568-22210684
+Human genome DNA aligment,Align the DNA sequence to the human genome:GTGATGGGCAATCCCGGAGCCACTGGCTTGCTGGTTCCAATTCTTAGAAGCAAAGTATGGATGGCCAGGATTTTATCTCTAGTAGGGTAACAGTGACTAAAAGTGCTGTAGAAATAAGATGGGAAA,chrX:96520716-96520841
+Human genome DNA aligment,Align the DNA sequence to the human genome:TTTTGTTTGTTTGTTTGTTTGTTTGTTTTGTTGTTGGGACGGATTCTCACTCTGTCTCCCAGGCTGGAGTGCAGTGGTGCGATCTCGGCTCACTGCAAGCTCCGCCTCCCGGGTTCACGCCATTCTCCTGCCTCAGCCT,chr20:57571370-57571508
+Human genome DNA aligment,Align the DNA sequence to the human genome:GTAGCTAGCCATGGTCAAGGCGGTCTAGACAGAGAGCAGTGTGGGGCTCCGTAAATACCGCACTGACGGAAAACATTAGCTTCCTGAACTGTACAGGTTATACCCAA,chr17:9557107-9557213
+Human genome DNA aligment,Align the DNA sequence to the human genome:ATTTCACGCTATATACAAAAATCAACTCAAAGCATTAAATGTAAGACACGAAACTGTAAAATTACTAGAAGAAAACATAGGGGAAATTTTCATAACATTGGTTTGGGCAATGCT,chr1:189568643-189568756
+Human genome DNA aligment,Align the DNA sequence to the human genome:TTATCTGAAAACACAGATCATTTTACTTCTTTCCAATTTGGATGTCTTTTTTTTTCTTGCCTAATTTCTCTGGCTAGGACTTCTAATACTGTGTCGAATAGACGTGGCAAAA,chr19:41724898-41725009
+Human genome DNA aligment,Align the DNA sequence to the human genome:GAATAAACGGTGGGCCTGGTCACCATAATGGCAGCAGGGTATGGAATGGGATGACTACAGAAATCTCTAACAGGGAGTAATGGATCATAGAATTCTTGGGGCTGAAATAGAACATTCCATTAAGGCCACGTTTGA,chr6:119363354-119363488
+Human genome DNA aligment,Align the DNA sequence to the human genome:CCAGGAGTTTGAGACCAGCTTGGGTAACCTGGCAAGACTCCGTCTCTCTCTCTCAACAACAACAACAACAAAAAGGCCGGGTGCGGTGGCTCATAACCCCAGCACTTCGGGAGGCTGAGGTGGACGGATCACTTGAG,chr16:3779892-3780028
+Human genome DNA aligment,Align the DNA sequence to the human genome:GTGTTGAACAGTCCCTTTCATAGAGCAGGTTTGAAACACTCTTTTTGTAGTATCTGGAAGTGGACATTAGGAACGCTCTCAGGACTGCGTTGAAAAAGGAAATATCTTCCAATAAAAGCTAGATAG,chr2:93063432-93063557
+Human genome DNA aligment,Align the DNA sequence to the human genome:CCTCCTTCCCACCTCTCCCTGGGCCTGCTCCTGGGAGGGACAGCTCCTGTTCGAGGGGCAGGAGTCCACGGTGAGTGGGACCCTCTGTGGGACGCCCCCTCTACTTCACTCCAGGATCCCATTTTGGCCATGCACAGAGAGG,chr19:19162638-19162779
+Human genome DNA aligment,Align the DNA sequence to the human genome:ACTCTTCTGTTGGGAGAGTTTATTCAACTTCATTTTGACTTCACTGACTTCTATACACTGATCCAAGGTGTTTTTTTATTGGCAGGTTGGATTTAATTTTCA,chr9:8591402-8591503
+Human genome DNA aligment,Align the DNA sequence to the human genome:AACCTCTGCCTTCTGGGTTCAAGAGATTCTTGCGCCTCAAGCCTCCTGAGTAGCTGGGCTTATAGGCATGCACCTCCACACGCAGCTAATTTTTGTACTTTTAGTAGAGACAGGGTTTTGCCATATTGGCCAGACTGGTCTC,chr6:20935508-20935649
+Human genome DNA aligment,Align the DNA sequence to the human genome:AGGAGGGGGAGGGGGAGAGGGAAGGGGCAGCCCCGCCTCCCGCAGGAGAAGGGAGCGCCTCATTACGCCGGGCTCGCCCGGGATGCCTGGCTCCCGGCGTCCGCTGCCTCCGCTGGGGACGTCCCGGGTCTG,chr1:20486790-20486921
+Human genome DNA aligment,Align the DNA sequence to the human genome:ATGTGGGATGTCCTGCACGTGGGCTCTGGAGTTAACAGAGGTGGGTTCTAAGTCAGGGTCATCACTTGCTTACTGAGCAACCTCGGCCAAGTTACTTATCCTCTTTGGGTTTTTTGTTAGTTTGTTCGTTTGTTTGTTTGT,chr14:99402298-99402438
+Human genome DNA aligment,Align the DNA sequence to the human genome:TTTCCACGATAGACCTGAAACTGCCTAAATATATCTCTTTGCAGATTCTACAAAAAGACTGTTTCCAAGCTGCTCAATCAAAGAAAGTTTTTACTCTGTGTGATGAATGCACACATCACA,chr20:29228714-29228833
+Human genome DNA aligment,Align the DNA sequence to the human genome:TGAGATTCTAGGTTCTCAGCCACCCAACCTTGCTGAACATGCTGGGCAACGTGGAACACGGGGACTCGTGGTCATGCTAATAACAGAACAAGTTTCCATTGGAAAGCTTTGCCTAAAAGAATCCTTAAAATACTATAAATTTACTC,chr10:121721897-121722042
+Human genome DNA aligment,Align the DNA sequence to the human genome:TCACTTGAGCCCAGGAGTTTGAGGCTGCAGTGAGCTCTGATTGCATCACTGCCCTGAAGCCTGGGCAACAGAGTGAGACCCTGTCTCTTAAATAAATAAATAAATAAATAAATAAATAAATAAAATTTTAAAAAATG,chr10:8432390-8432526
+Human genome DNA aligment,Align the DNA sequence to the human genome:TACTATAAATATCTCTGTGCACACCAACTAGAAAGTCTAGAGGAAATGAATAAACTCTTAGAAATATACAACCTCCCAAGATTGAATCAGGAATAAACAGAAGTCTTGAAGAAACCAAAA,chr2:132111535-132111654
+Human genome DNA aligment,Align the DNA sequence to the human genome:GAATGCAGTGGCATGATCATGGCTCACTATAGTCTTGACCTCTCGGGCTCTGGCGATGCTCCTGTGTCAGTCTCCTGAGTAGCTGGGACCACAGGTGCATACCACCATGCCTGGGTAGTTTATTTTTATTTTTTGTAGA,chr20:34383091-34383229
+Multi-species DNA aligment,Which organism does the DNA sequence come from:AGGGGCAGCAAACACCGGGACACACCCATTCGTGCACTAATCAGAAACTTTTTTTTCTCAAATAATTCAAACAATCAAAATTGGTTTTTTCGAGCAAGGTGGGAAATTTTTCGAT,worm
+Multi-species DNA aligment,Which organism does the DNA sequence come from:CGTACACCATTGGTGCCAGTGACTGTGGTCAATTCGGTAGAAGTAGAGGTAAAAGTGCTGTTCCATGGCTCAGTTGTAGTTATGATGGTGCTAGCAGTTGTTGGAGTTCTGATGACAATGACGGTTTCGTCAGTTG,yeast
+Multi-species DNA aligment,Which organism does the DNA sequence come from:GTGAAGATGATGGAGAATTTCATTGCCTGGCCACCAACCGTGCTGGAGACAAACTTAATTCCATTGAAGTTCAAGTAAACAATGCACCAAAAGGATCATTGTTTTTCTAT,worm
+Multi-species DNA aligment,Which organism does the DNA sequence come from:AAAAATAATTTCCCGTTAACTGTTAATAAGTATTAGCAGTGGCTCAATGCTGTAGTGACCTAATTTAAACAGAATCAAAGCGAGCTGTGCTAAAGGGCATGAGACAGTGGAATCTTTT,human
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TTCAATTCTCTGTAGGCAAGGATGGCTCATCACCATTATCACCCTGACGAGACTTAGAAACACCACGGAGACACACCTCTGGGCACGAGTGTTATGGTGTTT,rat
+Multi-species DNA aligment,Which organism does the DNA sequence come from:ATGCACAGCAGAGAGCCCCAGGGTGGACTGTAAACCTAAAGATGACCGAGGATCCTGTTGAGAAGATGCCAAAGCTAAGGAGAGAGACATGCGTGCAGACTCTCCGACACTCTGATTTGGGGTCTTGGGTTCTGAGGAGAAAGC,mouse
+Multi-species DNA aligment,Which organism does the DNA sequence come from:GTTGATGTCAGCTCTCTACAGTTCATGACTGGACACACACACATAGCCCGTTTCATTAAAGAAATAGAATCCTAACAATGACATCATTGTAGAAGCTCCTGGGATGACAG,zebrafish
+Multi-species DNA aligment,Which organism does the DNA sequence come from:AAAAAAAAACTCCATAAAAACAACAAAAAGAGACGGACGCGGTTAACGAAGTAGTAACTTGATGAAAATGAATAAAAAAGAATAAAATTAACAAATAGAAAAGTTGAATCTTTTAAAACTCAAAGTCGCCATCGATCAAC,yeast
+Multi-species DNA aligment,Which organism does the DNA sequence come from:CTGCATTTACACAGCACACAGGAAAGGCGCAATGACCAGGAAAAAAAAAAAGAGCGGGTGCTGACTGACAGCTGATAATTAAAGAGTGTCTTTTCTCTATTCC,zebrafish
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TGAGAGTATGATATCTATGCTACGAGACCCATATTACATCTCATACATATGGCACACTTCTTAAATATATTGCTAGGGCATATTTCTTATCTTGAATCATGCTCAGTCTGCCTCAACAAATACTTCT,human
+Multi-species DNA aligment,Which organism does the DNA sequence come from:ACCCCACACTGTTTTTATAGAAAGCATTAAAGACTCCCAACCTGGGGCTGGGGATTTAGCTCAGTGGTAGAGCGCTTCCAAGGCCCTGGGTTCGGTCCCCAGCTCCGAAAAAAAAAAAAAAAAAAAGAAC,rat
+Multi-species DNA aligment,Which organism does the DNA sequence come from:AATTATTCGCTGAAATTCAGTTAATATATGACGAAAATAAAATCATGAATCTAAATAAACCGTCCCAATACAAACAACACAGCGAATACAAAAATGTTTCTCGCACATCTCCAAACACGACTAA,yeast
+Multi-species DNA aligment,Which organism does the DNA sequence come from:CAGGAACAACAGCAAAACATTACTTCACGTGCAAACCGATCTGTAGGGCTAAAGAAGAGACCACACACAAGTTTCTCTGGATATTTTGAAACTATTTAATGAAGGAATTAAATTCCTGTAGCACAGCTCTAATAGTAGCCAT,chicken
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TTCATCGGTCTGAGCAGAGGATGAAGTTGCAAATGATGCAAGCAAAACAGCTCAAAGATGAAGAGGAAAAGGCTATACACAACAGGAGCAATGTAGATACAGAAGGT,rat
+Multi-species DNA aligment,Which organism does the DNA sequence come from:ACAAGGAAAGACACTAATACCAGTTCTTAGGTGGGGAGAGATTGCTCACATTCCCCTGGGGTTCCCTGCTCCACAGTACAAGAGAACACGCAATGGTCCGTGAGAGCAGAGAA,mouse
+Multi-species DNA aligment,Which organism does the DNA sequence come from:ACCAAAAGAGTGCGCCACTTGTGGTGACACCTGGACTTCTCAGTGGAGAAGTGGACCTAATGGAAATGTTGAGCTATGTAGTCGATGTGGCATAGCATATAGGAAAAAAATGGAGAAAAAAATACGATCGCAACAA,yeast
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TATGCGATGTTTGTCTTGCTGGTCTGATTACCTCACCCAATATAGTCTTTTTTAGGTCCATTCATTTACCTGAAAATTACATGATTTAATTATTTCTACAACAGAATAGCATC,mouse
+Multi-species DNA aligment,Which organism does the DNA sequence come from:GCTTACTGCAACTTCCGTCTCCCGGGTTCAAGTGATTCTCCTGCCTCAGCCTCGCGAGTAGCTGGGATTACAGGCACCCACCACCACGCCCAGCTAATTTTTTGTATTTTTAGTAGAGACAGGCTTT,human
+Multi-species DNA aligment,Which organism does the DNA sequence come from:CATGCAATGAGATTGCTGCACACCAGGAACCCTAACTTCCAGTCTTTTGTTTTCTGCTTGTAGCATGCTTGTTTTCTACACACTGTCATGGGTGTATGCAGATAAAAATAATCAATCCACGAC,chicken
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TTGTTCATCCTCTAGAGAGAGAAGGGATACGCATTCATGGAGATCCTACTGTTGCAAACTCTGCATTAGGAGTTTTACATGAATTGTCTCATTTAGTCCTCACAACAGTCCTGTGAGGCAC,human
+Multi-species DNA aligment,Which organism does the DNA sequence come from:GCTAGTAAATATAAATATTTGTTATCATGTATTATGTGTTATTTTTGCGGGGAGTATGATTATGATGCTTTCATTACAAATGTAACGTTATATGTGCCTATGTGGTGCCATGTGCCAGGATGT,worm
+Multi-species DNA aligment,Which organism does the DNA sequence come from:ATGTGCTTGTAGGAAGCAGCACAGGCCAGAAGAGGTTGTCAGATTCCCTAGAACTGGAGTTAGAAGCAGTTGTGAGCTCCTCTATGTAGGTGCTGAGAACTAAACCTGGATCCCATGAGCCATCTCCCTAA,mouse
+Multi-species DNA aligment,Which organism does the DNA sequence come from:GCATGTTAGTTTGTGTGCACACATGCATATGCATGTGTATGGAGACCAGGGTTCGTATTAGCTGTCTTCCTCGATTGCAGCACTTCATGTGATTTTGAGAGCAGCTGTGACCCTGAACCTTGAGCTCGTTTCAGCTAGGCTGGCTGGCA,rat
+Multi-species DNA aligment,Which organism does the DNA sequence come from:ACTGTTGTTCTGTTCGAGAAAACTATCACAAAAAGATGACTGGCTCATAACTTTGATACGAATAGCAGTTCAAATATGTCACTGTTTTTCTTGTTTGAGTATTCATATGGTGAA,worm
+Multi-species DNA aligment,Which organism does the DNA sequence come from:ACTCAATCTATCACATATACTGAGAAAAACTGTATCTATTTTGATTTCCCTAAATGGAAAGTTAGAAGCTTACTCTGCAGGTGGCAGGTAAGCACCAATCCTT,human
+Multi-species DNA aligment,Which organism does the DNA sequence come from:AAAACGGTACGAAAAGGTAATATTGCCTAATCTGAAATAATGTAGTCACTCTAGAACTATTAATAAAGAAGCTTGTACTTCCTCTTATCCCTGGAATGGACGGTTATGCTGCTT,yeast
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TGAAACCTTTTGTTCCATATGTATATTTACAATAAAAAAAATAATGCAAGTAAGCCATTTATCACAAAAACAGGTTTATTTAATATCTCTTTCTTTTTTAAAATAATTAGATTTATTC,zebrafish
+Multi-species DNA aligment,Which organism does the DNA sequence come from:AATTTTACCTTTCATGTCCACATTGCCCTTGCTCAGCTCCCTGTCATGCCACAACTAATAGCTGCTTTGGAATAGAAACAGCTAATGACACCTCTAAATAATGA,chicken
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TGTGAGGGCTCTGGACCACCACAAGACTGGAAGTTTCCACGCACCCACTGCAAAGGGAGGGTGCAGCTCACCAAAACCAAGTTTGCTTTGATTCACGACGTCGTGTAAAGT,rat
+Multi-species DNA aligment,Which organism does the DNA sequence come from:CAGGTCCCCATGGCTTTGTTTCTTGGAGTCTCTCTCTTCACAGTCCTTTTCTCCAAGGCCAGTGAGGGAAGGAGAGATTTCAGGGGAAAAGCTACTGACTGGATTGGGAG,human
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TGGGCAGAGTGTTCTCTCAAATATTTATGTATTTGAAGTAGAGGTGGATTGAAAAAAAATGTCAAAGTGATTTAGCATCACAAAGTGTTTCAGTGAAACAAAAACAGTTCACTTACATGTCT,chicken
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TTTTTTTTTTTCACCCTTAACAGCAAGGTTGAACTCTATAAGGAAAAGGGATAGATCGTGCGGCACACCAGAAAAAGGGGATCAGTAAAGTGATGCAACATAAATACA,yeast
+Multi-species DNA aligment,Which organism does the DNA sequence come from:AATTGTTTATAGCCAAACTGTTATGCCCAGGTGTTGTCAAGGTGCTCAAATTTCAAATTTTATCAAATTTTAGGTCATTTTTTGAGCCACCATGTTTTTTGAGAAGTTTCCAAGAAGTTTCATCAGGAAATTCGGCGT,worm
+Multi-species DNA aligment,Which organism does the DNA sequence come from:GCTGGTAAATCCACCGGCCACCCCAAAAGCGCCGTTGCGCCCTTTACCAATTATAGAGATCCCCTTCAAGAGAATTGGTATGGATCTCATCGGGCCATTAGAGTGATCCGCACGCGGGCACCGGTTTGCATTAGT,zebrafish
+Multi-species DNA aligment,Which organism does the DNA sequence come from:AATACTAATGTTATTATTAATAGTAGTTAGATATATAAAAAAAAAATATATATATATATATACTATACTATATATATTATATATATATACACACACAGTATATA,zebrafish
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TAGCAGCGTTCGGTTTATTAACCTGTATAGGGTTACTTGCATTCTTCGTTAATTGTGCAAGATTCTCATCTATTTGAGATTGCAATAATTTTTCTCGTTCTTCCGTTAATTTATTTAAATCAACATTCCCAGGTATTAGCGAATC,yeast
+Multi-species DNA aligment,Which organism does the DNA sequence come from:GTTTGGACTGTGGGGGAAACCGTAGCACCCGGAGGAAACCCACACCAACACGGGGAGAACATGCAAACTCCACACAGAAACACCAACTGACCCAGCCCGGACTCAAA,zebrafish
+Multi-species DNA aligment,Which organism does the DNA sequence come from:AAGGTATAGGGAGAGAGAACTGGTAGTAACACAGTTCAAATTATGAGACCTGCATCTGAATAGCTGGCTAGCGGGGGCGGGGGGGTGCACTTGAAGCATCTCTCTCCCTC,mouse
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TGTTACTCAGGAACTCCTATGATGTGCTGGAGATTCAGAATGAACAAACTGAAAGCCATACTCCAAGCCTCTTCCTTTTATACCTGTATGTTTAGTTATTTCCCAGTGGTTAAGAGCAC,human
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TCCATTGTAGGCAAAAGGATTTGCTTAGGATATAAAAAGTGGAAATGAATCATGTGAACAGCTTTTCCATATTGTCCATTATCCATTTTTGGATAACTTCAGTGGATACAAGCTGAAGGACAAGCTGCTTGTGTAC,chicken
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TCATTATGTGCATGTCCTACTTTCTGTCTGTGTCTGTGCACAGGCAAATGTGTCCATTTTATGCATGTAAAATATGTATGGTTGGTACTTTTGAGAGCTATCCATTTAAATTCTGGCACA,zebrafish
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TTTGGATGCTGCCATCCAAAGACATAATCGCTGCCTCTAATGAGCGTTACTTTGTGCACGCTAATGGGTCTCTTGATATACGAAATGTTAAATTATCTGATGCTGGGGAGTATGTCTGCATGGCTCGTAATGC,zebrafish
+Multi-species DNA aligment,Which organism does the DNA sequence come from:ATTACAGAGATCCTGAAACCTTCCCTCCACCTCTCCCTACCTTCCAACACAGGACACAGAAGGACAATTGGAACCCCTTGCAACTTGGTTTCATTCTGAATTG,mouse
+Multi-species DNA aligment,Which organism does the DNA sequence come from:GACAGGGATGTCATCAACGCATAATGATGTACAGTGTTGGATTGCATACCTGTATCGTACGTATCAGGATGCTGAATGTCACCTCTTGCAACAAATCTAGCTTTATGAG,yeast
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TTTCCTTGTCACAGTATCACATCAATCTCTCACTTTAGTTATACATAATTAATGTCACTGTTGAGATAGTTTTAAAAAAATGTCCTTCTCATCTTGAAATGAACAACTTATTAGGAAGGAATTTCTCAAAACACTTGCCT,worm
+Multi-species DNA aligment,Which organism does the DNA sequence come from:CATGTACAATAAAAGAACTGGAGGTATCACCTTCCCTGATTTCAAGCTGTAGTACAAAGCATTGTAACAAAAACATGCATGATATTGGCATAACAAGGACAGGTTGATCAATGGAATTGAGTTGAAGACCCAGAAATACACCCA,rat
+Multi-species DNA aligment,Which organism does the DNA sequence come from:CCACAGTTTTTTTCCTGTATTAGTTTTTTTTGACTCTCATAGTGCTGGTAGTCAATAACTTGAATATTATAAATCCCCCCCAATTCCCCCCCAAAAAAAGCTAAAAATAGTTTCAGCTAAAAATCTAAA,zebrafish
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TCCCAAATGTATTGCACAATGTGCACACGGACACACACACACACTTTACACCTCTGCGTCTCTTGTTCTCTTTCACCACCGAAATGCTTGCAAAATCTGGTTGAACGGTTTCCACGTCA,worm
+Multi-species DNA aligment,Which organism does the DNA sequence come from:TAAAAATTATAGGAAAAAAGACAAAAATTGCACAATCCCAAAAAAGGCAGAAAAACACAAAATCTTCTACTTTAAAAAAAAACCTATAAAATTTTCACATTTTCCCCGATTTTTAATCAAAAAACCAAAACTTTTCGCT,worm
+Multi-species DNA aligment,Which organism does the DNA sequence come from:GCTCGATTGAAACGAACTGTGGAGCGGTTCGATTGCAGTGAGAAAGCGATCCGATCCGAGCGCGGTTATATCACAGTGTTTTATGGATATGTAATAGGCTTACGGCTATATGAAGAGAGTTATGAGTATGGC,zebrafish
+Gene name conversion,Convert ENSG00000215251 to official gene symbol.,FASTKD5
+Gene name conversion,Convert ENSG00000205403 to official gene symbol.,CFI
+Gene name conversion,Convert ENSG00000140199 to official gene symbol.,SLC12A6
+Gene name conversion,Convert ENSG00000149476 to official gene symbol.,TKFC
+Gene name conversion,Convert ENSG00000291317 to official gene symbol.,TMEM276
+Gene name conversion,Convert ENSG00000174944 to official gene symbol.,P2RY14
+Gene name conversion,Convert ENSG00000138604 to official gene symbol.,GLCE
+Gene name conversion,Convert ENSG00000174233 to official gene symbol.,ADCY6
+Gene name conversion,Convert ENSG00000165487 to official gene symbol.,MICU2
+Gene name conversion,Convert ENSG00000124157 to official gene symbol.,SEMG2
+Gene name conversion,Convert ENSG00000182885 to official gene symbol.,ADGRG3
+Gene name conversion,Convert ENSG00000128322 to official gene symbol.,IGLL1
+Gene name conversion,Convert ENSG00000103199 to official gene symbol.,ZNF500
+Gene name conversion,Convert ENSG00000148824 to official gene symbol.,MTG1
+Gene name conversion,Convert ENSG00000188343 to official gene symbol.,CIBAR1
+Gene name conversion,Convert ENSG00000077984 to official gene symbol.,CST7
+Gene name conversion,Convert ENSG00000117528 to official gene symbol.,ABCD3
+Gene name conversion,Convert ENSG00000135338 to official gene symbol.,LCA5
+Gene name conversion,Convert ENSG00000139370 to official gene symbol.,SLC15A4
+Gene name conversion,Convert ENSG00000170209 to official gene symbol.,ANKK1
+Gene name conversion,Convert ENSG00000198681 to official gene symbol.,MAGEA1
+Gene name conversion,Convert ENSG00000078549 to official gene symbol.,ADCYAP1R1
+Gene name conversion,Convert ENSG00000091592 to official gene symbol.,NLRP1
+Gene name conversion,Convert ENSG00000148680 to official gene symbol.,HTR7
+Gene name conversion,Convert ENSG00000183943 to official gene symbol.,PRKX
+Gene name conversion,Convert ENSG00000160791 to official gene symbol.,CCR5
+Gene name conversion,Convert ENSG00000162849 to official gene symbol.,KIF26B
+Gene name conversion,Convert ENSG00000147202 to official gene symbol.,DIAPH2
+Gene name conversion,Convert ENSG00000117586 to official gene symbol.,TNFSF4
+Gene name conversion,Convert ENSG00000168591 to official gene symbol.,TMUB2
+Gene name conversion,Convert ENSG00000129474 to official gene symbol.,AJUBA
+Gene name conversion,Convert ENSG00000172009 to official gene symbol.,THOP1
+Gene name conversion,Convert ENSG00000189157 to official gene symbol.,FAM47E
+Gene name conversion,Convert ENSG00000196586 to official gene symbol.,MYO6
+Gene name conversion,Convert ENSG00000203783 to official gene symbol.,PRR9
+Gene name conversion,Convert ENSG00000126500 to official gene symbol.,FLRT1
+Gene name conversion,Convert ENSG00000010404 to official gene symbol.,IDS
+Gene name conversion,Convert ENSG00000182022 to official gene symbol.,CHST15
+Gene name conversion,Convert ENSG00000177051 to official gene symbol.,FBXO46
+Gene name conversion,Convert ENSG00000172296 to official gene symbol.,SPTLC3
+Gene name conversion,Convert ENSG00000120738 to official gene symbol.,EGR1
+Gene name conversion,Convert ENSG00000169548 to official gene symbol.,ZNF280A
+Gene name conversion,Convert ENSG00000153060 to official gene symbol.,TEKT5
+Gene name conversion,Convert ENSG00000176222 to official gene symbol.,ZNF404
+Gene name conversion,Convert ENSG00000168970 to official gene symbol.,JMJD7-PLA2G4B
+Gene name conversion,Convert ENSG00000185883 to official gene symbol.,ATP6V0C
+Gene name conversion,Convert ENSG00000240694 to official gene symbol.,PNMA2
+Gene name conversion,Convert ENSG00000167664 to official gene symbol.,TMIGD2
+Gene name conversion,Convert ENSG00000243660 to official gene symbol.,ZNF487
+Gene name conversion,Convert ENSG00000132205 to official gene symbol.,EMILIN2
+Gene name extraction,What are the gene and protein names in the sentence: Comparative analyses indicate that the 5'-peripheral domain exhibits a 75-bp length polymorphism near sequences associated with the termination of the H-strand replication.?,No gene
+Gene name extraction,What are the gene and protein names in the sentence: Microscopic examination of these colonies showed a high percentage of histiocytes identical to those seen in the patient's bone marrow.?,No gene
+Gene name extraction,"What are the gene and protein names in the sentence: Deletion analysis of the 3.5kb DNA fragment revealed that the region between -125 to +1, containing a single Sp1 binding site, is essential for transcription of the embigin gene.?","Sp1 binding site, embigin gene"
+Gene name extraction,"What are the gene and protein names in the sentence: To investigate the effect of hyperthyroidism on the pattern and time course of O2 uptake (VO2) following the transition from rest to exercise, six patients and six healthy subjects performed cycle exercise at an average work rate (WR) of 18 and 20 W respectively.?",No gene
+Gene name extraction,"What are the gene and protein names in the sentence: All patients received marrow from HLA-identical sibling donors, underwent similar myeloablative regimens, and had similar pretreatment characteristics.?",HLA
+Gene name extraction,What are the gene and protein names in the sentence: Expression of the Asp but not the Ala gB mutation resulted in an increase in the steady-state expression of gB at the plasma membrane (PM) in U373 cells.?,gB
+Gene name extraction,What are the gene and protein names in the sentence: We conclude that clonidine 3 micrograms/kg produces sedation comparable to diazepam 0.2 mg/kg and also attenuates the intubation response without increasing the incidence of complications.?,No gene
+Gene name extraction,"What are the gene and protein names in the sentence: In addition, WR-3689, WR-109342, and WR-168643 were used with per os administration to determine hematopoietic lethality.?",No gene
+Gene name extraction,What are the gene and protein names in the sentence: Acute intoxication with cypermethrin (NRDC 149).?,No gene
+Gene name extraction,What are the gene and protein names in the sentence: This deletion disrupts the PU.1 Ets domain.?,"PU.1, Ets domain"
+Gene name extraction,"What are the gene and protein names in the sentence: Indeed, ectopic expression of MOX4 in aerobic cells resulted in partially constitutive expression of DAN1.?","MOX4, DAN1"
+Gene name extraction,What are the gene and protein names in the sentence: Amplitude of late surface (P2 and N2) and depth (B and C) components significantly decreased when patients shifted from SWS IV to PS and increased from PS to W2.?,No gene
+Gene name extraction,What are the gene and protein names in the sentence: Unconventional mRNA processing in the expression of two calcineurin B isoforms in Dictyostelium.?,calcineurin B isoforms
+Gene name extraction,"What are the gene and protein names in the sentence: The detergent-solubilized complex oxidizes caldariella quinol at high rates and is completely inhibited by cyanide and by quinolone analogs, potent inhibitors of quinol oxidases.?",quinol oxidases
+Gene name extraction,What are the gene and protein names in the sentence: Nramp2 contains a classical iron responsive element in the 3' untranslated region that confers iron dependent mRNA stabilization.?,Nramp2
+Gene name extraction,What are the gene and protein names in the sentence: Differences were not found in colons by SEM.?,No gene
+Gene name extraction,"What are the gene and protein names in the sentence: The enzyme encoded by the cloned fragment is equally active on pyruvate and hydroxypyruvate, indicating that the enzyme has both D-lactate and D-glycerate dehydrogenase activities.?",D-lactate and D-glycerate dehydrogenase
+Gene name extraction,What are the gene and protein names in the sentence: The relationship between polymorphonuclear granulocytes and cartilage destruction in rheumatoid arthritis.?,No gene
+Gene name extraction,What are the gene and protein names in the sentence: Synthesis of 22-oxavitamin D3 analogues.?,No gene
+Gene name extraction,What are the gene and protein names in the sentence: Ischaemia and reperfusion injury in the kidney: current status and future direction.?,No gene
+Gene name extraction,"What are the gene and protein names in the sentence: We found that RXR and VDR transactivated selectively from VDRE-linked templates exclusively as a heterodimeric complex, since neither receptor alone enhanced transcription in vitro.?","RXR, VDR"
+Gene name extraction,"What are the gene and protein names in the sentence: Lysates of COS cells transfected with modified hGrzB cDNA were able to hydrolyze tert-butyloxycarbonyl-Ala-Ala-Asp-thiobenzyl ester (Boc-Ala-Ala-Asp-SBzl), whereas lysates transfected with unmodified hGrzB cDNA were inactive.?","modified hGrzB cDNA, unmodified hGrzB cDNA"
+Gene name extraction,What are the gene and protein names in the sentence: BACKGROUND: Recent iterative methods for sequence alignment have indicated that the 380 kDa motor unit of dynein belongs to the AAA class of chaperone-like ATPases.?,"dynein, AAA class, chaperone-like ATPases"
+Gene name extraction,"What are the gene and protein names in the sentence: The authors discussed their experience in investigating 20 patients with maxillary malignant tumors using routine x-ray studies and MR-tomography, and 13 patients, investigated in the same way plus CT.?",No gene
+Gene name extraction,"What are the gene and protein names in the sentence: In addition to loss of digit identity and varying degrees of polydactyly, proximal skeletal elements are severely shortened in Xt;ld double homozygous limbs.?","Xt, ld"
+Gene name extraction,What are the gene and protein names in the sentence: 4 382 new mothers were examined retrospectively with the enzyme-linked immunosorbent assay (ELISA) for IgG activity to cytomegalovirus (CMV) during pregnancy.?,IgG
+Gene name extraction,"What are the gene and protein names in the sentence: The animals were followed over a 1- to 6-h posttraumatic course, and processed for the LM and TEM visualization of HRP.?",HRP
+Gene name extraction,"What are the gene and protein names in the sentence: Cell cycle regulatory components have been largely conserved in eukaryotes; however, orthologs of neither CAK1 nor csk1 have been identified in other species to date.?","CAK1, csk1"
+Gene name extraction,What are the gene and protein names in the sentence: Copyright 1999 Academic Press.?,No gene
+Gene name extraction,What are the gene and protein names in the sentence: The essential questions about hepatitis C?,No gene
+Gene name extraction,"What are the gene and protein names in the sentence: In this study, a site of PDGF-induced tyrosine phosphorylation was mapped to Tyr 138 in the SH3 domain; Tyr 138 is exposed on the SH3 peptide binding surface.?","PDGF, SH3 domain, SH3 peptide binding surface"
+Gene name extraction,"What are the gene and protein names in the sentence: The H5 mutants were: DH5 (all amino acids in D configuration) and H5F (where all His are replaced by Phe at positions 3, 7, 8, 15, 18, 19, 21).?","H5 mutants, DH5, H5F"
+Gene name extraction,"What are the gene and protein names in the sentence: Following 40 min ""ischemia"", preparations treated with PC recovered from transmural conduction block more rapidly (PC1 group, 4 min, P less than 0.05; PC2 group, 23 min, ns), compared to control.(ABSTRACT TRUNCATED AT 250 WORDS)?",No gene
+Gene name extraction,What are the gene and protein names in the sentence: Measurement of the spectral sensitivity and the ERG can thus help in the diagnosis of these three hereditary diseases.?,No gene
+Gene name extraction,What are the gene and protein names in the sentence: This increase is not the result of alterations in the deposition of inhaled particles of capsaicin brought about by volume restriction.?,No gene
+Gene name extraction,"What are the gene and protein names in the sentence: The transcriptional initiation site of RAG1 was localized at A, 26 bp upstream of the putative translational initiation codon, ATG, by the primer extension assay.?",RAG1
+Gene name extraction,What are the gene and protein names in the sentence: Parameters of sperm quality were evaluated before and after freezing/thawing.?,No gene
+Gene name extraction,"What are the gene and protein names in the sentence: Neurological toxicity occurred in 8/219 patients treated with fludarabine (FAMP), 30 mg/m2 per day and cytosine arabinoside (Ara-C), 0.5 g/m2 per hour for 2-6 hours for 5 days, for new or relapsed acute leukemia or myelodysplasia.?",No gene
+Gene name extraction,"What are the gene and protein names in the sentence: 1H and 15N magnetic resonance assignments, secondary structure, and tertiary fold of Escherichia coli DnaJ(1-78).?",Escherichia coli DnaJ(1-78)
+Gene name extraction,"What are the gene and protein names in the sentence: The T(CCO2) was related to the PCO2 by a Pearson product coefficient of 0.79 (p<.0005), with a mean difference of 1.94 (T(CCO2)>P(CO2) and 95% confidence interval of -0.12 to 4.07.?",No gene
+Gene name extraction,"What are the gene and protein names in the sentence: Although polyubiquitin chains linked through Lys(29) of ubiquitin have been implicated in the targeting of certain substrates to proteasomes, the signaling properties of these chains are poorly understood.?","polyubiquitin chains, ubiquitin"
+Gene name extraction,"What are the gene and protein names in the sentence: This evidence, together with the ability of a carboxyl-terminal coding sequence starting from the BamHI site to complement a shy1 mutant, suggests that the Shy1p contains two domains that can be separately expressed to form a functional protein.?","BamHI site, shy1 mutant, Shy1p"
+Gene name extraction,What are the gene and protein names in the sentence: Nimodipine (5 micrograms/kg) followed by infusion of 0.75 microgram/kg/min lowered the blood pressure by 10% in both normotensive and hypertensive rats; the same dose schedule of nifedipine did not lower MAP.?,No gene
+Gene name extraction,What are the gene and protein names in the sentence: This distinct biochemical difference between STAT5A and STAT5B was confirmed with purified activated STAT5 recombinant proteins.?,"STAT5A, STAT5B, STAT5 recombinant proteins"
+Gene name extraction,What are the gene and protein names in the sentence: In three other patients the electrophysiologic characteristics of atrioventricular conduction prevented a demonstration of these differences.?,No gene
+Gene name extraction,What are the gene and protein names in the sentence: In T cells these two signal pathways are critical for interleukin-2 production.?,interleukin-2
+Gene name extraction,"What are the gene and protein names in the sentence: These results induce that the putative TATA box and initiator are not involved in the promoter activity, and that the vitronectin promoter lacks the TATA box, initiator and GC box.?",vitronectin promoter
+Gene name extraction,What are the gene and protein names in the sentence: Excretion of radiopharmaceuticals into breast milk.?,No gene
+Gene name extraction,What are the gene and protein names in the sentence: A nationwide record linkage of the Finnish Twin Cohort Study (FTCS) with the Hospital Discharge Registry and the Registry of Rights for Free medication is presented.?,No gene
+Gene name extraction,What are the gene and protein names in the sentence: CTDK1 and CTDK2 also differ in their protein substrate specificity.?,"CTDK1, CTDK2"
+Protein-coding genes,Is ATP5F1EP2 a protein-coding gene?,NA
+Protein-coding genes,Is LOC124907753 a protein-coding gene?,NA
+Protein-coding genes,Is AMD1P4 a protein-coding gene?,NA
+Protein-coding genes,Is NODAL a protein-coding gene?,TRUE
+Protein-coding genes,Is MIR4436B2 a protein-coding gene?,NA
+Protein-coding genes,Is NAXE a protein-coding gene?,TRUE
+Protein-coding genes,Is LOC124909477 a protein-coding gene?,NA
+Protein-coding genes,Is LINC01560 a protein-coding gene?,NA
+Protein-coding genes,Is UCKL1-AS1 a protein-coding gene?,NA
+Protein-coding genes,Is MIR6843 a protein-coding gene?,NA
+Protein-coding genes,Is RPL7AP58 a protein-coding gene?,NA
+Protein-coding genes,Is SERF2 a protein-coding gene?,TRUE
+Protein-coding genes,Is LOC124907937 a protein-coding gene?,NA
+Protein-coding genes,Is RNU6-1193P a protein-coding gene?,NA
+Protein-coding genes,Is LOC124903168 a protein-coding gene?,NA
+Protein-coding genes,Is HMGB1P9 a protein-coding gene?,NA
+Protein-coding genes,Is LOC100420990 a protein-coding gene?,NA
+Protein-coding genes,Is RNU6-1212P a protein-coding gene?,NA
+Protein-coding genes,Is CPVL-AS2 a protein-coding gene?,NA
+Protein-coding genes,Is NPFFR1 a protein-coding gene?,TRUE
+Protein-coding genes,Is CYP4F10P a protein-coding gene?,NA
+Protein-coding genes,Is FANCG a protein-coding gene?,TRUE
+Protein-coding genes,Is CMKLR2 a protein-coding gene?,TRUE
+Protein-coding genes,Is SSBP3-AS1 a protein-coding gene?,NA
+Protein-coding genes,Is LOC100419835 a protein-coding gene?,NA
+Protein-coding genes,Is RNU7-171P a protein-coding gene?,NA
+Protein-coding genes,Is RPL34P34 a protein-coding gene?,NA
+Protein-coding genes,Is LOC100526841 a protein-coding gene?,NA
+Protein-coding genes,Is TTLL1 a protein-coding gene?,TRUE
+Protein-coding genes,Is CORO1A-AS1 a protein-coding gene?,NA
+Protein-coding genes,Is SPARC a protein-coding gene?,TRUE
+Protein-coding genes,Is LOC100129457 a protein-coding gene?,NA
+Protein-coding genes,Is HOTAIR a protein-coding gene?,NA
+Protein-coding genes,Is CAAP1 a protein-coding gene?,TRUE
+Protein-coding genes,Is PIGCP1 a protein-coding gene?,NA
+Protein-coding genes,Is LINC01054 a protein-coding gene?,NA
+Protein-coding genes,Is SPOP a protein-coding gene?,TRUE
+Protein-coding genes,Is RNU6-746P a protein-coding gene?,NA
+Protein-coding genes,Is POLE4P1 a protein-coding gene?,NA
+Protein-coding genes,Is RASSF3-DT a protein-coding gene?,NA
+Protein-coding genes,Is RPL31P19 a protein-coding gene?,NA
+Protein-coding genes,Is FBXO3-DT a protein-coding gene?,NA
+Protein-coding genes,Is DNAJB6P2 a protein-coding gene?,NA
+Protein-coding genes,Is LINC02865 a protein-coding gene?,NA
+Protein-coding genes,Is AFF1 a protein-coding gene?,TRUE
+Protein-coding genes,Is PWWP2A a protein-coding gene?,TRUE
+Protein-coding genes,Is LOC105369759 a protein-coding gene?,NA
+Protein-coding genes,Is B3GAT1 a protein-coding gene?,TRUE
+Protein-coding genes,Is MIR22HG a protein-coding gene?,NA
+Protein-coding genes,Is CGGBP1 a protein-coding gene?,TRUE
+Gene SNP association,Which gene is SNP rs1217074595 associated with?,LINC01270
+Gene SNP association,Which gene is SNP rs1241371358 associated with?,LRRC23
+Gene SNP association,Which gene is SNP rs1481036795 associated with?,SEPTIN11
+Gene SNP association,Which gene is SNP rs1318850293 associated with?,PLEKHG7
+Gene SNP association,Which gene is SNP rs996319727 associated with?,USP39
+Gene SNP association,Which gene is SNP rs577757681 associated with?,OXR1
+Gene SNP association,Which gene is SNP rs1294482311 associated with?,DMXL1
+Gene SNP association,Which gene is SNP rs979970652 associated with?,KHDRBS2
+Gene SNP association,Which gene is SNP rs1029002401 associated with?,MAJIN
+Gene SNP association,Which gene is SNP rs1015227 associated with?,SCHLAP1
+Gene SNP association,Which gene is SNP rs1278530438 associated with?,LDLRAD4
+Gene SNP association,Which gene is SNP rs745325402 associated with?,CALCR
+Gene SNP association,Which gene is SNP rs4704888 associated with?,SGCD
+Gene SNP association,Which gene is SNP rs1201372088 associated with?,ZBTB25
+Gene SNP association,Which gene is SNP rs1324451169 associated with?,MED26
+Gene SNP association,Which gene is SNP rs983419152 associated with?,LINC02055
+Gene SNP association,Which gene is SNP rs745940901 associated with?,JMJD1C
+Gene SNP association,Which gene is SNP rs1303680136 associated with?,XKR9
+Gene SNP association,Which gene is SNP rs1053827498 associated with?,NSMCE1
+Gene SNP association,Which gene is SNP rs1350154096 associated with?,LOC107986092
+Gene SNP association,Which gene is SNP rs1037441458 associated with?,LOC105372191
+Gene SNP association,Which gene is SNP rs900408143 associated with?,RBFOX1
+Gene SNP association,Which gene is SNP rs900532834 associated with?,PAK1
+Gene SNP association,Which gene is SNP rs1281200566 associated with?,CCT8L2
+Gene SNP association,Which gene is SNP rs1431266687 associated with?,CACNB2
+Gene SNP association,Which gene is SNP rs900745020 associated with?,CREB5
+Gene SNP association,Which gene is SNP rs1188606225 associated with?,GAREM1
+Gene SNP association,Which gene is SNP rs902730377 associated with?,LOC105372323
+Gene SNP association,Which gene is SNP rs1044115387 associated with?,GLIS3
+Gene SNP association,Which gene is SNP rs979980368 associated with?,FAM53B
+Gene SNP association,Which gene is SNP rs1161130206 associated with?,EMX2OS
+Gene SNP association,Which gene is SNP rs910422326 associated with?,ANKFN1
+Gene SNP association,Which gene is SNP rs1035892430 associated with?,TSPAN15
+Gene SNP association,Which gene is SNP rs1255093658 associated with?,TENM3
+Gene SNP association,Which gene is SNP rs1257276516 associated with?,LOC100506403
+Gene SNP association,Which gene is SNP rs563369098 associated with?,LINC01673
+Gene SNP association,Which gene is SNP rs1032834815 associated with?,FNDC3B
+Gene SNP association,Which gene is SNP rs552952471 associated with?,RARB
+Gene SNP association,Which gene is SNP rs1452964195 associated with?,LINC03021
+Gene SNP association,Which gene is SNP rs949202492 associated with?,NECAB2
+Gene SNP association,Which gene is SNP rs1218214598 associated with?,MIR4527HG
+Gene SNP association,Which gene is SNP rs1022906840 associated with?,CCDC178
+Gene SNP association,Which gene is SNP rs1199372758 associated with?,RUBCN
+Gene SNP association,Which gene is SNP rs1396355441 associated with?,PTPRB
+Gene SNP association,Which gene is SNP rs1432624213 associated with?,SLC22A14
+Gene SNP association,Which gene is SNP rs937944577 associated with?,IFFO1
+Gene SNP association,Which gene is SNP rs1450106117 associated with?,MED13
+Gene SNP association,Which gene is SNP rs34083046 associated with?,MICU1
+Gene SNP association,Which gene is SNP rs149916046 associated with?,LINC02841
+Gene SNP association,Which gene is SNP rs1385096481 associated with?,LRFN5
+SNP location,Which chromosome does SNP rs1430464868 locate on human genome?,chr13
+SNP location,Which chromosome does SNP rs545148486 locate on human genome?,chr16
+SNP location,Which chromosome does SNP rs895485955 locate on human genome?,chr19
+SNP location,Which chromosome does SNP rs1376217783 locate on human genome?,chr11
+SNP location,Which chromosome does SNP rs1420724913 locate on human genome?,chr16
+SNP location,Which chromosome does SNP rs992486373 locate on human genome?,chr15
+SNP location,Which chromosome does SNP rs975300764 locate on human genome?,chr4
+SNP location,Which chromosome does SNP rs993131098 locate on human genome?,chr14
+SNP location,Which chromosome does SNP rs899883800 locate on human genome?,chr1
+SNP location,Which chromosome does SNP rs547832386 locate on human genome?,chr15
+SNP location,Which chromosome does SNP rs1212113267 locate on human genome?,chr22
+SNP location,Which chromosome does SNP rs1435895561 locate on human genome?,chr19
+SNP location,Which chromosome does SNP rs427884 locate on human genome?,chr11
+SNP location,Which chromosome does SNP rs1188706680 locate on human genome?,chr4
+SNP location,Which chromosome does SNP rs1316126938 locate on human genome?,chr18
+SNP location,Which chromosome does SNP rs1398189587 locate on human genome?,chr4
+SNP location,Which chromosome does SNP rs1372020525 locate on human genome?,chr14
+SNP location,Which chromosome does SNP rs188137472 locate on human genome?,chr17
+SNP location,Which chromosome does SNP rs1246801490 locate on human genome?,chr18
+SNP location,Which chromosome does SNP rs983633514 locate on human genome?,chr8
+SNP location,Which chromosome does SNP rs1274126968 locate on human genome?,chr14
+SNP location,Which chromosome does SNP rs1392348488 locate on human genome?,chr22
+SNP location,Which chromosome does SNP rs965556407 locate on human genome?,chr4
+SNP location,Which chromosome does SNP rs999510594 locate on human genome?,chr16
+SNP location,Which chromosome does SNP rs1412275115 locate on human genome?,chr17
+SNP location,Which chromosome does SNP rs951388492 locate on human genome?,chr14
+SNP location,Which chromosome does SNP rs967011458 locate on human genome?,chr4
+SNP location,Which chromosome does SNP rs555675816 locate on human genome?,chr8
+SNP location,Which chromosome does SNP rs1333853138 locate on human genome?,chr22
+SNP location,Which chromosome does SNP rs910383316 locate on human genome?,chr1
+SNP location,Which chromosome does SNP rs563617526 locate on human genome?,chr11
+SNP location,Which chromosome does SNP rs1357251061 locate on human genome?,chr21
+SNP location,Which chromosome does SNP rs1401416674 locate on human genome?,chr10
+SNP location,Which chromosome does SNP rs76491275 locate on human genome?,chr21
+SNP location,Which chromosome does SNP rs141272872 locate on human genome?,chr3
+SNP location,Which chromosome does SNP rs1281763211 locate on human genome?,chr4
+SNP location,Which chromosome does SNP rs1278117191 locate on human genome?,chr20
+SNP location,Which chromosome does SNP rs1239675264 locate on human genome?,chr21
+SNP location,Which chromosome does SNP rs866998836 locate on human genome?,chr17
+SNP location,Which chromosome does SNP rs1228002921 locate on human genome?,chr2
+SNP location,Which chromosome does SNP rs976400036 locate on human genome?,chr19
+SNP location,Which chromosome does SNP rs397784008 locate on human genome?,chr15
+SNP location,Which chromosome does SNP rs1170945868 locate on human genome?,chr22
+SNP location,Which chromosome does SNP rs990783431 locate on human genome?,chr3
+SNP location,Which chromosome does SNP rs1041819671 locate on human genome?,chr5
+SNP location,Which chromosome does SNP rs139642661 locate on human genome?,chr14
+SNP location,Which chromosome does SNP rs1263053296 locate on human genome?,chr14
+SNP location,Which chromosome does SNP rs1391145256 locate on human genome?,chr12
+SNP location,Which chromosome does SNP rs1002944049 locate on human genome?,chr9
+SNP location,Which chromosome does SNP rs962314907 locate on human genome?,chr5
+TF regulation,Does transcription factor ETV4 activate or repress gene ERBB2?,Repression
+TF regulation,Does transcription factor USF1 activate or repress gene TERT?,Repression
+TF regulation,Does transcription factor MSC activate or repress gene CDC6?,Repression
+TF regulation,Does transcription factor ZIC1 activate or repress gene FAM57A?,Activation
+TF regulation,Does transcription factor HIF1A activate or repress gene APEX1?,Repression
+TF regulation,Does transcription factor TP53 activate or repress gene CTSD?,Activation
+TF regulation,Does transcription factor MYCN activate or repress gene TP53?,Repression
+TF regulation,Does transcription factor BRCA1 activate or repress gene FST?,Activation
+TF regulation,Does transcription factor SP2 activate or repress gene DNMT3B?,Activation
+TF regulation,Does transcription factor RELA activate or repress gene IL10?,Activation
+TF regulation,Does transcription factor SP3 activate or repress gene COL2A1?,Repression
+TF regulation,Does transcription factor DR1 activate or repress gene NR1I2?,Activation
+TF regulation,Does transcription factor GATA4 activate or repress gene SI?,Activation
+TF regulation,Does transcription factor CDX2 activate or repress gene PTGS2?,Repression
+TF regulation,Does transcription factor IRF2 activate or repress gene CXCR4?,Repression
+TF regulation,Does transcription factor SP1 activate or repress gene HTT?,Activation
+TF regulation,Does transcription factor ING4 activate or repress gene ANGPT1?,Repression
+TF regulation,Does transcription factor APC activate or repress gene NOS2?,Activation
+TF regulation,Does transcription factor FOXA1 activate or repress gene BCL2?,Repression
+TF regulation,Does transcription factor EGR1 activate or repress gene ALOX5?,Repression
+TF regulation,Does transcription factor ERG activate or repress gene EPB41L3?,Repression
+TF regulation,Does transcription factor CREB5 activate or repress gene TNFRSF11B?,Repression
+TF regulation,Does transcription factor SP1 activate or repress gene SOD2?,Repression
+TF regulation,Does transcription factor NRF1 activate or repress gene CAPNS1?,Activation
+TF regulation,Does transcription factor PAX4 activate or repress gene GCG?,Repression
+TF regulation,Does transcription factor NCOA3 activate or repress gene BCL2?,Activation
+TF regulation,Does transcription factor TP53 activate or repress gene XPO1?,Repression
+TF regulation,Does transcription factor HDAC4 activate or repress gene MEF2A?,Repression
+TF regulation,Does transcription factor MITF activate or repress gene OCA2?,Activation
+TF regulation,Does transcription factor RELA activate or repress gene TRAF1?,Activation
+TF regulation,Does transcription factor KAT2B activate or repress gene CDKN1B?,Activation
+TF regulation,Does transcription factor NFKB1 activate or repress gene MMP9?,Activation
+TF regulation,Does transcription factor HIF1A activate or repress gene AGTR1?,Activation
+TF regulation,Does transcription factor TCF3 activate or repress gene MYC?,Activation
+TF regulation,Does transcription factor SPI1 activate or repress gene IL1B?,Activation
+TF regulation,Does transcription factor TP53 activate or repress gene STAT3?,Repression
+TF regulation,Does transcription factor STAT3 activate or repress gene SALL4?,Activation
+TF regulation,Does transcription factor FOXQ1 activate or repress gene RSPO2?,Activation
+TF regulation,Does transcription factor NFE2L2 activate or repress gene KRT16?,Activation
+TF regulation,Does transcription factor LMO4 activate or repress gene BMP7?,Activation
+TF regulation,Does transcription factor NFKB1 activate or repress gene CCL2?,Activation
+TF regulation,Does transcription factor NRIP1 activate or repress gene SLC7A1?,Activation
+TF regulation,Does transcription factor HOXC13 activate or repress gene SPI1?,Repression
+TF regulation,Does transcription factor CTCF activate or repress gene MYC?,Repression
+TF regulation,Does transcription factor FHL2 activate or repress gene CDKN1B?,Activation
+TF regulation,Does transcription factor AHR activate or repress gene IL6?,Activation
+TF regulation,Does transcription factor FOXA1 activate or repress gene APOB?,Activation
+TF regulation,Does transcription factor ETS1 activate or repress gene PTHLH?,Activation
+TF regulation,Does transcription factor IRF1 activate or repress gene MYB?,Repression
+TF regulation,Does transcription factor SP1 activate or repress gene HSD17B2?,Activation

@@ -1,119 +1,49 @@
 """Main python file."""
-from agent_smith_ai.utility_agent import UtilityAgent
-from .monarch_agent import MonarchAgent
-from .disease_genes_eval_agent import DiseaseGenesEvalAgent
-import pandas as pd
+from oai_plugin_evals.trial import Trial
+from oai_plugin_evals.agents import *
 import os
-import pprint
 import json
-
-pp = pprint.PrettyPrinter(indent=4)
-
-
-# uses the DiseaseGenesEvalAgent to evaluate the performance of another agent on the Disease Genes task
-def eval_disease_genes_answer(question: str, goldstandard: str, agent_answer: str):
-    eval_agent = DiseaseGenesEvalAgent("Disease Genes Eval Agent") # uses GPT-4 for evaluation
-    eval_message = f"""Considering the following question: {question}, score these two answers:
-
-    gold-standard: {goldstandard}
-
-    Monarch Assistant: {agent_answer}
-    """
-
-    # the eval agent is designed to call a function to do the evaluation, which takes the list of gold standard genes and a list of genes
-    # mentioned by the monarch agent. Since we are starting a new chat with a question that can be answered by a function call,
-    # the first message in the stream will be the function call and the second message will be the response.
-    messages_iterator = eval_agent.new_chat(eval_message)
-    
-    # first message in the stream: the eval agent should be trying try to call the function
-    function_call_message = next(messages_iterator)
-
-    # it is possible that the eval agent doesn't decide to call the function, 
-    # in which case there won't be two messages in the stream, or something else weird might happen
-    # if there's a second message and it's a function response message, we can parse it to get the score
-    # if we fail for some reason, set it to None
-    try:
-        # second message in the stream: the function returns the score
-        function_call_response = next(messages_iterator)
-        # we don't need to continue the conversation further; saves us tokens on GPT-4!
-
-        assert function_call_response.role == "function", "Second message in the stream was not a function response as expected"
-        valuation = float(function_call_response.content)
-    except ValueError:
-        function_call_response = None
-        valuation = None
-    
-    # return all the info for provenance
-    return function_call_message.model_dump(), function_call_response.model_dump(), valuation
+import random
+import time
 
 
+def load_eval_data():
+    run_location = os.getcwd()
+    all_data = json.load(open(run_location + "/datasets/geneturing/geneturing_converted.json"))
+    # only keep entries where Model is New Bing, since we just want the questions not all the other model answers for now
+    # we also only want the fields for Question, Module, and Goldstandard
+    all_data = [{k: v for k, v in d.items() if k in ['Question', 'Module', 'Goldstandard']} for d in all_data if d['Model'] == 'New Bing']
 
-def main():
-    current_location = os.path.dirname(os.path.realpath(__file__))
-    gene_turing = pd.read_csv(os.path.join(current_location, "datasets/geneturing/qa.csv"), header=0)
-
-    # select "Gene disease association" questions for now
-    gene_turing = gene_turing[gene_turing['Module'] == 'Gene disease association']
-
-
-    results = []
-    for row_index in range(5): #range(len(gene_turing)):
-        module = gene_turing.iloc[row_index]['Module']
-        question = gene_turing.iloc[row_index]['Question']
-        goldstandard = gene_turing.iloc[row_index]['Goldstandard']
-        print(f"Module: {module}, Question: {question}, Goldstandard: {goldstandard}")
-       
-        # define a monarch agent to answer the question
-        monarch_agent = MonarchAgent("Monarch Assistant")
-
-        # get the answer from the agent. it will make multiple function calls to the monarch API,
-        # with the final answer being the last message in the stream
-        monarch_messages = list(monarch_agent.new_chat(question))
-        monarch_messages_dict = [message.model_dump() for message in monarch_messages]
-        monarch_agent_answer = monarch_messages[-1]
-        print("Monarch agent answer: ", monarch_agent_answer.content)
-
-        # evaluate the answer
-        monarch_eval_message, monarch_eval_response, monarch_eval_valuation = eval_disease_genes_answer(question, goldstandard, monarch_agent_answer.content)
-
-        ## Same, but now with a dummy agent without monarch backing
-        dummy_agent = UtilityAgent("Assistant", system_message = "You are a helpful assistant.", model = "gpt-3.5-turbo-0613")
-        dummy_messages = list(dummy_agent.new_chat(question))
-        dummy_messages_dict = [message.model_dump() for message in dummy_messages]
-        dummy_agent_answer = dummy_messages[-1]
-        print("Dummy agent answer: ", dummy_agent_answer.content)
-
-        # evaluate the answer
-        dummy_eval_message, dummy_eval_response, dummy_eval_valuation = eval_disease_genes_answer(question, goldstandard, dummy_agent_answer.content)
+    return all_data
 
 
-        result = {'module': module, 
-                  'question': question, 
-                  'goldstandard': goldstandard,
-                  'monarch_agent': {
-                      'agent_answer': monarch_agent_answer.content, 
-                      'conversation': monarch_messages_dict, 
-                      'eval_message': monarch_eval_message, 
-                      'eval_response': monarch_eval_response,
-                      'eval_valuation': monarch_eval_valuation
-                    },
-                  'dummy_agent': {
-                      'agent_answer': dummy_agent_answer.content, 
-                      'conversation': dummy_messages_dict, 
-                      'eval_message': dummy_eval_message, 
-                      'eval_response': dummy_eval_response,
-                      'eval_valuation': dummy_eval_valuation
-                    }
-                  }
-       
-        results.append(result)
-        pp.pprint(result)
-        
-    # write test_results.json file
-    with open(os.path.join(current_location, "test_results.json"), 'w') as f:
-        json.dump(results, f, indent=4)
+all_data = load_eval_data()
 
+model_classes_to_test = [MonarchAgent35, DummyAgent35]
+trials = []
 
+# Modules:
+# [ ] "Gene alias", "Question": "What is the official gene symbol of LMP10?", "Goldstandard": "PSMB10"
 
-if __name__ == "__main__":
-    main()
+# [ ] "Gene disease association", "Question": "What are genes related to Distal renal tubular acidosis?", "Goldstandard": "SLC4A1, ATP6V0A4"
+gene_disease_association_data = [d for d in all_data if d['Module'] == 'Gene disease association']
+for model_class in model_classes_to_test:
+    for example in gene_disease_association_data:
+        trials.append(Trial(example['Module'], example['Question'], example['Goldstandard'], model_class, DiseaseGenesEvalAgent, results_location = "./results"))
+
+# [ ] "Gene location", "Question": "Which chromosome is RP11-17A4.3 gene located on human genome?", "Goldstandard": "chr8"
+# [ ] "Gene ontology", "Question": "What is the enriched gene ontology term associated with FMR1, FBXL2, TMEM41B, PHB1, DDX56?", "Goldstandard": "modulation by host of viral rna genome replication"
+# [ ] "Human genome DNA aligment", "Question": "Align the DNA sequence to the human genome:TGAGAGCACAGTGGTGAGGAGGACCCACATGCCTCCTATCCTTCATAGGAGGAGAAAGGCACAAACCAGAAAACCCCCCCAACACACACACACATACACAT", "Goldstandard": "chr1:234883857-234883957"
+# [ ] "Multi-species DNA aligment", "Question": "Which organism does the DNA sequence come from:TTCAATTCTCTGTAGGCAAGGATGGCTCATCACCATTATCACCCTGACGAGACTTAGAAACACCACGGAGACACACCTCTGGGCACGAGTGTTATGGTGTTT", "Goldstandard": "rat"
+# [ ] "Gene name conversion", "Question": "Convert ENSG00000205403 to official gene symbol.", "Goldstandard": "CFI"
+# [ ] "Gene name extraction", "Question": "What are the gene and protein names in the sentence: Differences were not found in colons by SEM.?", "Goldstandard": "No gene"
+# [ ]        "Gene name extraction", "Question": "What are the gene and protein names in the sentence: The H5 mutants were: DH5 (all amino acids in D configuration) and H5F (where all His are replaced by Phe at positions 3, 7, 8, 15, 18, 19, 21).?", "Goldstandard": "H5 mutants, DH5, H5F"
+# [ ] "Protein-coding genes", "Question": "Is AMD1P4 a protein-coding gene?", "Goldstandard": null
+# [ ]        "Protein-coding genes", "Question": "Is NODAL a protein-coding gene?", "Goldstandard": "TRUE"
+# [ ] "Gene SNP association", "Question": "Which gene is SNP rs1217074595 associated with?", "Goldstandard": "LINC01270"
+# [ ] "SNP location", "Question": "Which chromosome does SNP rs545148486 locate on human genome?", "Goldstandard": "chr16"
+# [ ] "TF regulation", "Question": "Does transcription factor ETV4 activate or repress gene ERBB2?", "Goldstandard": "Repression"
+
+for trial in trials:
+    trial.run()
+    time.sleep(random.randint(1, 5))

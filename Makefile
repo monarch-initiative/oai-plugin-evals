@@ -3,5 +3,5 @@ SHELL := bash
 
 .PHONY: tests
 
-tests:
-	poetry run main
+eval-gene-disease:
+	poetry run eval-gene-disease
