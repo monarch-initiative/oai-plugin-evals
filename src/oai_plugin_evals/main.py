@@ -3,9 +3,7 @@ from oai_plugin_evals.trial import Trial
 from oai_plugin_evals.agents import *
 import os
 import json
-import random
 import sys
-import time
 
 
 def load_eval_data():
@@ -49,4 +47,3 @@ for model_class in model_classes_to_test:
 sys.stderr.write("Starting trials\n")
 for trial in trials:
     trial.run()
-    time.sleep(random.randint(1, 5))
