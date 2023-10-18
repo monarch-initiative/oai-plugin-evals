@@ -1,9 +1,9 @@
 {
-    "module": "Gene alias",
-    "question": "What is the official gene symbol of SNAT6?",
-    "goldstandard": "SLC38A6",
+    "module": "Gene disease association",
+    "question": "What are genes related to Hemolytic anemia due to phosphofructokinase deficiency?",
+    "goldstandard": "PFKL",
     "agent_name": "Monarch Assistant GPT35",
-    "agent_answer": "The official gene symbol for SNAT6 is SLC38A6.",
+    "agent_answer": "I'm sorry, but I couldn't find any information about genes related to Hemolytic anemia due to phosphofructokinase deficiency in the Monarch Initiative knowledge graph.",
     "agent_answer_num_function_calls": 1,
     "agent_answer_provenance": [
         {
@@ -14,8 +14,8 @@
             "content": null,
             "func_name": "monarch-search_entity",
             "func_arguments": {
-                "term": "SNAT6",
-                "category": "biolink:Gene"
+                "term": "Hemolytic anemia due to phosphofructokinase deficiency",
+                "category": "biolink:Disease"
             },
             "finish_reason": null
         },
@@ -24,7 +24,7 @@
             "author": "Monarch Assistant GPT35 (monarch-search_entity function)",
             "intended_recipient": "Monarch Assistant GPT35",
             "is_function_call": false,
-            "content": "{\"results\": [{\"id\": \"HGNC:19863\", \"name\": \"SLC38A6\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"RGD:1310330\", \"name\": \"Slc38a6\", \"categories\": [\"biolink:Gene\"], \"description\": null}], \"total\": 2}",
+            "content": "{\"results\": [], \"total\": 0}",
             "func_name": "monarch-search_entity",
             "func_arguments": null,
             "finish_reason": null
@@ -40,11 +40,9 @@
             "func_name": "compute_score",
             "func_arguments": {
                 "goldstandard": [
-                    "SLC38A6"
+                    "PFKL"
                 ],
-                "agent_answer": [
-                    "SLC38A1"
-                ]
+                "agent_answer": []
             },
             "finish_reason": null
         },

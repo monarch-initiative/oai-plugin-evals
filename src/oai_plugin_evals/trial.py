@@ -41,7 +41,6 @@ class Trial:
         if not os.path.exists(self.results_location):
             os.makedirs(self.results_location)
 
-        print(self.cache_file, clear_cache_file)
         # if the cache file exists, and we're not clearing it, load the results from the cache file
         if os.path.exists(self.cache_file) and not clear_cache_file:
             with open(self.cache_file, 'r') as f:
@@ -53,7 +52,7 @@ class Trial:
             with open(self.cache_file, 'w') as f:
                 json.dump(results, f, indent=4)
 
-        result_pretty = pp.pformat(result)
+        result_pretty = pp.pformat(results)
         sys.stderr.write(f"Trial results: {result_pretty}\n")
 
         return results
@@ -74,7 +73,7 @@ class Trial:
             eval_provenance, eval_valuation = res
         except Exception as e:
             if retry_on_error:
-                print(f"Error evaluating answer: {e}. Retrying...")
+                sys.stderr.write(f"Error evaluating answer: {e}. Retrying...")
                 return self.run_trial()
             else:
                 raise e

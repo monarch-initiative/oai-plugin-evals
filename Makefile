@@ -3,5 +3,5 @@ SHELL := bash
 
 .PHONY: tests
 
-eval-gene-disease:
-	poetry run eval-gene-disease
+run-tests:
+	poetry run python3 src/oai_plugin_evals/main.py

@@ -1,0 +1,87 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Meesmann corneal dystrophy?",
+    "goldstandard": "KRT12, KRT3",
+    "agent_name": "Monarch Assistant GPT35",
+    "agent_answer": "The genes related to Meesmann corneal dystrophy are:\n\n1. [KRT12](https://monarchinitiative.org/gene/HGNC:6414)\n2. [KRT3](https://monarchinitiative.org/gene/HGNC:6440)\n\nThese genes are associated with Meesmann corneal dystrophy and may play a role in the development or progression of the disease.",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Meesmann corneal dystrophy",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0007379\", \"name\": \"Meesmann corneal dystrophy\", \"categories\": [\"biolink:Disease\"], \"description\": \"Meesmann corneal dystrophy (MECD) is a rare form of superficial corneal dystrophy characterized by distinct tiny bubble-like, round-to-oval punctate bilateral opacities in the central corneal epithelium, and to a lesser extent in the peripheral cornea, with little impact on vision.\"}, {\"id\": \"MONDO:0020791\", \"name\": \"corneal dystrophy, Meesmann, 1\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0032904\", \"name\": \"corneal dystrophy, Meesmann, 2\", \"categories\": [\"biolink:Disease\"], \"description\": null}], \"total\": 3}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0007379"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:6414\", \"label\": \"KRT12\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:6440\", \"label\": \"KRT3\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:6414\", \"label\": \"KRT12\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:6440\", \"label\": \"KRT3\"}}], \"total\": 4, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "KRT12",
+                    "KRT3"
+                ],
+                "agent_answer": [
+                    "KRT12",
+                    "KRT3"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

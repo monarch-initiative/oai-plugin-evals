@@ -4,6 +4,7 @@ from oai_plugin_evals.agents import *
 import os
 import json
 import random
+import sys
 import time
 
 
@@ -16,12 +17,13 @@ def load_eval_data():
 
     return all_data
 
-
+sys.stderr.write("Loading eval data\n")
 all_data = load_eval_data()
 
 model_classes_to_test = [MonarchAgent35, DummyAgent35]
 trials = []
 
+sys.stderr.write("Creating trials\n")
 # Modules:
 # [ ] "Gene alias", "Question": "What is the official gene symbol of LMP10?", "Goldstandard": "PSMB10"
 
@@ -44,6 +46,7 @@ for model_class in model_classes_to_test:
 # [ ] "SNP location", "Question": "Which chromosome does SNP rs545148486 locate on human genome?", "Goldstandard": "chr16"
 # [ ] "TF regulation", "Question": "Does transcription factor ETV4 activate or repress gene ERBB2?", "Goldstandard": "Repression"
 
+sys.stderr.write("Starting trials\n")
 for trial in trials:
     trial.run()
     time.sleep(random.randint(1, 5))

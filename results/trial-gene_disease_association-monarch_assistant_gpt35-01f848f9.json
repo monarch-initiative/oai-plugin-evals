@@ -1,0 +1,85 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Sensorineural deafness with mild renal dysfunction?",
+    "goldstandard": "BSND",
+    "agent_name": "Monarch Assistant GPT35",
+    "agent_answer": "The gene related to Sensorineural deafness with mild renal dysfunction (Bartter disease type 4A) is [BSND](https://monarchinitiative.org/gene/HGNC:16512).",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Sensorineural deafness with mild renal dysfunction",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0011242\", \"name\": \"Bartter disease type 4A\", \"categories\": [\"biolink:Disease\"], \"description\": \"Any Bartter syndrome in which the cause of the disease is a mutation in the BSND gene.\"}], \"total\": 1}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0011242"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:16512\", \"label\": \"BSND\"}}], \"total\": 1, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "BSND"
+                ],
+                "agent_answer": [
+                    "BSND"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}
