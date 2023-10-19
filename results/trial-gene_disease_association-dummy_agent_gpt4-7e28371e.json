@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Superoxide dismutase?",
+    "goldstandard": "SOD3",
+    "agent_name": "Dummy Agent GPT4",
+    "agent_answer": "Superoxide dismutase (SOD) is an enzyme that helps break down potentially harmful oxygen molecules in cells, which might prevent damage to tissues. It's a powerful antioxidant. There are three types of superoxide dismutases, each encoded by a different gene:\n\n1. SOD1: This gene encodes a major cytoplasmic antioxidant enzyme that metabolizes superoxide radicals to molecular oxygen and hydrogen peroxide, thus providing a defense against oxygen toxicity.\n\n2. SOD2: This gene encodes a member of the iron/manganese superoxide dismutase family. The encoded protein is localized to the mitochondrial matrix and constitutes the first line of defense against oxidative stress in the mitochondria.\n\n3. SOD3: This gene encodes a member of the superoxide dismutase (SOD) protein family. SODs are antioxidant enzymes that catalyze the dismutation of two superoxide radicals into hydrogen peroxide and oxygen.\n\nMutations in these genes can lead to various diseases, including familial amyotrophic lateral sclerosis (SOD1), idiopathic cardiomyopathy (SOD2), and chronic obstructive pulmonary disease (SOD3).",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "SOD3"
+                ],
+                "agent_answer": [
+                    "SOD1",
+                    "SOD2",
+                    "SOD3"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

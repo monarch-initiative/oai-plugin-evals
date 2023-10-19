@@ -1,0 +1,94 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Type diabetes mellitus?",
+    "goldstandard": "HNF1B, IL6, GPD2, HMGA1, IRS1, NEUROD1, IL6",
+    "agent_name": "Monarch Assistant GPT4",
+    "agent_answer": "The genes related to Type 1 Diabetes Mellitus are:\n\n1. [HNF1A](https://monarchinitiative.org/gene/HGNC:11621)\n2. [IL6](https://monarchinitiative.org/gene/HGNC:6018)\n3. [ITPR3](https://monarchinitiative.org/gene/HGNC:6182)\n4. [PTPN22](https://monarchinitiative.org/gene/HGNC:9652)\n\nThese genes have been found to be correlated with Type 1 Diabetes Mellitus. Please note that correlation does not imply causation, and these genes may be involved in the disease in complex ways.",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Type diabetes mellitus",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0005147\", \"name\": \"type 1 diabetes mellitus\", \"categories\": [\"biolink:Disease\"], \"description\": \"A chronic condition characterized by minimal or absent production of insulin by the pancreas.\"}, {\"id\": \"MONDO:0005148\", \"name\": \"type 2 diabetes mellitus\", \"categories\": [\"biolink:Disease\"], \"description\": \"A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\"}, {\"id\": \"MONDO:0007454\", \"name\": \"type 1 diabetes mellitus 2\", \"categories\": [\"biolink:Disease\"], \"description\": \"An inherited susceptibility or predisposition to developing type 1 diabetes mellitus in which the cause of the disease is a mutation in the INS gene.\"}, {\"id\": \"MONDO:0009100\", \"name\": \"type 1 diabetes mellitus 1\", \"categories\": [\"biolink:Disease\"], \"description\": \"An inherited susceptibility or predisposition to developing 1 diabetes mellitus that is caused by variation in genes located in the MHC complex on chromosome 6p21.3.\"}, {\"id\": \"MONDO:0010861\", \"name\": \"type 1 diabetes mellitus 3\", \"categories\": [\"biolink:Disease\"], \"description\": \"An inherited susceptibility or predisposition to developing type 1 diabetes mellitus that has material basis in mutation of the locus at chromosome 15q26.\"}, {\"id\": \"MONDO:0010862\", \"name\": \"type 1 diabetes mellitus 4\", \"categories\": [\"biolink:Disease\"], \"description\": \"An inherited susceptibility or predisposition to developing type 1 diabetes mellitus that has material basis in mutation of the locus at chromosome 11q13.\"}, {\"id\": \"MONDO:0010863\", \"name\": \"type 1 diabetes mellitus 5\", \"categories\": [\"biolink:Disease\"], \"description\": \"An inherited susceptibility or predisposition to developing type 1 diabetes mellitus in which the cause of the disease is a mutation in the SUMO4 gene.\"}, {\"id\": \"MONDO:0010864\", \"name\": \"type 1 diabetes mellitus 7\", \"categories\": [\"biolink:Disease\"], \"description\": \"An inherited susceptibility or predisposition to developing type 1 diabetes mellitus that has material basis in mutation of the locus at chromosome 2q31.\"}, {\"id\": \"MONDO:0010950\", \"name\": \"type 1 diabetes mellitus 8\", \"categories\": [\"biolink:Disease\"], \"description\": \"An inherited susceptibility or predisposition to developing type 1 diabetes mellituss that has material basis in mutation of the locus at chromosome 6q25-q27.\"}, {\"id\": \"MONDO:0011016\", \"name\": \"type 1 diabetes mellitus 11\", \"categories\": [\"biolink:Disease\"], \"description\": \"An inherited susceptibility or predisposition to developing type 1 diabetes mellitus that has material basis in mutation of the locus at chromosome 14q24.3-q31.\"}], \"total\": 49}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0005147"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:11621\", \"label\": \"HNF1A\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:6018\", \"label\": \"IL6\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:6182\", \"label\": \"ITPR3\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:9652\", \"label\": \"PTPN22\"}}], \"total\": 4, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "HNF1B",
+                    "IL6",
+                    "GPD2",
+                    "HMGA1",
+                    "IRS1",
+                    "NEUROD1",
+                    "IL6"
+                ],
+                "agent_answer": [
+                    "HNF1A",
+                    "IL6",
+                    "ITPR3",
+                    "PTPN22"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.14285714285714285",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.14285714285714285
+}

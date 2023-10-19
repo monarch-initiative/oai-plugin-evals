@@ -1,0 +1,43 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Multiple system atrophy?",
+    "goldstandard": "COQ2",
+    "agent_name": "Dummy Agent GPT4",
+    "agent_answer": "Multiple System Atrophy (MSA) is a rare neurodegenerative disorder characterized by autonomic dysfunction, parkinsonism, and ataxia. The exact cause of MSA is unknown, but it's thought to be related to the accumulation of a protein called alpha-synuclein in certain areas of the brain.\n\nThe following genes have been associated with MSA:\n\n1. **SNCA (alpha-synuclein)**: This is the primary gene associated with MSA. Mutations in this gene can cause abnormal accumulation of the alpha-synuclein protein in the brain, leading to the symptoms of MSA.\n\n2. **COQ2 (Coenzyme Q2)**: Some studies have suggested that variants in this gene may be associated with an increased risk of MSA.\n\n3. **GBA (Glucocerebrosidase)**: Mutations in this gene, which is also associated with Gaucher's disease and Parkinson's disease, have been found in some people with MSA.\n\n4. **LRRK2 (Leucine-rich repeat kinase 2)**: This gene is primarily associated with Parkinson's disease, but some studies have suggested a possible link to MSA as well.\n\n5. **MAPT (Microtubule-associated protein tau)**: While this gene is primarily associated with other neurodegenerative disorders like Alzheimer's disease and frontotemporal dementia, some studies have suggested a possible link to MSA.\n\nPlease note that while these genes have been associated with MSA, not everyone with mutations in these genes will develop the disease. The development of MSA is likely due to a combination of genetic and environmental factors.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "COQ2"
+                ],
+                "agent_answer": [
+                    "SNCA",
+                    "COQ2",
+                    "GBA",
+                    "LRRK2",
+                    "MAPT"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

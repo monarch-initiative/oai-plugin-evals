@@ -18,7 +18,7 @@ def load_eval_data():
 sys.stderr.write("Loading eval data\n")
 all_data = load_eval_data()
 
-model_classes_to_test = [MonarchAgent35, DummyAgent35]
+model_classes_to_test = [MonarchAgent35, DummyAgent35, MonarchAgent4, DummyAgent4]
 trials = []
 
 sys.stderr.write("Creating trials\n")

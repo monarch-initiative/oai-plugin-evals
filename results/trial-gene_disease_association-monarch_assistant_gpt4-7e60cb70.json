@@ -1,0 +1,89 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Hyperphenylalaninemia?",
+    "goldstandard": "PTS, GCH1, QDPR, PCBD1, DNAJC12, PAH",
+    "agent_name": "Monarch Assistant GPT4",
+    "agent_answer": "The gene related to mild hyperphenylalaninemia is PAH ([HGNC:8582](https://monarchinitiative.org/gene/HGNC:8582)). This gene is correlated with the disease.",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Hyperphenylalaninemia"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0019335\", \"name\": \"mild hyperphenylalaninemia\", \"categories\": [\"biolink:Disease\"], \"description\": \"Mild hyperphenylalaninemia (HPA) is a rare form of phenylketonuria, an inborn error of amino acid metabolism, characterized by mild symptoms of HPA.\"}, {\"id\": \"MONDO:0000040\", \"name\": \"obsolete hyperphenylalaninemia, BH4-deficient\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0009863\", \"name\": \"BH4-deficient hyperphenylalaninemia A\", \"categories\": [\"biolink:Disease\"], \"description\": \"An autosomal recessive condition caused by mutation(s) in the PTS gene, encoding 6-pyruvoyl tetrahydrobiopterin synthase. It is characterized by BH4-defecient hyperphenylalanemia, depletion of dopamine and serotonin, and progressive cognitive and motor deficits.\"}, {\"id\": \"MONDO:0017389\", \"name\": \"tetrahydrobiopterin-responsive hyperphenylalaninemia/phenylketonuria\", \"categories\": [\"biolink:Disease\"], \"description\": \"Tetrahydrobiopterin-responsive hyperphenylalaninemia/ phenylketonuria (BH4-responsive hyperphenylalaninemia/ phenylketonuria) is a form of phenylketonuria (PKU), an inborn error of amino acid metabolism, characterized by mild to moderate symptoms of PKU including impaired cognitive function, seizures, and behavioral and developmental disorders, and a marked reduction and normalization of elevated phenylalanine concentrations after oral loading with tetrahydrobiopterin (BH4; sapropterin dihydrochloride), an essential cofactor of phenylalanine hydroxylase.\"}, {\"id\": \"MONDO:0850519\", \"name\": \"tetrahydrobiopterin (BH4)-deficient hyperphenylalaninemia\", \"categories\": [\"biolink:Disease\"], \"description\": \"An amino acid metabolic disorder that are characterized phenotypically by hyperphenylalaninemia, depletion of the neurotransmitters dopamine and serotonin, and progressive cognitive and motor deficits and that has material basis in autosomal recessive mutations in the genes encoding enzymes involved in the synthesis or regeneration of BH4.\"}, {\"id\": \"MONDO:0016543\", \"name\": \"hyperphenylalaninemia due to tetrahydrobiopterin deficiency\", \"categories\": [\"biolink:Disease\"], \"description\": \"Hyperphenylalaninemia (HPA) due to tetrahydrobiopterin (BH4) deficiency, also known as malignant HPA is an amino acid disorder with neonatal onset that is clinically characterized by the classic manifestations of phenylketonuria (PKA) and that later on is clinically differentiated by neurologic symptoms such as microcephaly, intellectual disability, central hypotonia, delayed motor development, peripheral spasticity and seizures, that develop and persist despite an established metabolic control of plasma phenylalanine.\"}, {\"id\": \"MONDO:0044304\", \"name\": \"hyperphenylalaninemia due to DNAJC12 deficiency\", \"categories\": [\"biolink:Disease\"], \"description\": \"Mild non-BH4-deficient hyperphenylalaninemia (HPANBH4) is an autosomal recessive disorder characterized by increased serum phenylalanine usually detected by newborn screening and associated with highly variable neurologic defects, including movement abnormalities and intellectual disability. Laboratory analysis shows dopamine and serotonin deficiencies in the cerebrospinal fluid, and normal BH4 metabolism. Evidence suggests that treatment with neurotransmitter precursors can lead to clinical improvement or even prevent the neurologic defects if started in infancy (summary by {1:Anikster et al., 2017}).\"}, {\"id\": \"MONDO:0100186\", \"name\": \"GTP cyclohydrolase I deficiency with hyperphenylalaninemia\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0100098\", \"name\": \"dystonia, dopa-responsive, with or without hyperphenylalaninemia, autosomal recessive\", \"categories\": [\"biolink:Disease\"], \"description\": \"A dopa-responsive dystonia characterized by marked motor delay, but no intellectual disablity, and only minimal, if any, hyperphenylalaninemia.\"}, {\"id\": \"MONDO:0009908\", \"name\": \"pterin-4 alpha-carbinolamine dehydratase 1 deficiency\", \"categories\": [\"biolink:Disease\"], \"description\": \"Pterin-4 alpha-carbinolamine dehydratase 1 (PCBD1) deficiency is considered a transient and benign form of hyperphenylalaninemia due to tetrahydrobiopterin deficiency, characterized by muscular hypotonia, irritability (detected by EEG), slow acquisition of psychomotor skills, age-dependent movement disorders, including dystonia and an accompanying excretion of 7-substituted pterins. Neurological developement is normal with dietary control of blood phenyalanine. PCBD1 is inherited in an autosomal recessive manner.\"}], \"total\": 14}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0019335"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:8582\", \"label\": \"PAH\"}}], \"total\": 1, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "PTS",
+                    "GCH1",
+                    "QDPR",
+                    "PCBD1",
+                    "DNAJC12",
+                    "PAH"
+                ],
+                "agent_answer": [
+                    "PAH"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.16666666666666666",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.16666666666666666
+}

@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to EDICT syndrome?",
+    "goldstandard": "MIR184",
+    "agent_name": "Dummy Agent GPT4",
+    "agent_answer": "EDICT syndrome is a rare genetic disorder. It is caused by mutations in the KAT6A gene. This gene provides instructions for making a protein that is involved in regulating gene activity. Mutations in the KAT6A gene disrupt the normal development of several body systems, leading to the varied signs and symptoms of EDICT syndrome.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "MIR184"
+                ],
+                "agent_answer": [
+                    "KAT6A"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

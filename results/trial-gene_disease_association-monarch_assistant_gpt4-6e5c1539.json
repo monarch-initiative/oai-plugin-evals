@@ -1,0 +1,88 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Nephropathy due to CFHR5 deficiency?",
+    "goldstandard": "CFHR5",
+    "agent_name": "Monarch Assistant GPT4",
+    "agent_answer": "The disease \"Nephropathy due to CFHR5 deficiency\", also known as \"C3 glomerulonephritis\" (MONDO:0013892), is associated with the following genes:\n\n1. [CFHR5](https://monarchinitiative.org/gene/HGNC:24668) (HGNC:24668) - This gene has a causal relationship with the disease.\n2. [CFHR3](https://monarchinitiative.org/gene/HGNC:16980) (HGNC:16980) - This gene is correlated with the disease.\n3. [CFHR1](https://monarchinitiative.org/gene/HGNC:4888) (HGNC:4888) - This gene is correlated with the disease.\n4. [CFHR2](https://monarchinitiative.org/gene/HGNC:4890) (HGNC:4890) - This gene is correlated with the disease.\n\nPlease note that correlation does not imply causation. The genes listed as correlated have been found to have some association with the disease, but it is not necessarily a causal relationship.",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Nephropathy due to CFHR5 deficiency",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0013892\", \"name\": \"C3 glomerulonephritis\", \"categories\": [\"biolink:Disease\"], \"description\": \"Glomerulonephritis characterized by C3 accumulation with little or absent deposition of immunoglobulin, in the absence of ultrastructural electron-dense transformation seen in dense deposit disease.\"}], \"total\": 1}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0013892"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:24668\", \"label\": \"CFHR5\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:16980\", \"label\": \"CFHR3\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:24668\", \"label\": \"CFHR5\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:4888\", \"label\": \"CFHR1\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:4890\", \"label\": \"CFHR2\"}}], \"total\": 5, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "CFHR5"
+                ],
+                "agent_answer": [
+                    "CFHR5",
+                    "CFHR3",
+                    "CFHR1",
+                    "CFHR2"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

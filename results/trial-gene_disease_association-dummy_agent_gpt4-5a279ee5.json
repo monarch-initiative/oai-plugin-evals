@@ -1,0 +1,45 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Vascular malformation?",
+    "goldstandard": "ELMO2",
+    "agent_name": "Dummy Agent GPT4",
+    "agent_answer": "As an AI, I can provide some information on this. Genes related to vascular malformations can vary depending on the specific type of malformation. However, some genes that have been associated with various types of vascular malformations include:\n\n1. TEK (TIE2) gene: Mutations in this gene are associated with multiple types of vascular malformations, including venous malformations and cutaneomucosal venous malformations.\n\n2. RASA1 gene: Mutations in this gene can cause capillary malformation-arteriovenous malformation (CM-AVM), a disorder characterized by capillary malformations and arteriovenous malformations.\n\n3. GLMN gene: Mutations in this gene can cause glomuvenous malformations, which are characterized by small, bluish-purple skin lesions.\n\n4. ENG and ACVRL1 genes: Mutations in these genes are associated with hereditary hemorrhagic telangiectasia, a disorder that can cause various types of vascular malformations.\n\n5. GNAQ and GNA11 genes: Mutations in these genes can cause Sturge-Weber syndrome and phakomatosis pigmentovascularis, both of which can involve vascular malformations.\n\nPlease consult with a healthcare professional or genetic counselor for more specific and personalized information.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "ELMO2"
+                ],
+                "agent_answer": [
+                    "TEK",
+                    "RASA1",
+                    "GLMN",
+                    "ENG",
+                    "ACVRL1",
+                    "GNAQ",
+                    "GNA11"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}
