@@ -1,0 +1,61 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of TFA?",
+    "goldstandard": "F3",
+    "agent_name": "Monarch Assistant GPT35",
+    "agent_answer": "The official gene symbol for TFA is \"tfa\".",
+    "agent_answer_num_function_calls": 1,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "TFA",
+                "category": "biolink:Gene"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"ZFIN:ZDB-GENE-980526-35\", \"name\": \"tfa\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:8764\", \"name\": \"PDCD5\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:8761\", \"name\": \"PDCD10\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11741\", \"name\": \"TFAM\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11636\", \"name\": \"TFAMP1\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11638\", \"name\": \"TFAMP2\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11742\", \"name\": \"TFAP2A\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11743\", \"name\": \"TFAP2B\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11744\", \"name\": \"TFAP2C\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:15581\", \"name\": \"TFAP2D\", \"categories\": [\"biolink:Gene\"], \"description\": null}], \"total\": 96}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "F3",
+                "agent_answer": [
+                    "tfa"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

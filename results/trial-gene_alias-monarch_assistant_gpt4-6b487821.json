@@ -1,0 +1,61 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of PLK-5?",
+    "goldstandard": "PLK5",
+    "agent_name": "Monarch Assistant GPT4",
+    "agent_answer": "The official gene symbol for PLK-5 is \"PLK5\". It is identified by the ontology identifier [HGNC:27001](https://monarchinitiative.org/gene/HGNC:27001). There is also a rat gene with the same symbol, identified by [RGD:1305038](https://monarchinitiative.org/gene/RGD:1305038).",
+    "agent_answer_num_function_calls": 1,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "PLK-5",
+                "category": "biolink:Gene"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"HGNC:27001\", \"name\": \"PLK5\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"RGD:1305038\", \"name\": \"Plk5\", \"categories\": [\"biolink:Gene\"], \"description\": null}], \"total\": 2}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "PLK5",
+                "agent_answer": [
+                    "PLK5"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}
