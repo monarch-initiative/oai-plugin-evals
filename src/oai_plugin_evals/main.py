@@ -24,6 +24,10 @@ trials = []
 sys.stderr.write("Creating trials\n")
 # Modules:
 # [ ] "Gene alias", "Question": "What is the official gene symbol of LMP10?", "Goldstandard": "PSMB10"
+gene_alias_data = [d for d in all_data if d['Module'] == 'Gene alias']
+for model_class in model_classes_to_test:
+    for example in gene_alias_data:
+        trials.append(Trial(example['Module'], example['Question'], example['Goldstandard'], model_class, GeneAliasEvalAgent, results_location = "./results"))
 
 # [ ] "Gene disease association", "Question": "What are genes related to Distal renal tubular acidosis?", "Goldstandard": "SLC4A1, ATP6V0A4"
 gene_disease_association_data = [d for d in all_data if d['Module'] == 'Gene disease association']

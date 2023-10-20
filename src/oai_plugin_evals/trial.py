@@ -30,7 +30,7 @@ class Trial:
         self.question_id = deterministic_hash(question + module)[-8:]
 
         ## Todo: it would save startup time to do this at runtime, since it does take a hot split second to initialize the agent,
-        ## here we're just doing to to get its name, which we could do at runtime
+        ## here we're just doing to to get its name, 
         agent_name = self.agent_class().name
         agent_name = re.subn("[^A-Za-z0-9]+", "_", agent_name.lower())[0]
         module = re.subn("[^A-Za-z0-9]+", "_", module.lower())[0]
