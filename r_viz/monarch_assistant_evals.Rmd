@@ -1,0 +1,92 @@
+---
+title: "Monarch Assistant Evals"
+author: "Shawn T O'Neil"
+date: "2023-10-21"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("load.R")
+```
+
+
+
+
+
+
+```{r}
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+data_grouped <- data %>%
+	mutate(eval_valuation =  case_when(eval_valuation == 1 ~ "1.0",
+																		 eval_valuation == 0 ~ "0.0",
+																		 0 < eval_valuation & eval_valuation <= 1/3 ~ "(0, 1/3]",
+																		 1/3 < eval_valuation & eval_valuation <= 2/3 ~ "(1/3, 2/3]",
+																		 2/3 < eval_valuation & eval_valuation < 1 ~ "(2/3, 1)",
+																		 .default = NA
+																		 
+		)) %>%
+	mutate(eval_valuation = factor(eval_valuation, levels = c("0.0", "(0, 1/3]", "(1/3, 2/3]", "(2/3, 1)", "1.0"), ordered = TRUE))
+
+
+data_grouped <- data_grouped %>% 
+	group_by(module, agent_name, eval_valuation) %>% 
+	summarize(count = n()) %>% 
+  ungroup() %>% 
+  complete(module, agent_name, eval_valuation, fill = list(count = 0)) %>%
+  arrange(agent_name, module)
+
+
+print(data_grouped)
+
+# data_wide <- pivot_wider(data %>% select(-filename, -agent_answer), names_from = "agent_name", values_from = c(eval_valuation, agent_answer_num_function_calls))
+# print(head(data_wide))
+
+ggplot(data_grouped, aes(x=eval_valuation, y=count, fill=eval_valuation)) +
+  geom_bar(stat="identity") +
+  facet_grid(module ~ agent_name) +
+  theme_minimal() +
+  labs(title="Score distributions by task and agent type") +
+	theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+	scale_y_continuous(limits = c(0, 50), name = "Count of Questions") +
+	scale_x_discrete(name = "Score Bucket") +
+	guides(fill = "none")
+```
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r plot_evals, echo=FALSE}
+p <- ggplot(data_full, aes(x = agent_name, y = eval_valuation)) +
+	geom_bin2d() +
+	geom_hline(aes(yintercept = mean(eval_valuation), x = agent_name)) +
+	geom_point(aes(alpha = 0.6,
+								 customdata = "https://github.com/monarch-initiative/oai-plugin-evals/blob/main/results/" %+% filename,
+								 text = "Click point for details.\n\nAgent Answer: \n" %+% str_wrap(agent_answer) %+% "\n\n" %+% "Num Functions Called: " %+% agent_answer_num_function_calls
+								 ), position = "jitter") +
+	facet_wrap(~ module) +
+	scale_x_discrete(name = "") +
+	theme(axis.text.x = element_text(angle = 30, hjust = 1)) 
+
+p <- ggplotly(p, tooltip = "text")
+
+onRender(
+	p, "
+  function(el) {
+    el.on('plotly_click', function(d) {
+      var url = d.points[0].customdata;
+      console.log(url);
+      window.open(url);
+    });
+  }
+"
+)
+```
+

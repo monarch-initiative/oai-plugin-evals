@@ -4,6 +4,8 @@ library(tidyr)
 library(stringr)
 library(ggplot2)
 library(plotly)
+library(htmlwidgets)
+
 
 file_names <- list.files("../results", pattern = "trial-.*\\.json", full.names = TRUE)
 
@@ -27,6 +29,7 @@ data_parsed <- lapply(seq_along(data_raw), function(i) {
 	eval_prov <- as.character(jsonlite::prettify(jsonlite::toJSON(data_raw[[i]]$eval_provenance)))
 	x$agent_answer_provenance <- answer_prov
 	x$eval_provenance <- eval_prov
+	x$filename <- basename(file_names[i])
 	x
 })
 
@@ -35,14 +38,3 @@ data <- data_full %>% select(-agent_answer_provenance, -eval_provenance)
 
 `%+%` <- function(a, b) { paste0(a, b) }
 
-p <- ggplot(data_full) +
-	geom_point(aes(x = agent_name,
-								 y = eval_valuation,
-								 text = '<div style="width: 200px; height: 400px; overflow: auto; border: 1px solid #ccc;"><pre>' %+%
-												paste(agent_answer_provenance, eval_provenance, sep = "\n\n") %+%
-								 			  '</pre></div>'
-								 ), position = "jitter") +
-	facet_wrap(~ module) +
-	theme(axis.text.x = element_text(angle = 30, hjust = 1))
-
-ggplotly(p)
