@@ -115,7 +115,7 @@ ggplot(data_grouped, aes(x=eval_valuation, y=count, fill=eval_valuation)) +
 	guides(fill = "none")
 ```
 
-Fortunately, access to the Monarch API does indeed improve answers. 3.5 and 4 perform comparably, as expected for these simple 1- or 2-call operations. Both models can answer some questions on their own accord without Monarch help, with GPT-4 having only a slight advantage over 3.5. 
+Access to the Monarch API significantly improves answers. 3.5 and 4 perform comparably, not unsurprising for these simple 1- or 2-call operations. Both models can answer some questions on their own accord without Monarch help, with GPT-4 having only a slight advantage over 3.5. 
 The change for Monarch + 3.5 to Monarch + 4 for Gene alias is interesting, with several incorrect answers moving to partially-correct. This task uses Jaccard index scoring, comparing gene names mentioned by the model against a single gold standard gene name. As a consequence scores are reduced if the agent includes additional synonyms, which GPT-4 is more likely to do:
 
 <br />
@@ -163,10 +163,10 @@ gt(data1) %>%
 
 <br />
 
-The score links in the above table open the full trial information, including the function calls and responses. Digging into the `PTH` examples shows that both models make the same function call and get the same result, GPT-4 is just more thorough in it's response. The system prompts specify to include markdown-formatted links to the Monarch Initiative for all results, so this is possibly due to GPT-4's improved instruction-following capabilities.
+The score links in the above table open the full trial information, including the function calls, responses, and final model answers. Digging into the `PTH` examples shows that both models make the same function call and get the same result, but 3.5 + Monarch reports the first result only (`PTH1`, not the answer sought). GPT-4 is more thorough in its summary of the results. The system prompts specify to include markdown-formatted links to the Monarch Initiative for all results, so this is possibly due to GPT-4's improved instruction-following capabilities.
 
 
-The following questions were answered more accurately by 4 Base than 4 + Monarch:
+The following questions were answered more accurately by 4 Base than 4 + Monarch, an unexpected result:
 
 <br />
 
@@ -201,9 +201,9 @@ gt(monarch4_vs_dummy4) %>%
 <br />
 
 
-Investigating the the score of `0.25` for Monarch GPT4's answer to "What are genes related to Proteasme-associated autoinflammatory syndrome", we can see that the agent called the `search` endpoint with the string `"Proteasome-associated autoinflammatory syndrome"`, and while the response included several matching diseases, `MONDO:0030924 proteasome-associated autoinflammatory syndrome 5` was listed first; the followup call to `get_disease_gene_associations` for this returned only the causal association with `PSMB10`. The correct entry was later in the results list and would have pulled the 4 gold standards (and [two more](https://monarchinitiative.org/MONDO:0009726?associations=biolink:CausalGeneToDiseaseAssociation)) had the model chosen it. The relative improvement of Base GPT-4 on the `PTH` question is again GPT-4's mentioning several alternatives.
+Investigating the the score of `0.25` for Monarch GPT4's answer to "What are genes related to Proteasme-associated autoinflammatory syndrome", we can see that the agent called the `search` endpoint with the string `"Proteasome-associated autoinflammatory syndrome"`, and while the response included several matching diseases, `MONDO:0030924 proteasome-associated autoinflammatory syndrome 5` (PRAAS5) was listed first; the followup call to `get_disease_gene_associations` for this notes only a single causal association with `PSMB10`. The more general entry `MONDO:0009726 proteosome-associated autoinflammatory syndrome` (PRAAS) was later in the search results and would have pulled PMSB4, PSMB8, PSMB9, PSMB10, and POMP had the model chosen it. 4 Base in this case answered with PSMB8, PSMB9, PSMB4, PSMA3, and POMP. This answer misses `PSMB10` and adds PSMA3, which OMIM notes is associated with [proeteasome-associated autoinflammatory syndrome 1](https://www.omim.org/entry/256040) (PRAAS1). PSMG2 is not present in either answer (nor Monarch for general PRAAS) but also associated with PRAAS1 by OMIM.
 
-Given that GPT-4 is a much larger model, we might expect it to have improved memorization of training data and perform better than 3.5 on tasks like disease-gene association. We find several examples of the opposite; here are the questions where the Base 4 and 3.5 scores differed.
+Given that GPT-4 is a much larger model, we might expect it to have improved memorization of training data and perform better than 3.5 on tasks like disease-gene association. We find several examples of the opposite, but in some cases at least these are due different potential correct answers.
 
 
 <br />
@@ -217,11 +217,15 @@ dummy4_vs_dummy35 <- data_wide %>%
 				 `3.5 Base Score` = `url_3.5 Base`)
 
 gt(dummy4_vs_dummy35) %>%
-  tab_header("Questions where 4 Base outperformed 4 + Monarch") %>%
+  tab_header("Questions where 4 Base score differs from 3.5 Base") %>%
   format_table()
 ```
 
 <br />
+
+To take an example, for sensironeural deafness question, 3.5 Base reports example genes as "COQ6", "ATP6V1B1", and "BSND", while 4 Base reports genes associated with Alport Syndrome, "COL4A3". "COL4A4", and "COL4A5". All of these answers appear to address the question - COQ6 is causal for [familial steroid-resistant nephrotic syndrome with sensorineural deafness](https://monarchinitiative.org/MONDO:0013836), ATP6V1B1 is causal for [renal tubular acidosis, distal, 2, with progressive sensorineural hearing loss](https://monarchinitiative.org/MONDO:0009968), and [Alport Syndrome](https://monarchinitiative.org/MONDO:0018965) is indeed caused by the three genes listed and is characterized by progressive renal insufficiency and hearing loss.
+
+Considering Haim-Munk syndrome where GPT-4 outperforms GPT 3.5, 4 gets the answer exactly correct, while 3.5 describes the syndrome and mentions that "The exact genes related to Haim-Munk syndrome have not been identified yet." This is incorrect, and OMIM [notes](https://www.omim.org/entry/245010) that the relationship with CTSC was discovered circa 2000.
 
 ## Discussion
 
@@ -231,9 +235,9 @@ Although these results are good, there are several avenues for improvement throu
 - Improvements in the API wrapper, for example to return more results, re-rank results for better interpretation, or include more contextual information
 - Improvements in the backend Monarch API, for example to improve search relevance
 
-The scoring mechanisms suggested by the GeneTuring paper for our two tasks represent different goals: a Jaccard-index score for the gene alias task penalizes answers with multiple name options, even if they are all 'correct' (but not the expected goldstandard answer). By contrast, the disease to gene accuracy score does not penalize associations listed beyond the expected gold standards, even if they are incorrect (note that we do not test for this).
+The scoring mechanisms suggested by the GeneTuring paper for our two tasks represent different goals: a Jaccard-index score for the gene alias task penalizes answers with multiple name options, even if they are all 'correct' (but not the expected goldstandard answer). By contrast, the disease to gene accuracy score does not penalize associations listed beyond the expected gold standards, even if they are incorrect (note that we do not look for this). These scores also penalize creative-but-correct answers as illustrated by the renal dysfunction + deafness example.
 
-Lastly, these tests might be seen as convoluted unit tests, with a couple of AI models in the middle. This is particularly the case for the disease-gene association task, where the benchmark data is sourced from OMIM which also feeds Monarch. We should thus expect good results for this task, moderated by the performance of the keyword search, wrapper API, and model-based information extraction and summarization performance. 
+Lastly, these tests might be seen as convoluted unit tests, with a couple of AI models in the middle. This is particularly the case for the disease-gene association task, where the benchmark data is sourced from OMIM which also feeds Monarch. We should thus expect good results for this task, moderated by the performance of the keyword search, wrapper API, and model-based information extraction and summarization performance.
 
 ## Appendix
 
