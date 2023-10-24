@@ -1,6 +1,6 @@
 # Monarch Assistant/ChatGPT Plugin Evals
 
-Evaluations for the Monarch OpenAI Plugin/Monarch Assistant against benchmarks. [Preliminary results report](https://htmlpreview.github.io/?https://github.com/monarch-initiative/oai-plugin-evals/blob/main/r_viz/monarch_assistant_evals.html).
+Evaluations for the Monarch OpenAI Plugin/Monarch Assistant against benchmarks. [Preliminary results report](https://monarch-initiative.github.io/oai-plugin-evals/index.html).
 
 # Acknowledgements
 
