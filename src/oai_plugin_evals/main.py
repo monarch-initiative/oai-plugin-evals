@@ -41,9 +41,9 @@ for model_class in model_classes_to_test:
 # [ ] "Multi-species DNA aligment", "Question": "Which organism does the DNA sequence come from:TTCAATTCTCTGTAGGCAAGGATGGCTCATCACCATTATCACCCTGACGAGACTTAGAAACACCACGGAGACACACCTCTGGGCACGAGTGTTATGGTGTTT", "Goldstandard": "rat"
 # [ ] "Gene name conversion", "Question": "Convert ENSG00000205403 to official gene symbol.", "Goldstandard": "CFI"
 # [ ] "Gene name extraction", "Question": "What are the gene and protein names in the sentence: Differences were not found in colons by SEM.?", "Goldstandard": "No gene"
-# [ ]        "Gene name extraction", "Question": "What are the gene and protein names in the sentence: The H5 mutants were: DH5 (all amino acids in D configuration) and H5F (where all His are replaced by Phe at positions 3, 7, 8, 15, 18, 19, 21).?", "Goldstandard": "H5 mutants, DH5, H5F"
+#         "Gene name extraction", "Question": "What are the gene and protein names in the sentence: The H5 mutants were: DH5 (all amino acids in D configuration) and H5F (where all His are replaced by Phe at positions 3, 7, 8, 15, 18, 19, 21).?", "Goldstandard": "H5 mutants, DH5, H5F"
 # [ ] "Protein-coding genes", "Question": "Is AMD1P4 a protein-coding gene?", "Goldstandard": null
-# [ ]        "Protein-coding genes", "Question": "Is NODAL a protein-coding gene?", "Goldstandard": "TRUE"
+#         "Protein-coding genes", "Question": "Is NODAL a protein-coding gene?", "Goldstandard": "TRUE"
 # [ ] "Gene SNP association", "Question": "Which gene is SNP rs1217074595 associated with?", "Goldstandard": "LINC01270"
 # [ ] "SNP location", "Question": "Which chromosome does SNP rs545148486 locate on human genome?", "Goldstandard": "chr16"
 # [ ] "TF regulation", "Question": "Does transcription factor ETV4 activate or repress gene ERBB2?", "Goldstandard": "Repression"
