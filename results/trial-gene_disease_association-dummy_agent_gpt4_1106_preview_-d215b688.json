@@ -1,0 +1,51 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Cone dystrophy?",
+    "goldstandard": "PDE6C, GUCA1A",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Cone dystrophy is a group of eye disorders that affect the cone cells of the retina, which are responsible for color vision and central vision. These disorders can be caused by mutations in various genes. Some of the genes that have been associated with cone dystrophy include:\n\n1. **GUCY2D** - This gene encodes an enzyme that plays a crucial role in the phototransduction pathway of cone photoreceptor cells. Mutations in GUCY2D can lead to autosomal dominant cone dystrophy.\n\n2. **CRX** - The CRX gene is important for the development and maintenance of photoreceptor cells. Mutations in this gene can cause cone-rod dystrophy, which affects both cone and rod cells.\n\n3. **PDE6C** - This gene encodes a subunit of the photoreceptor phosphodiesterase, which is involved in the phototransduction pathway. Mutations in PDE6C can result in achromatopsia, a condition that includes symptoms of cone dystrophy.\n\n4. **PDE6H** - The PDE6H gene encodes the inhibitory subunit of cone photoreceptor cGMP phosphodiesterase. Mutations in this gene can lead to incomplete achromatopsia or cone dystrophy.\n\n5. **OPN1LW** and **OPN1MW** - These genes encode the opsin proteins for the long-wavelength (red) and medium-wavelength (green) sensitive cone photoreceptors, respectively. Mutations in these genes can result in color vision defects and cone dystrophy.\n\n6. **RPGR** - Mutations in the RPGR gene, which is associated with retinitis pigmentosa, can also cause X-linked cone dystrophy.\n\n7. **ABCA4** - Although primarily associated with Stargardt disease, mutations in the ABCA4 gene can also lead to cone-rod dystrophy.\n\n8. **CNGA3** and **CNGB3** - These genes encode subunits of the cyclic nucleotide-gated channels in cone photoreceptors. Mutations in these genes are often associated with achromatopsia, which can have overlapping symptoms with cone dystrophy.\n\n9. **GUCA1A** - This gene encodes the guanylate cyclase activator 1A, which is involved in the recovery phase of phototransduction. Mutations in GUCA1A can cause autosomal dominant cone dystrophy.\n\n10. **RIMS1** - Mutations in the RIMS1 gene, which is involved in synaptic transmission in photoreceptor cells, can lead to autosomal dominant cone-rod dystrophy.\n\nIt's important to note that cone dystrophy can be genetically heterogeneous, meaning that different genetic mutations can cause similar clinical symptoms. Genetic testing can help identify the specific mutation in an individual, which can be useful for diagnosis, prognosis, and potential treatment options. Additionally, research is ongoing, and new genes associated with cone dystrophy may be identified in the future.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "PDE6C",
+                    "GUCA1A"
+                ],
+                "agent_answer": [
+                    "GUCY2D",
+                    "CRX",
+                    "PDE6C",
+                    "PDE6H",
+                    "OPN1LW",
+                    "OPN1MW",
+                    "RPGR",
+                    "ABCA4",
+                    "CNGA3",
+                    "CNGB3",
+                    "GUCA1A",
+                    "RIMS1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

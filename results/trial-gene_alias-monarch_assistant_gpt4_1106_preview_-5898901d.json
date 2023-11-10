@@ -1,0 +1,64 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of GCS1?",
+    "goldstandard": "MOGS",
+    "agent_name": "Monarch Assistant GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for \"GCS1\" can refer to different genes depending on the organism. Here are some of the entries for \"GCS1\":\n\n1. In yeast (Saccharomyces cerevisiae), \"GCS1\" is the official symbol, with the identifier [SGD:S000002385](https://monarchinitiative.org/gene/SGD:S000002385).\n2. In fruit fly (Drosophila melanogaster), \"GCS1\" is also the official symbol, with the identifier [FB:FBgn0030289](https://monarchinitiative.org/gene/FB:FBgn0030289).\n3. In humans, \"GCS1\" is associated with the gene symbol \"ADAP1\" (ArfGAP with dual PH domains 1), with the identifier [HGNC:16486](https://monarchinitiative.org/gene/HGNC:16486).\n4. Another human gene associated with \"GCS1\" is \"MOGS\" (Mannosyl-Oligosaccharide Glucosidase), with the identifier [HGNC:24862](https://monarchinitiative.org/gene/HGNC:24862).\n5. In fission yeast (Schizosaccharomyces pombe), \"gcs1\" is the official symbol, with the identifier [PomBase:SPAC22F3.10c](https://monarchinitiative.org/gene/PomBase:SPAC22F3.10c).\n6. In rats, \"Mogs\" is associated with \"GCS1\", with the identifier [RGD:69240](https://monarchinitiative.org/gene/RGD:69240).\n7. In mice, \"Mogs\" is associated with \"GCS1\", with the identifier [MGI:1929872](https://monarchinitiative.org/gene/MGI:1929872).\n\nPlease specify the organism if you need the information for a particular species.",
+    "agent_answer_num_function_calls": 1,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "GCS1",
+                "category": "biolink:Gene"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"SGD:S000002385\", \"name\": \"GCS1\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"FB:FBgn0030289\", \"name\": \"GCS1\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:16486\", \"name\": \"ADAP1\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:24862\", \"name\": \"MOGS\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"PomBase:SPAC22F3.10c\", \"name\": \"gcs1\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"RGD:69240\", \"name\": \"Mogs\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"MGI:1929872\", \"name\": \"Mogs\", \"categories\": [\"biolink:Gene\"], \"description\": null}], \"total\": 7}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "MOGS",
+                "agent_answer": [
+                    "GCS1",
+                    "ADAP1",
+                    "MOGS",
+                    "Mogs"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.25",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.25
+}

@@ -1,0 +1,35 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of OR11-75?",
+    "goldstandard": "OR56A1",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for a gene typically refers to the standardized nomenclature used to identify a particular gene across different databases and scientific literature. Gene symbols are assigned by organizations such as the HUGO Gene Nomenclature Committee (HGNC) for human genes or the Mouse Genome Informatics (MGI) database for mouse genes.\n\nHowever, \"OR11-75\" does not appear to be a standard gene symbol format, and without additional context, it's challenging to determine the exact gene you are referring to. The \"OR\" prefix often refers to olfactory receptor genes, which are a large gene family involved in the sense of smell. The numbering system following the \"OR\" prefix can vary depending on the species and the specific naming convention used.\n\nIf you are looking for the official gene symbol for a specific olfactory receptor or another gene, it would be helpful to have more context or the full name of the gene. If \"OR11-75\" is part of a larger identifier or if it's from a specific database, providing that information could help in identifying the correct gene symbol.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "OR56A1",
+                "agent_answer": []
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

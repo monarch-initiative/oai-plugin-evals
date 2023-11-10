@@ -1,0 +1,35 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of ASV?",
+    "goldstandard": "SRC",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The term \"ASV\" is not specific enough to identify a unique gene symbol because it can refer to different things in different contexts. For example, ASV could stand for \"avian sarcoma virus\" in the context of virology, or it could be an acronym for something else entirely in another context.\n\nIn the context of human genetics, gene symbols are standardized by the HUGO Gene Nomenclature Committee (HGNC), and they typically consist of a combination of letters and sometimes numbers that uniquely identify a gene.\n\nIf you are referring to a specific gene related to the avian sarcoma virus or another entity, please provide more context or the full name of the gene so that I can attempt to give you the correct official gene symbol.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "SRC",
+                "agent_answer": []
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

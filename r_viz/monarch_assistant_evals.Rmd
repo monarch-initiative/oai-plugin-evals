@@ -78,13 +78,12 @@ library(tidyr)
 library(dplyr)
 library(ggplot2)
 
-data <- data %>%
+data2 <- data %>%
 	mutate(agent_name = factor(agent_name, 
-														 levels = c("Dummy Agent GPT35", "Dummy Agent GPT4", "Monarch Assistant GPT35", "Monarch Assistant GPT4"), 
-														 labels = c("3.5 Base", "4 Base", "3.5 + Monarch", "4 + Monarch"), 
-														 ordered = TRUE))
+														 levels = c("Dummy Agent GPT35", "Dummy Agent GPT4", "Dummy Agent GPT4 (1106-preview)", "Monarch Assistant GPT35", "Monarch Assistant GPT4", "Monarch Assistant GPT4 (1106-preview)"), 
+														 labels = c("3.5 Base", "4 Base", "4-1106 Base", "3.5 + Monarch", "4 + Monarch", "4-1106 + Monarch"), 
+														 ordered = TRUE)) %>%
 
-data_grouped <- data %>%
 	mutate(eval_valuation =  case_when(eval_valuation == 1 ~ "1.0",
 																		 eval_valuation == 0 ~ "0.0",
 																		 0 < eval_valuation & eval_valuation <= 1/3 ~ "(0, 1/3]",
@@ -96,14 +95,14 @@ data_grouped <- data %>%
 	mutate(eval_valuation = factor(eval_valuation, levels = c("0.0", "(0, 1/3]", "(1/3, 2/3]", "(2/3, 1)", "1.0"), ordered = TRUE))
 
 
-data_grouped2 <- data_grouped %>% 
+data_grouped2 <- data2 %>% 
 	group_by(module, agent_name, eval_valuation) %>% 
 	summarize(count = n()) %>% 
   ungroup() %>% 
   complete(module, agent_name, eval_valuation, fill = list(count = 0)) %>%
   arrange(agent_name, module) %>%
 	mutate(agent_name = factor(agent_name, 
-														 levels = c("4 + Monarch", "3.5 + Monarch", "4 Base", "3.5 Base"),
+														 levels = c("4-1106 + Monarch", "4 + Monarch", "3.5 + Monarch", "4-1106 Base", "4 Base", "3.5 Base"),
 														 ordered = TRUE),
 				 module = factor(module, 
 				 								 levels = c("Gene disease association", "Gene alias"),
@@ -122,6 +121,8 @@ ggplot(data_grouped2, aes(x=eval_valuation, y=count, fill=eval_valuation)) +
 	guides(fill = "none")
 ```
 
+Update: 4-1106 represents results for the [recently released](https://openai.com/blog/new-models-and-developer-products-announced-at-devday) `gpt-4-1106-preview` model. Results seem to be similar (if not slightly better) than GPT-4 with Monarch integration; there is a noticeable bump in accuracy for Gene-Disease Association for the new model on its own (4-1106 Base).
+
 Access to the Monarch API significantly improves answers. 3.5 and 4 perform comparably, not unsurprising for these simple 1- or 2-call operations. Both models can answer some questions on their own accord without Monarch help, with GPT-4 having only a slight advantage over 3.5. 
 The change for Monarch + 3.5 to Monarch + 4 for Gene alias is interesting, with several incorrect answers moving to partially-correct. This task uses Jaccard index scoring, comparing gene names mentioned by the model against a single gold standard gene name. As a consequence scores are reduced if the agent includes additional synonyms, which GPT-4 is more likely to do:
 
@@ -132,7 +133,8 @@ library(gt)
 library(purrr)
 library(glue)
 
-data1 <- data %>% 
+data1 <- data2 %>% 
+	filter(!agent_name %in% c("4-1106 Base", "4-1106 + Monarch")) %>%
 	mutate(url = 'https://github.com/monarch-initiative/oai-plugin-evals/blob/main/results/' %+% filename) %>%
 	mutate(
 		     url = glue('{eval_valuation} (<a href="{url}" target="_blank">link</a>)'),
@@ -183,7 +185,8 @@ library(gt)
 library(purrr)
 library(glue)
 
-data <- data %>% 
+data <- data2 %>% 
+	filter(!agent_name %in% c("4-1106 Base", "4-1106 + Monarch")) %>%
 	mutate(url = 'https://github.com/monarch-initiative/oai-plugin-evals/blob/main/results/' %+% filename) %>%
 	mutate(
 		     url = glue('{eval_valuation} (<a href="{url}" target="_blank">link</a>)'),

@@ -1,0 +1,37 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of SNAT6?",
+    "goldstandard": "SLC38A6",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for SNAT6 is SLC38A6. This gene belongs to the solute carrier family 38, member 6. The SLC38 family includes sodium-coupled neutral amino acid transporters, which are responsible for the transport of amino acids across cell membranes. SNAT6, as a member of this family, is involved in the transport of certain amino acids, playing a role in amino acid homeostasis, nutrient sensing, and cellular signaling.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "SLC38A6",
+                "agent_answer": [
+                    "SLC38A6"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

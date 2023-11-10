@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Spondylocarpotarsal synostosis syndrome?",
+    "goldstandard": "FLNB",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Spondylocarpotarsal synostosis syndrome (SCT) is a rare genetic disorder characterized by the fusion of certain bones in the spine (vertebral fusion), as well as the possible fusion of bones in the carpal and tarsal joints (the wrists and ankles, respectively). This condition can lead to a variety of skeletal abnormalities, including scoliosis (curvature of the spine), short stature, and limited mobility in the affected joints.\n\nThe primary gene known to be associated with Spondylocarpotarsal synostosis syndrome is FLNB, which encodes the protein filamin B. Mutations in the FLNB gene can disrupt the normal development of bones and joints, leading to the features observed in SCT. Filamin B is important for the organization of the actin cytoskeleton, which is a network of fibers that helps maintain the cell's shape and is involved in various cellular functions, including cell movement and division.\n\nIn some cases, SCT can be inherited in an autosomal dominant pattern, which means that a mutation in only one copy of the FLNB gene is sufficient to cause the disorder. However, there are also reports of SCT occurring in individuals with no known family history of the condition, suggesting that de novo (new) mutations in the FLNB gene can also be responsible.\n\nIt's important to note that genetic research is ongoing, and additional genes or genetic factors may be identified in the future that contribute to the development of Spondylocarpotarsal synostosis syndrome. Genetic testing and counseling can provide more information for individuals and families affected by this condition.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "FLNB"
+                ],
+                "agent_answer": [
+                    "FLNB"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

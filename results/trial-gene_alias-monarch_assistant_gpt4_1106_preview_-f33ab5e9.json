@@ -1,0 +1,69 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of TFA?",
+    "goldstandard": "F3",
+    "agent_name": "Monarch Assistant GPT4 (1106-preview)",
+    "agent_answer": "The term \"TFA\" does not correspond to a unique official gene symbol but could refer to several different genes. Here are some possibilities:\n\n- **PDCD5** (Programmed Cell Death 5) with the identifier [HGNC:8764](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8764)\n- **PDCD10** (Programmed Cell Death 10) with the identifier [HGNC:8761](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8761)\n- **TFAM** (Transcription Factor A, Mitochondrial) with the identifier [HGNC:11741](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11741)\n- **TFAMP1** (Transcription Factor A, Mitochondrial Pseudogene 1) with the identifier [HGNC:11636](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11636)\n- **TFAMP2** (Transcription Factor A, Mitochondrial Pseudogene 2) with the identifier [HGNC:11638](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11638)\n- **TFAP2A** (Transcription Factor AP-2 Alpha) with the identifier [HGNC:11742](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11742)\n- **TFAP2B** (Transcription Factor AP-2 Beta) with the identifier [HGNC:11743](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11743)\n- **TFAP2C** (Transcription Factor AP-2 Gamma) with the identifier [HGNC:11744](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11744)\n- **TFAP2D** (Transcription Factor AP-2 Delta) with the identifier [HGNC:15581](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:15581)\n\nIf you are looking for a specific gene, please provide more context or the full name of the gene.",
+    "agent_answer_num_function_calls": 1,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "TFA",
+                "category": "biolink:Gene"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"ZFIN:ZDB-GENE-980526-35\", \"name\": \"tfa\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:8764\", \"name\": \"PDCD5\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:8761\", \"name\": \"PDCD10\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11741\", \"name\": \"TFAM\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11636\", \"name\": \"TFAMP1\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11638\", \"name\": \"TFAMP2\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11742\", \"name\": \"TFAP2A\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11743\", \"name\": \"TFAP2B\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:11744\", \"name\": \"TFAP2C\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:15581\", \"name\": \"TFAP2D\", \"categories\": [\"biolink:Gene\"], \"description\": null}], \"total\": 96}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "F3",
+                "agent_answer": [
+                    "PDCD5",
+                    "PDCD10",
+                    "TFAM",
+                    "TFAMP1",
+                    "TFAMP2",
+                    "TFAP2A",
+                    "TFAP2B",
+                    "TFAP2C",
+                    "TFAP2D"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

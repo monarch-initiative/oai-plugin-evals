@@ -1,0 +1,50 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Type diabetes mellitus?",
+    "goldstandard": "HNF1B, IL6, GPD2, HMGA1, IRS1, NEUROD1, IL6",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Type 1 diabetes mellitus (T1DM) is an autoimmune disorder where the body's immune system attacks and destroys the insulin-producing beta cells in the pancreas. This results in the body's inability to produce sufficient insulin, which is necessary for the regulation of blood glucose levels.\n\nThe development of Type 1 diabetes is influenced by a combination of genetic and environmental factors. Several genes have been associated with an increased risk of developing Type 1 diabetes. The most significant genetic factors are found in the human leukocyte antigen (HLA) complex on chromosome 6, particularly the HLA-DR and HLA-DQ gene regions. These genes play a critical role in the immune system, and certain variants can make an individual more susceptible to developing Type 1 diabetes.\n\nOther genes that have been implicated in Type 1 diabetes include:\n\n1. **INS** - This gene encodes insulin, and certain polymorphisms in this gene are associated with an increased risk of Type 1 diabetes.\n2. **PTPN22** - The protein tyrosine phosphatase, non-receptor type 22 gene, is involved in the regulation of the immune system, and variations in this gene have been linked to Type 1 diabetes.\n3. **CTLA4** - Cytotoxic T-lymphocyte-associated protein 4 is another gene involved in immune regulation. Certain alleles of this gene may contribute to the risk of Type 1 diabetes.\n4. **IL2RA** and **IL2RB** - These genes encode components of the interleukin-2 receptor, which is important for T-cell mediated immune responses. Variants in these genes may affect the risk of developing Type 1 diabetes.\n5. **ERBB3** - This gene is involved in the development and growth of several tissues and organs. It has been suggested that variants in ERBB3 may be associated with Type 1 diabetes risk.\n\nIt's important to note that having a genetic predisposition to Type 1 diabetes does not mean that a person will definitely develop the disease. Environmental factors, such as viral infections, are also thought to play a significant role in triggering the autoimmune response that leads to the destruction of beta cells in genetically susceptible individuals.\n\nResearch into the genetics of Type 1 diabetes is ongoing, and scientists continue to discover new genetic markers that may contribute to the risk of developing the disease. Genetic testing can sometimes be used to assess the risk in individuals with a family history of Type 1 diabetes, but it is not routinely performed for the general population.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "HNF1B",
+                    "IL6",
+                    "GPD2",
+                    "HMGA1",
+                    "IRS1",
+                    "NEUROD1",
+                    "IL6"
+                ],
+                "agent_answer": [
+                    "INS",
+                    "PTPN22",
+                    "CTLA4",
+                    "IL2RA",
+                    "IL2RB",
+                    "ERBB3"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

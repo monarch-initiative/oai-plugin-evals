@@ -1,0 +1,90 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Distal renal tubular acidosis?",
+    "goldstandard": "SLC4A1, ATP6V0A4",
+    "agent_name": "Monarch Assistant GPT4 (1106-preview)",
+    "agent_answer": "The following genes are related to Distal renal tubular acidosis (dRTA):\n\n1. **SLC4A1** - This gene has a causal relationship with dRTA. [More info](https://monarchinitiative.org/gene/HGNC:11027)\n2. **ATP6V1B1** - This gene also has a causal relationship with dRTA. [More info](https://monarchinitiative.org/gene/HGNC:853)\n3. **ATP6V0A4** - Another gene with a causal relationship with dRTA. [More info](https://monarchinitiative.org/gene/HGNC:866)\n4. **WDR72** - This gene is correlated with dRTA. [More info](https://monarchinitiative.org/gene/HGNC:26790)\n5. **FOXI1** - This gene is correlated with dRTA. [More info](https://monarchinitiative.org/gene/HGNC:3815)\n\nPlease note that the relationship \"causal\" indicates a direct involvement in the disease, while \"correlated\" may indicate a gene that is associated with the disease but not necessarily causative.",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Distal renal tubular acidosis",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0015827\", \"name\": \"distal renal tubular acidosis\", \"categories\": [\"biolink:Disease\"], \"description\": \"Distal renal tubular acidosis (dRTA) is a disorder of impaired net acid secretion by the distal tubule characterized by hyperchloremic metabolic acidosis. The classic form is often associated with hypokalemia whereas other forms of acquired dRTA may be associated with hypokalemia, hyperkalemia or normokalemia.\"}, {\"id\": \"MONDO:0009967\", \"name\": \"renal tubular acidosis 3\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0008368\", \"name\": \"autosomal dominant distal renal tubular acidosis\", \"categories\": [\"biolink:Disease\"], \"description\": \"Autosomal dominant distal renal tubular acidosis (AD dRTA) is an inherited form of distal renal tubular acidosis (dRTA) characterized by hyperchloremic metabolic acidosis often but not always associated with hypokalemia.\"}, {\"id\": \"MONDO:0018440\", \"name\": \"autosomal recessive distal renal tubular acidosis\", \"categories\": [\"biolink:Disease\"], \"description\": \"Autosomal recessive distal renal tubular acidosis (AR dRTA) is an inherited form of distal renal tubular acidosis (dRTA) characterized by hypokalemic hyperchloremic metabolic acidosis. Deafness often occurs either early or later on in life but may be absent or never be diagnosed.\"}, {\"id\": \"MONDO:0012700\", \"name\": \"renal tubular acidosis, distal, 4, with hemolytic anemia\", \"categories\": [\"biolink:Disease\"], \"description\": \"Distal renal tubular acidosis (dRTA) with anemia is a very rare form of distal renal tubular acidosis (dRTA) characterized by a defect in renal acidification and hereditary hemolytic anemia.\"}, {\"id\": \"MONDO:0009968\", \"name\": \"renal tubular acidosis, distal, 2, with progressive sensorineural hearing loss\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0011268\", \"name\": \"renal tubular acidosis, distal, 3, with or without sensorineural hearing loss\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0012692\", \"name\": \"renal tubular acidosis, distal, with nephrocalcinosis, short stature, intellectual disability, and distinctive facies\", \"categories\": [\"biolink:Disease\"], \"description\": null}], \"total\": 8}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0015827"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:11027\", \"label\": \"SLC4A1\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:853\", \"label\": \"ATP6V1B1\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:866\", \"label\": \"ATP6V0A4\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:11027\", \"label\": \"SLC4A1\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:26790\", \"label\": \"WDR72\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:3815\", \"label\": \"FOXI1\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:853\", \"label\": \"ATP6V1B1\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:866\", \"label\": \"ATP6V0A4\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:11027\", \"label\": \"SLC4A1\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:11027\", \"label\": \"SLC4A1\"}}], \"total\": 10, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "SLC4A1",
+                    "ATP6V0A4"
+                ],
+                "agent_answer": [
+                    "SLC4A1",
+                    "ATP6V1B1",
+                    "ATP6V0A4",
+                    "WDR72",
+                    "FOXI1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

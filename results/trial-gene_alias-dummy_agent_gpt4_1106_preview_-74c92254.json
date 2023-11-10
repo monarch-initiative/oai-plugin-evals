@@ -1,0 +1,35 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of CT116?",
+    "goldstandard": "LYPD6B",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol of a gene is designated by the HUGO Gene Nomenclature Committee (HGNC), which is responsible for approving unique symbols and names for human genes. However, \"CT116\" does not appear to be a standard gene symbol recognized by the HGNC.\n\nIt's possible that \"CT116\" could be an alias, an outdated symbol, or a term used in a specific research context rather than an official gene symbol. To provide accurate information, I would need more context or the correct and full name of the gene in question.\n\nIf you have additional information or a different name that might be associated with \"CT116,\" please provide it, and I can attempt to find the official gene symbol for you.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "LYPD6B",
+                "agent_answer": []
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

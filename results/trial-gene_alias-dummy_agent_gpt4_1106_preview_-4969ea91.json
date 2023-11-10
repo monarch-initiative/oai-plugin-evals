@@ -1,0 +1,35 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of hCAP?",
+    "goldstandard": "RNGTT",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for human Cyclin A associated protein (hCAP) is not standardized as \"hCAP\" in the gene nomenclature. The term \"hCAP\" could refer to different proteins depending on the context, as it is not a unique identifier. For example, hCAP could refer to a protein that is associated with Cyclin A, such as a member of the Cyclin-dependent kinase (CDK) family.\n\nTo provide an accurate answer, it would be necessary to have more specific information about the protein in question. If you are referring to a specific protein complex or a protein that interacts with Cyclin A, please provide additional details or the full name of the protein so that I can attempt to identify the correct gene symbol for you.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "RNGTT",
+                "agent_answer": []
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

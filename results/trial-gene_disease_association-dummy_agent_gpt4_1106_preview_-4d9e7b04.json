@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Sialidosis?",
+    "goldstandard": "NEU1",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Sialidosis is a rare genetic disorder caused by mutations in the NEU1 gene. This gene provides instructions for making an enzyme called neuraminidase 1, which is involved in the breakdown and recycling of molecules called sialoglycoconjugates. These molecules are found in various tissues throughout the body, including the brain.\n\nMutations in the NEU1 gene lead to a deficiency of neuraminidase 1, which causes an accumulation of sialoglycoconjugates in the lysosomes of cells. Lysosomes are compartments within the cell that break down and recycle different types of molecules. The buildup of these substances in lysosomes leads to the signs and symptoms of sialidosis, which can include vision problems, movement disorders, and intellectual disability.\n\nSialidosis is inherited in an autosomal recessive pattern, which means that an individual must inherit two copies of the mutated gene, one from each parent, to be affected by the disorder. Individuals who carry only one copy of the mutation are typically asymptomatic carriers and do not show signs of the disease.\n\nThere are two types of sialidosis, which are distinguished by the age of onset and severity of symptoms:\n\n- Sialidosis type I, also known as cherry-red spot myoclonus syndrome, typically presents in adolescence or adulthood with symptoms such as vision loss, myoclonus (sudden, involuntary muscle jerks), and seizures.\n- Sialidosis type II is more severe and can be further divided into congenital, infantile, and juvenile forms. It presents earlier in life and is characterized by additional features such as coarse facial features, skeletal abnormalities, and organomegaly (enlargement of organs).\n\nDiagnosis of sialidosis is typically based on clinical symptoms, biochemical tests to measure neuraminidase activity, and genetic testing to identify mutations in the NEU1 gene. Treatment is supportive and focuses on managing symptoms, as there is currently no cure for the disorder.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "NEU1"
+                ],
+                "agent_answer": [
+                    "NEU1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

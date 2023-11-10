@@ -1,0 +1,37 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of beta3Gn-T8?",
+    "goldstandard": "B3GNT8",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for beta3Gn-T8 is B3GNT8. This gene symbol represents the enzyme beta-1,3-N-acetylglucosaminyltransferase 8, which is involved in the biosynthesis of glycoproteins and glycolipids by adding N-acetylglucosamine in a beta 1-3 linkage to substrates. The gene symbols are standardized by the HUGO Gene Nomenclature Committee (HGNC) to ensure consistency in the naming of human genes.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "B3GNT8",
+                "agent_answer": [
+                    "B3GNT8"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

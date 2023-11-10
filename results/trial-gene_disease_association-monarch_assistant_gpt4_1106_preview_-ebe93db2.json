@@ -1,0 +1,85 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Ablepharon-macrostomia syndrome?",
+    "goldstandard": "TWIST2",
+    "agent_name": "Monarch Assistant GPT4 (1106-preview)",
+    "agent_answer": "The gene associated with Ablepharon-macrostomia syndrome is TWIST2. This association is considered causal for the syndrome. For more information, you can visit the [Monarch Initiative gene page for TWIST2](https://monarchinitiative.org/gene/HGNC:20670).",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Ablepharon-macrostomia syndrome",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0008693\", \"name\": \"ablepharon macrostomia syndrome\", \"categories\": [\"biolink:Disease\"], \"description\": \"Ablepharon macrostomia syndrome is an extremely rare multiple congenital malformation syndrome characterized by the association of ablepharon, macrostomia, abnormal external ears, syndactyly of the hands and feet, skin findings (such as dry and coarse skin or redundant folds of skin), absent or sparse hair, genital malformations and developmental delay (in 2/3 of cases). Other reported manifestations include malar hypoplasia, absent or hypoplastic nipples, umbilical abnormalities and growth retardation. It is a mainly sporadic disorder, although a few familial cases having been reported, and it displays significant clinical overlap with Fraser syndrome.\"}], \"total\": 1}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0008693"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:20670\", \"label\": \"TWIST2\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:20670\", \"label\": \"TWIST2\"}}], \"total\": 2, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "TWIST2"
+                ],
+                "agent_answer": [
+                    "TWIST2"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

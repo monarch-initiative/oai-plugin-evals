@@ -1,0 +1,42 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Multiple system atrophy?",
+    "goldstandard": "COQ2",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Multiple system atrophy (MSA) is a rare, progressive neurodegenerative disorder characterized by a combination of symptoms that affect both the autonomic nervous system and movement. The cause of MSA is not fully understood, and it is generally considered a sporadic condition, which means it occurs at random without a clear familial pattern. However, research has suggested that certain genetic factors may contribute to an increased risk of developing the disease.\n\nWhile no specific genes have been definitively linked to MSA, some genetic variants have been associated with a higher risk of the disease. For example:\n\n1. **COQ2**: Variants in the COQ2 gene, which is involved in the biosynthesis of coenzyme Q10, have been associated with MSA in some populations. Coenzyme Q10 plays a role in mitochondrial function, and alterations in mitochondrial function have been implicated in various neurodegenerative diseases.\n\n2. **SNCA**: The alpha-synuclein gene (SNCA) has been extensively studied in Parkinson's disease, and there is some evidence to suggest that variants in this gene may also be associated with MSA. Alpha-synuclein is a protein that accumulates in the brains of individuals with MSA, forming glial cytoplasmic inclusions, which are a hallmark of the disease.\n\n3. **GBA**: Mutations in the GBA gene, which encodes the enzyme glucocerebrosidase, have been linked to Parkinson's disease and have also been suggested to increase the risk of MSA. GBA mutations can lead to lysosomal dysfunction, which is thought to play a role in neurodegeneration.\n\n4. **LRRK2**: The LRRK2 gene, which is another gene associated with Parkinson's disease, has been investigated in MSA as well. While LRRK2 mutations are a well-known genetic cause of Parkinson's, their role in MSA is less clear.\n\nIt's important to note that these genetic associations do not mean that MSA is directly inherited in a simple Mendelian fashion. Instead, they suggest that certain genetic factors may make individuals more susceptible to developing the disease. Environmental factors, lifestyle, and other unknown factors likely also play a role in the development of MSA.\n\nResearch into the genetics of MSA is ongoing, and as our understanding of the disease improves, more genes and genetic variants may be identified that contribute to the risk of developing MSA. Genetic studies in MSA are challenging due to the rarity of the disease and the need for large cohorts of patients to identify significant genetic associations.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "COQ2"
+                ],
+                "agent_answer": [
+                    "COQ2",
+                    "SNCA",
+                    "GBA",
+                    "LRRK2"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

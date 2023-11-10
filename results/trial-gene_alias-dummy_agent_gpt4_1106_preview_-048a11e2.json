@@ -1,0 +1,35 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of HsT1192?",
+    "goldstandard": "SYT4",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for \"HsT1192\" is not a standard nomenclature for human genes. Human gene symbols are typically standardized by the HUGO Gene Nomenclature Committee (HGNC), and they usually consist of a combination of letters and sometimes numbers that represent a specific gene.\n\nThe term \"HsT1192\" appears to be an older or non-standard designation for a gene or a sequence that might have been used in past research literature or databases. To find the current official gene symbol, you would need to cross-reference \"HsT1192\" with updated databases such as GenBank, the HGNC database, or other genomic resources.\n\nIf you have access to a specific sequence or additional context for \"HsT1192,\" you could use that information to search in a genomic database to find the current official gene symbol. If you provide more details, I can attempt to assist you further in identifying the gene.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "SYT4",
+                "agent_answer": []
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

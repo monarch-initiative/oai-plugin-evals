@@ -1,0 +1,83 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Liver failure?",
+    "goldstandard": "TRMU",
+    "agent_name": "Monarch Assistant GPT4 (1106-preview)",
+    "agent_answer": "It appears that there are no specific gene associations listed for liver failure (MONDO:0100192) in the Monarch Initiative knowledge graph at this time. This could be due to a variety of reasons, including the complexity of the disease, the current state of research, or the way the data is curated within the knowledge graph.\n\nLiver failure is a liver disease characterized by the liver losing or having lost all of its function. It can be a complex condition with multiple potential causes, including genetic factors, but the specific gene associations may not be well-defined or may not have been fully characterized in the context of the Monarch Initiative's data.\n\nFor more information on liver failure, you can visit the [Monarch Initiative's page on liver failure](https://monarchinitiative.org/disease/MONDO:0100192).",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Liver failure",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0100192\", \"name\": \"liver failure\", \"categories\": [\"biolink:Disease\"], \"description\": \"A liver disease characterized by the liver losing or has lost all of its function.\"}, {\"id\": \"MONDO:0000023\", \"name\": \"infantile liver failure\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0019542\", \"name\": \"acute liver failure\", \"categories\": [\"biolink:Disease\"], \"description\": \"Rapid deterioration of liver function causing encephalopathy and coagulopathy. It results from damage to the liver parenchyma usually secondary to acetaminophen overdose or viral infections.\"}, {\"id\": \"MONDO:0100193\", \"name\": \"chronic liver failure\", \"categories\": [\"biolink:Disease\"], \"description\": \"Liver failure that develops slowly and gradually for some time, possibly for years, often as the result of cirrhosis, or malnutrition.\"}, {\"id\": \"MONDO:0014659\", \"name\": \"infantile liver failure syndrome 2\", \"categories\": [\"biolink:Disease\"], \"description\": \"Any infantile liver failure in which the cause of the disease is a mutation in the NBAS gene.\"}, {\"id\": \"MONDO:0024568\", \"name\": \"infantile liver failure syndrome 1\", \"categories\": [\"biolink:Disease\"], \"description\": \"Any infantile liver failure in which the cause of the disease is a mutation in the LARS gene.\"}, {\"id\": \"MONDO:0032844\", \"name\": \"infantile liver failure syndrome 3\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0016811\", \"name\": \"renal tubulopathy-encephalopathy-liver failure syndrome\", \"categories\": [\"biolink:Disease\"], \"description\": \"Renal tubulopathy - encephalopathy - liver failure describes a spectrum of phenotypes with manifestations similar but milder than those seen in Gracile syndrome and that can be associated with encephalopathy and psychiatric disorders.\"}, {\"id\": \"MONDO:0014744\", \"name\": \"acute infantile liver failure-cerebellar ataxia-peripheral sensory motor neuropathy syndrome\", \"categories\": [\"biolink:Disease\"], \"description\": \"An autosomal recessive cerebellar ataxia that has material basis in homozygous or compound heterozygous mutation in the SCYL1 gene on chromosome 11q13.\"}, {\"id\": \"MONDO:0013111\", \"name\": \"acute infantile liver failure due to synthesis defect of mtDNA-encoded proteins\", \"categories\": [\"biolink:Disease\"], \"description\": \"Acute infantile liver failure due to mtDNA-encoded proteins synthesis defect is a very rare mitochondrial respiratory chain deficiency described in fewer than 10 infants, primarily of middle Eastern descent, and characterized clinically by transient but life-threatening liver failure with elevated liver enzymes, jaundice, vomiting, coagulopathy, hyperbilirubinemia, and lactic acidemia.\"}], \"total\": 12}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0100192"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"associations\": [], \"total\": 0, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "TRMU"
+                ],
+                "agent_answer": []
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

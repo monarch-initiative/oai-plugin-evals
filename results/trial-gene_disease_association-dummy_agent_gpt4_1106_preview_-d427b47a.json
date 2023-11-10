@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Meesmann corneal dystrophy?",
+    "goldstandard": "KRT12, KRT3",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Meesmann corneal dystrophy (MCD) is a rare genetic eye disorder that affects the cornea, which is the clear, dome-shaped surface that covers the front of the eye. It is characterized by the development of tiny cysts or vesicles in the corneal epithelium, leading to various symptoms such as eye irritation, photophobia (sensitivity to light), and vision problems.\n\nThe genes known to be related to Meesmann corneal dystrophy are:\n\n1. **KRT3 (Keratin 3)**: This gene provides instructions for making a protein that is a type of keratin, which is found in the corneal epithelium. Mutations in the KRT3 gene can disrupt the structure and function of keratin, leading to the development of MCD.\n\n2. **KRT12 (Keratin 12)**: Similar to KRT3, the KRT12 gene also encodes a type of keratin protein specific to the corneal epithelium. Mutations in KRT12 can cause abnormalities in the cornea's surface, resulting in the symptoms associated with MCD.\n\nBoth KRT3 and KRT12 are important for the structural integrity and function of the corneal epithelium. Mutations in these genes lead to the production of abnormal keratin proteins, which can cause the cells in the corneal epithelium to be fragile and prone to damage, ultimately leading to the formation of the characteristic cysts of Meesmann corneal dystrophy.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "KRT12",
+                    "KRT3"
+                ],
+                "agent_answer": [
+                    "KRT12",
+                    "KRT3"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

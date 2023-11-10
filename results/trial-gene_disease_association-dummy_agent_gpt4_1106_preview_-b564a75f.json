@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Mitochondrial DNA depletion syndrome 4A Alpers type?",
+    "goldstandard": "POLG",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Mitochondrial DNA depletion syndrome 4A (MDS4A), also known as Alpers-Huttenlocher syndrome, is a severe condition that affects the central nervous system and the liver. It is a genetic disorder caused by mutations in the POLG gene. The POLG gene encodes the catalytic subunit of the mitochondrial DNA polymerase, an enzyme that is essential for mitochondrial DNA replication and repair.\n\nMutations in the POLG gene can lead to a reduction in mitochondrial DNA copy number, which is referred to as mitochondrial DNA depletion. This depletion impairs the function of mitochondria, which are the cell's energy producers, leading to the symptoms associated with MDS4A.\n\nThere may be other genes associated with similar mitochondrial DNA depletion syndromes, but POLG is the primary gene known to be associated with the Alpers type. It's important to note that genetic disorders can be complex, and the manifestation of the disease can be influenced by various factors, including other genetic and environmental factors. Genetic testing and counseling are recommended for accurate diagnosis and understanding of these conditions.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "POLG"
+                ],
+                "agent_answer": [
+                    "POLG"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

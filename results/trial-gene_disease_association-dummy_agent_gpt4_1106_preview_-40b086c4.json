@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Pseudohypoparathyroidism Ic?",
+    "goldstandard": "GNAS",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Pseudohypoparathyroidism (PHP) is a group of rare genetic disorders characterized by resistance to the hormone parathyroid hormone (PTH). PHP is classified into different types, with type Ic being one of them. PHP type Ic is similar to type Ia in terms of resistance to PTH and the presence of certain physical features (such as short stature, round face, and short hand bones), but it does not include the hormone resistance beyond PTH seen in type Ia.\n\nPHP type Ic is caused by mutations in the GNAS gene, which encodes the alpha subunit of the stimulatory G protein (Gs\u03b1) involved in the PTH signaling pathway. The GNAS gene is located on chromosome 20q13.3 and is involved in multiple signaling pathways that regulate a variety of physiological processes.\n\nMutations in the GNAS gene can lead to a loss of function or improper functioning of the Gs\u03b1 protein, which in turn causes resistance to PTH. This resistance leads to the symptoms associated with PHP, such as low calcium and high phosphate levels in the blood, despite normal or elevated PTH levels.\n\nIt's important to note that genetic disorders like PHP can be complex, and the relationship between genotype and phenotype can vary among individuals. Genetic testing and consultation with a healthcare provider or genetic counselor are recommended for individuals suspected of having PHP or for family members who may be at risk.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "GNAS"
+                ],
+                "agent_answer": [
+                    "GNAS"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

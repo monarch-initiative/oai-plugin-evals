@@ -1,0 +1,53 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Intracranial hemorrhage in brain cerebrovascular malformations?",
+    "goldstandard": "IL6",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Intracranial hemorrhage (ICH) in the context of brain cerebrovascular malformations can be associated with several genetic factors. Cerebrovascular malformations, such as arteriovenous malformations (AVMs), cavernous malformations (CMs), and aneurysms, can lead to ICH. Some of the genes related to these conditions include:\n\n1. **CCM1/KRIT1, CCM2/MGC4607, and CCM3/PDCD10**: Mutations in these genes are known to cause cerebral cavernous malformations, which can lead to ICH.\n\n2. **ENG and ACVRL1**: Mutations in these genes are associated with hereditary hemorrhagic telangiectasia (HHT), which can result in arteriovenous malformations and subsequent ICH.\n\n3. **RASA1**: Mutations in this gene can cause capillary malformation-arteriovenous malformation (CM-AVM) syndrome, which may lead to ICH.\n\n4. **SMAD4**: This gene is also associated with HHT when mutated and can lead to cerebrovascular malformations.\n\n5. **ADAMTS13**: Deficiency in this gene's product can lead to thrombotic thrombocytopenic purpura (TTP), which can indirectly cause ICH.\n\n6. **COL3A1**: Mutations in this gene can cause vascular Ehlers-Danlos syndrome, which is associated with a higher risk of arterial dissection and ICH.\n\n7. **NOTCH3**: Mutations in this gene are associated with cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy (CADASIL), which can lead to ICH.\n\n8. **TGFBR1 and TGFBR2**: Mutations in these genes can cause Loeys-Dietz syndrome, which includes vascular malformations that may lead to ICH.\n\n9. **FOXC1 and PITX2**: Mutations in these genes are associated with Axenfeld-Rieger syndrome, which can include cerebral small vessel disease and possibly ICH.\n\n10. **SOX17**: Mutations in this gene have been associated with brain arteriovenous malformations.\n\nIt's important to note that the presence of a mutation in these genes does not guarantee that an individual will experience an intracranial hemorrhage, but it may increase the risk. Genetic testing and counseling can help to assess the risk in individuals with a family history of cerebrovascular malformations or ICH. Additionally, environmental factors, lifestyle, and other health conditions can also play a role in the development of ICH.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "IL6"
+                ],
+                "agent_answer": [
+                    "CCM1/KRIT1",
+                    "CCM2/MGC4607",
+                    "CCM3/PDCD10",
+                    "ENG",
+                    "ACVRL1",
+                    "RASA1",
+                    "SMAD4",
+                    "ADAMTS13",
+                    "COL3A1",
+                    "NOTCH3",
+                    "TGFBR1",
+                    "TGFBR2",
+                    "FOXC1",
+                    "PITX2",
+                    "SOX17"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

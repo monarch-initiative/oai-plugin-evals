@@ -1,0 +1,62 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of 15-LOX?",
+    "goldstandard": "ALOX15",
+    "agent_name": "Monarch Assistant GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbols for 15-LOX are **ALOX15** and **ALOX15B**. Here are their identifiers:\n\n- **ALOX15**: [HGNC:433](https://www.monarchinitiative.org/gene/HGNC:433)\n- **ALOX15B**: [HGNC:434](https://www.monarchinitiative.org/gene/HGNC:434)\n\nThese symbols represent different genes that are part of the lipoxygenase family and are involved in the metabolism of fatty acids in humans.",
+    "agent_answer_num_function_calls": 1,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "15-LOX",
+                "category": "biolink:Gene"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"HGNC:434\", \"name\": \"ALOX15B\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:433\", \"name\": \"ALOX15\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"RGD:70493\", \"name\": \"Alox15\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"RGD:628809\", \"name\": \"Alox15b\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"MGI:1098228\", \"name\": \"Alox8\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"MGI:87997\", \"name\": \"Alox15\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"Xenbase:XB-GENE-6465511\", \"name\": \"alox15b\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"Xenbase:XB-GENE-6489057\", \"name\": \"alox15b.L\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"RGD:1311159\", \"name\": \"Alox12\", \"categories\": [\"biolink:Gene\"], \"description\": null}], \"total\": 9}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "ALOX15",
+                "agent_answer": [
+                    "ALOX15",
+                    "ALOX15B"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.5",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.5
+}
