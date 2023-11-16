@@ -1,0 +1,53 @@
+Module	Question	Gold Standard	Score, 4-1106 + Monarch	Answer Genes, 4-1106 + Monarch	Score, 4-1106 Base	Answer Genes, 4-1106 Base
+Gene alias	What is the official gene symbol of HsT1192?	SYT4	1	SYT4	0	
+Gene alias	What is the official gene symbol of PFDN3?	VBP1	1	VBP1	0	PFDN3, Prefoldin Subunit 3
+Gene alias	What is the official gene symbol of LEP9?	LCE2A	1	LCE2A	0	
+Gene alias	What is the official gene symbol of LMP10?	PSMB10	1	PSMB10	0	PSMB8
+Gene alias	What is the official gene symbol of CTTNBP1?	SHANK2	1	SHANK2	0	CTTNBP2NL
+Gene alias	What is the official gene symbol of SGEF?	ARHGEF26	1	ARHGEF26	0	SGEF
+Gene alias	What is the official gene symbol of ZNF482?	ZBTB6	1	ZBTB6	0	ZNF482
+Gene alias	What is the official gene symbol of M12.219?	ADAMDEC1	1	ADAMDEC1	0	
+Gene alias	What is the official gene symbol of CXorf40B?	EOLA2	1	EOLA2	0	ENSG00000284747, CXorf40B
+Gene alias	What is the official gene symbol of PLK-5?	PLK5	1	PLK5	0	PLK1, PLK2, PLK3, PLK4
+Gene alias	What is the official gene symbol of C20orf86?	ANKRD60	1	ANKRD60	0	MFSD3
+Gene alias	What is the official gene symbol of PKCL?	PRKCH	1	PRKCH	0	PRKCL1
+Gene alias	What is the official gene symbol of CKBBP1?	RNF7	1	RNF7	0	Ckb
+Gene alias	What is the official gene symbol of SEP3?	SEPTIN3	1	SEPTIN3	0	SEPALLATA3
+Gene alias	What is the official gene symbol of AGTIL?	ASIP	1	ASIP	0	AGT
+Gene alias	What is the official gene symbol of ASV?	SRC	1	SRC	0	
+Gene alias	What is the official gene symbol of PCPB?	CPB2	1	CPB2	0	PYCR1
+Gene alias	What is the official gene symbol of C11orf27?	UBTFL1	1	UBTFL1	0	HMBS
+Gene alias	What is the official gene symbol of CTGLF6?	AGAP9	1	AGAP9	0	
+Gene alias	What is the official gene symbol of NPAP60L?	NUP50	1	NUP50	0	NUP210L
+Gene alias	What is the official gene symbol of TSH2B?	H2BC1	1	H2BC1	0	TSHB
+Gene alias	What is the official gene symbol of BMSC-MCP?	SLC25A33	1	SLC25A33	0	
+Gene alias	What is the official gene symbol of C20orf195?	FNDC11	1	FNDC11	0	MFSD3
+Gene alias	What is the official gene symbol of QSCN6L1?	QSOX2	1	QSOX2	0	NXF1
+Gene alias	What is the official gene symbol of C6orf186?	METTL24	1	METTL24	0	MROH8
+Gene disease association	What are genes related to Sensorineural deafness with mild renal dysfunction?	BSND	1	BSND	0	MYO7A, COL4A3, COL4A4, COL4A5, SLC26A4, GJB2, GJB6, OTOF, WFS1, MITF
+Gene disease association	What are genes related to Neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures?	DLL1	1	DLL1	0	SCN1A, MECP2, CDKL5, STXBP1, TSC1, TSC2, FOXG1, ARX, SLC6A1, CHD2, SYNGAP1
+Gene disease association	What are genes related to Immunodeficiency due to defect in MAPBP-interacting protein?	LAMTOR2	1	LAMTOR2	0	UFL1
+Gene disease association	What are genes related to Chronic atrial and intestinal dysrhythmia?	SGO1	1	SGO1	0	SCN5A, HLA genes, KCNQ1, ANK2
+Gene disease association	What are genes related to Split-foot malformation with mesoaxial polydactyly?	MAP3K20	1	MAP3K20	0	TP63, WNT10B, FBXW4, DLX5, DLX6, BHLHA9
+Gene disease association	What are genes related to Congenital disorder of deglycosylation?	NGLY1, MAN2C1	1	MAN2C1, NGLY1	0	PMM2, ALG6, MPI, ALG3, ALG12, PMM1
+Gene disease association	What are genes related to Spinal muscular atrophy with congenital bone fractures?	TRIP4, ASCC1	1	TRIP4, ASCC1	0	SMN1, SMN2
+Gene disease association	What are genes related to EDICT syndrome?	MIR184	1	MIR184	0	CUL4B
+Gene disease association	What are genes related to Leukoencephalopathy with dystonia and motor neuropathy?	SCP2	1	SCP2	0	POLR3A
+Gene disease association	What are genes related to Siddiqi syndrome?	FITM2	1	FITM2	0	USB1
+Gene disease association	What are genes related to Immunodeficiency with inflammatory disease and congenital thrombocytopenia?	ARPC1B	1	ARPC1B	0	WASP, CYBB, DOCK8, GATA1, ANKRD26, MYH9, RAB27A, STXBP2, ITGB3, GPIBA
+Gene disease association	What are genes related to Corneal fleck dystrophy?	PIKFYVE	1	PIKFYVE	0	
+Gene disease association	What are genes related to Intracranial hemorrhage in brain cerebrovascular malformations?	IL6	1	KRAS, IL6	0	CCM1/KRIT1, CCM2/MGC4607, CCM3/PDCD10, ENG, ACVRL1, RASA1, SMAD4, ADAMTS13, COL3A1, NOTCH3, TGFBR1, TGFBR2, FOXC1, PITX2, SOX17
+Gene disease association	What are genes related to Neurodevelopmental disorder with gait disturbance?	TCEAL1	1	TCEAL1	0	SCN1A, MECP2, FMR1, DMD, GNAO1, ADGRG1, KMT2A, TSC1, TSC2, ANKRD11, SLC6A1
+Gene disease association	What are genes related to Lichtenstein-Knorr syndrome?	SLC9A1	1	SLC9A1	0	
+Gene disease association	What are genes related to Gastrointestinal defects and immunodeficiency syndrome?	PI4KA, TTC7A	1	PI4KA, TTC7A	0	FOXP3, ITGB2, XIAP, BIRC4, IL10RA, IL10RB, SKIV2L, TTC37, RAG1, RAG2, ADA, CYBB
+Gene alias	What is the official gene symbol of AF10?	MLLT10	1	MLLT10	0.5	KMT2A, MLLT10
+Gene alias	What is the official gene symbol of CT116?	LYPD6B	0.5	LYPD6B, SPANXN1	0	
+Gene disease association	What are genes related to Proteasome-associated autoinflammatory syndrome?	PSMB9, PSMG2, POMP, PSMB10	1	PSMB10, PSMG2, PSMB8, PSMB4, PSMB9, POMP	0.5	PSMB8, PSMB4, PSMB9, PSMA3, POMP, PSMD12
+Gene disease association	What are genes related to Pigmented nodular adrenocortical disease?	PRKAR1A, PDE11A, PDE8B	1	PDE11A, PRKAR1A, PDE8B, PRKACA	0.666666666666667	PRKAR1A, PDE11A, PRKACB
+Gene alias	What is the official gene symbol of GCS1?	MOGS	0.25	GCS1, ADAP1, MOGS, Mogs	0	GANAB
+Gene alias	What is the official gene symbol of PTP-SL?	PTPRR	0.2	PTPRR, Ptprr, ptprr, ptprr.L, ptprr.S	0	PTPRS
+Gene disease association	What are genes related to Type diabetes mellitus?	HNF1B, IL6, GPD2, HMGA1, IRS1, NEUROD1, IL6	0.142857142857143	HNF1A, IL6, ITPR3, PTPN22	0	INS, PTPN22, CTLA4, IL2RA, IL2RB, ERBB3
+Gene alias	What is the official gene symbol of hCAP?	RNGTT	0.1	RNGTT, SCLT1, SMC3, DCD, NCAPD3, NCAPG, NCAPG2, NCAPD2, GEMIN4, NCAPH	0	
+Gene alias	What is the official gene symbol of DCSCRIPT?	ZNF366	0.5	ZNF366, ZNF366.L	1	ZNF366
+Gene alias	What is the official gene symbol of 15-LOX?	ALOX15	0.5	ALOX15, ALOX15B	1	ALOX15
+Gene disease association	What are genes related to Hyperphenylalaninemia?	PTS, GCH1, QDPR, PCBD1, DNAJC12, PAH	0.166666666666667	PAH	1	PTS, GCH1, QDPR, PCBD1, DNAJC12, PAH

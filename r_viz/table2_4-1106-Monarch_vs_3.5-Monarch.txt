@@ -1,0 +1,15 @@
+Module	Question	Gold Standard	Score, 4-1106 + Monarch	Answer Genes, 4-1106 + Monarch	Score, 3.5 + Monarch	Answer Genes, 3.5 + Monarch
+Gene alias	What is the official gene symbol of MPS4B?	GLB1	1	GLB1	0	
+Gene alias	What is the official gene symbol of CXorf40B?	EOLA2	1	EOLA2	0	CXorf40B
+Gene disease association	What are genes related to Trichoepithelioma?	CYLD	1	CYLD	0	
+Gene disease association	What are genes related to Proteasome-associated autoinflammatory syndrome?	PSMB9, PSMG2, POMP, PSMB10	1	PSMB10, PSMG2, PSMB8, PSMB4, PSMB9, POMP	0.25	PSMB10
+Gene alias	What is the official gene symbol of DCSCRIPT?	ZNF366	0.5	ZNF366, ZNF366.L	0	znf366
+Gene alias	What is the official gene symbol of 15-LOX?	ALOX15	0.5	ALOX15, ALOX15B	0	ALOX15B
+Gene disease association	What are genes related to Spinal muscular atrophy with congenital bone fractures?	TRIP4, ASCC1	1	TRIP4, ASCC1	0.5	TRIP4
+Gene disease association	What are genes related to Gastrointestinal defects and immunodeficiency syndrome?	PI4KA, TTC7A	1	PI4KA, TTC7A	0.5	PI4KA
+Gene alias	What is the official gene symbol of PTH1?	PTH	0.333333333333333	PTH1R, PTH, PTRH1	0	PTH1
+Gene alias	What is the official gene symbol of GCS1?	MOGS	0.25	GCS1, ADAP1, MOGS, Mogs	0	GCS1
+Gene disease association	What are genes related to Type diabetes mellitus?	HNF1B, IL6, GPD2, HMGA1, IRS1, NEUROD1, IL6	0.142857142857143	HNF1A, IL6, ITPR3, PTPN22	0.428571428571429	HNF1B, AKT2, GCK, ABCC8, PAX4, PPP1R3A, SLC2A2, HNF1A, TCF7L2, WFS1, SLC30A8, RETN, IGF2BP2, ENPP1, GPD2, HMGA1
+Gene alias	What is the official gene symbol of CT116?	LYPD6B	0.5	LYPD6B, SPANXN1	1	LYPD6B
+Gene alias	What is the official gene symbol of PTP-SL?	PTPRR	0.2	PTPRR, Ptprr, ptprr, ptprr.L, ptprr.S	1	PTPRR
+Gene alias	What is the official gene symbol of hCAP?	RNGTT	0.1	RNGTT, SCLT1, SMC3, DCD, NCAPD3, NCAPG, NCAPG2, NCAPD2, GEMIN4, NCAPH	1	RNGTT

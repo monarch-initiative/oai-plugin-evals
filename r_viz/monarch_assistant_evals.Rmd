@@ -84,7 +84,7 @@ data2 <- data %>%
 														 labels = c("3.5 Base", "4 Base", "4-1106 Base", "3.5 + Monarch", "4 + Monarch", "4-1106 + Monarch"), 
 														 ordered = TRUE)) %>%
 
-	mutate(eval_valuation =  case_when(eval_valuation == 1 ~ "1.0",
+	mutate(eval_valuation_bin =  case_when(eval_valuation == 1 ~ "1.0",
 																		 eval_valuation == 0 ~ "0.0",
 																		 0 < eval_valuation & eval_valuation <= 1/3 ~ "(0, 1/3]",
 																		 1/3 < eval_valuation & eval_valuation <= 2/3 ~ "(1/3, 2/3]",
@@ -92,14 +92,14 @@ data2 <- data %>%
 																		 .default = NA
 																		 
 		)) %>%
-	mutate(eval_valuation = factor(eval_valuation, levels = c("0.0", "(0, 1/3]", "(1/3, 2/3]", "(2/3, 1)", "1.0"), ordered = TRUE))
+	mutate(eval_valuation_bin = factor(eval_valuation_bin, levels = c("0.0", "(0, 1/3]", "(1/3, 2/3]", "(2/3, 1)", "1.0"), ordered = TRUE))
 
 
 data_grouped2 <- data2 %>% 
-	group_by(module, agent_name, eval_valuation) %>% 
+	group_by(module, agent_name, eval_valuation_bin) %>% 
 	summarize(count = n()) %>% 
   ungroup() %>% 
-  complete(module, agent_name, eval_valuation, fill = list(count = 0)) %>%
+  complete(module, agent_name, eval_valuation_bin, fill = list(count = 0)) %>%
   arrange(agent_name, module) %>%
 	mutate(agent_name = factor(agent_name, 
 														 levels = c("4-1106 + Monarch", "4 + Monarch", "3.5 + Monarch", "4-1106 Base", "4 Base", "3.5 Base"),
@@ -110,7 +110,7 @@ data_grouped2 <- data2 %>%
 				 								 ordered = TRUE))
 
 
-ggplot(data_grouped2, aes(x=eval_valuation, y=count, fill=eval_valuation)) +
+ggplot(data_grouped2, aes(x=eval_valuation_bin, y=count, fill=eval_valuation_bin)) +
   geom_bar(stat="identity") +
   facet_grid(module ~ agent_name) +
   theme_minimal() +
@@ -134,21 +134,21 @@ library(purrr)
 library(glue)
 
 data1 <- data2 %>% 
-	filter(!agent_name %in% c("4-1106 Base", "4-1106 + Monarch")) %>%
+	#filter(!agent_name %in% c("4-1106 Base", "4-1106 + Monarch")) %>%
 	mutate(url = 'https://github.com/monarch-initiative/oai-plugin-evals/blob/main/results/' %+% filename) %>%
 	mutate(
 		     url = glue('{eval_valuation} (<a href="{url}" target="_blank">link</a>)'),
-				 url = map(url, gt::md)) %>%
- 	filter(module == "Gene alias" & (agent_name == "3.5 + Monarch" | agent_name == "4 + Monarch")) %>%
- 	select(-agent_answer_num_function_calls, -module, -filename) %>%
-	mutate(agent_answer = map(agent_answer, gt::md)) %>%
+				 url = map(url, gt::md)) %>% 
+ 	filter((agent_name == "3.5 + Monarch" | agent_name == "4-1106 + Monarch")) %>% 
+ 	select(-agent_answer_num_function_calls, -module, -filename, -eval_valuation_bin) %>%
+	mutate(agent_answer = map(agent_answer, gt::md)) %>% 
  	pivot_wider(names_from = agent_name, values_from = c(url, eval_valuation, agent_answer)) %>% 
-	filter(`eval_valuation_4 + Monarch` > `eval_valuation_3.5 + Monarch`) %>%
-	select(-`eval_valuation_3.5 + Monarch`, -`eval_valuation_4 + Monarch`) %>%
+	filter(`eval_valuation_4-1106 + Monarch` > `eval_valuation_3.5 + Monarch`) %>%
+	select(-`eval_valuation_3.5 + Monarch`, -`eval_valuation_4-1106 + Monarch`) %>%
 	rename(`3.5 + Monarch Score` = `url_3.5 + Monarch`,
-				 `4 + Monarch Score` = `url_4 + Monarch`,
+				 `4-1106 + Monarch Score` = `url_4-1106 + Monarch`,
 				 `3.5 + Monarch Answer` = `agent_answer_3.5 + Monarch`,
-				 `4 + Monarch Answer` = `agent_answer_4 + Monarch`)
+				 `4-1106 + Monarch Answer` = `agent_answer_4-1106 + Monarch`)
 
 
 
@@ -164,11 +164,12 @@ format_table <- function(t) {
 }
 	
 gt(data1) %>%
-	tab_header("Gene alias questions where 4 + Monarch outperforms 3.5 + Monarch") %>%
+	tab_header("Questions where 4-1106 + Monarch outperforms 3.5 + Monarch") %>%
 	format_table()
 
 					
 ```
+
 
 <br />
 
@@ -186,7 +187,7 @@ library(purrr)
 library(glue)
 
 data <- data2 %>% 
-	filter(!agent_name %in% c("4-1106 Base", "4-1106 + Monarch")) %>%
+	#filter(!agent_name %in% c("4-1106 Base", "4-1106 + Monarch")) %>%
 	mutate(url = 'https://github.com/monarch-initiative/oai-plugin-evals/blob/main/results/' %+% filename) %>%
 	mutate(
 		     url = glue('{eval_valuation} (<a href="{url}" target="_blank">link</a>)'),
@@ -198,10 +199,10 @@ data_wide <- separate(data, filename, into = c("dummy1", "dummy2", "dummy3", "q_
 	pivot_wider(names_from = agent_name, values_from = c(eval_valuation, url))
 
 monarch4_vs_dummy4 <- data_wide %>% 
-	filter(`eval_valuation_4 Base` > `eval_valuation_4 + Monarch`) %>%
-	select(module, question, goldstandard, `url_4 + Monarch`, `url_4 Base`) %>%
-	rename(`4 + Monarch Score` = `url_4 + Monarch`, 
-				 `4 Base Score` = `url_4 Base`)
+	filter(`eval_valuation_4-1106 Base` > `eval_valuation_4-1106 + Monarch`) %>%
+	select(module, question, goldstandard, `url_4-1106 + Monarch`, `url_4-1106 Base`) %>%
+	rename(`4-1106 + Monarch Score` = `url_4-1106 + Monarch`, 
+				 `4-1106 Base Score` = `url_4-1106 Base`)
 
 gt(monarch4_vs_dummy4) %>%
 	tab_header("Questions where 4 Base outperformed 4 + Monarch") %>%
