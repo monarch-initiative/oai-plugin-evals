@@ -25,7 +25,7 @@ data_full %>%
 				 `Gold Standard` = goldstandard,
 				 `Agent Name` = agent_name) %>%
 	select(`Module`, `Question`, `Gold Standard`, `Agent Name`, `Score`, `Answer Genes`) %>%
-	pivot_wider(names_from = `wAgent Name`, values_from = c(`Score`, `Answer Genes`), names_sep = ", ") %>%
+	pivot_wider(names_from = `Agent Name`, values_from = c(`Score`, `Answer Genes`), names_sep = ", ") %>%
 	filter(`Score, 4-1106 + Monarch` != `Score, 3.5 + Monarch`) %>%
 	arrange(desc(`Score, 4-1106 + Monarch` - `Score, 3.5 + Monarch`)) %>%
 	select(`Module`, `Question`, `Gold Standard`, `Score, 4-1106 + Monarch`, `Answer Genes, 4-1106 + Monarch`, `Score, 3.5 + Monarch`, `Answer Genes, 3.5 + Monarch`) %>%
