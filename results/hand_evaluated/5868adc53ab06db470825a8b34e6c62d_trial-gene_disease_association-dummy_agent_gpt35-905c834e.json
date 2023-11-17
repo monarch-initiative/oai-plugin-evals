@@ -1,0 +1,37 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Siddiqi syndrome?",
+    "goldstandard": "FITM2",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "I'm sorry, but I couldn't find any specific information about genes related to Siddiqi syndrome. Siddiqi syndrome is a rare genetic disorder characterized by intellectual disability, developmental delay, and distinctive facial features. It is named after Dr. Omar Siddiqi, who first described the syndrome in 2016. However, the exact genetic cause of Siddiqi syndrome is currently unknown. Further research is needed to identify the specific genes involved in this condition.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "FITM2"
+                ],
+                "agent_answer": []
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

@@ -1,0 +1,86 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Bile acid malabsorption?",
+    "goldstandard": "SLC10A2, SLC51B",
+    "agent_name": "Monarch Assistant GPT35",
+    "agent_answer": "The gene related to Bile acid malabsorption is SLC10A2. You can find more information about this gene [here](https://monarchinitiative.org/gene/HGNC:10906).",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Bile acid malabsorption",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0013214\", \"name\": \"bile acid malabsorption, primary, 1\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0859180\", \"name\": \"bile acid malabsorption, primary, 2\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0019393\", \"name\": \"idiopathic malabsorption due to bile acid synthesis defects\", \"categories\": [\"biolink:Disease\"], \"description\": \"Idiopathic malabsorption due to increased acid bile synthesis is an intestinal disease of unknown etiology characterized by an overproduction of bile acids which leads to chronic watery diarrhea.\"}, {\"id\": \"MONDO:0015581\", \"name\": \"obsolete bile acid synthesis defect with cholestasis and malabsorption\", \"categories\": [\"biolink:Disease\"], \"description\": null}], \"total\": 4}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0013214"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:10906\", \"label\": \"SLC10A2\"}}], \"total\": 1, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "SLC10A2",
+                    "SLC51B"
+                ],
+                "agent_answer": [
+                    "SLC10A2"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.5",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.5
+}

@@ -1,0 +1,87 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Medullary thyroid carcinoma?",
+    "goldstandard": "RET",
+    "agent_name": "Monarch Assistant GPT4",
+    "agent_answer": "The genes related to Medullary Thyroid Carcinoma are:\n\n1. [RET](https://monarchinitiative.org/gene/HGNC:9967): This gene is causally related to the disease.\n2. [ESR2](https://monarchinitiative.org/gene/HGNC:3468): This gene is correlated with the disease.\n3. [NTRK1](https://monarchinitiative.org/gene/HGNC:8031): This gene is correlated with the disease.\n\nPlease note that a causal relationship means that changes in the gene are known to cause the disease, while a correlation means that changes in the gene are often seen in individuals with the disease, but it's not clear if these changes are a cause or a result of the disease.",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Medullary thyroid carcinoma",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0007958\", \"name\": \"familial medullary thyroid carcinoma\", \"categories\": [\"biolink:Disease\"], \"description\": \"An instance of thyroid medullary carcinoma that is caused by an inherited modification of the individual's genome.\"}, {\"id\": \"MONDO:0015277\", \"name\": \"medullary thyroid gland carcinoma\", \"categories\": [\"biolink:Disease\"], \"description\": \"A neuroendocrine carcinoma arising from the C-cells of the thyroid gland. It is closely associated with multiple endocrine neoplasia syndromes. Approximately 10% to 20% of medullary thyroid carcinomas are familial. Patients usually present with a thyroid nodule that is painless and firm. In the majority of cases nodal involvement is present at diagnosis. Surgery is the preferred treatment for both primary lesions and recurrences. This carcinoma is generally not very sensitive to radiation and almost unresponsive to chemotherapy.\"}, {\"id\": \"MONDO:0002823\", \"name\": \"obsolete thyroid gland medullary carcinoma\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0700165\", \"name\": \"canine thyroid gland medullary carcinoma\", \"categories\": [\"biolink:Disease\"], \"description\": \"Thyroid gland medullary carcinoma occurring in a dog.\"}, {\"id\": \"MONDO:0008234\", \"name\": \"multiple endocrine neoplasia type 2A\", \"categories\": [\"biolink:Disease\"], \"description\": \"Multiple endocrine neoplasia 2A (MEN2A) syndrome is a form of MEN2 characterized by medullary thyroid carcinoma (MTC) in combination with pheochromocytoma and primary mild hyperparathyroidism resulting from hyperplasia or adenoma of the parathyroid cells.\"}], \"total\": 5}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0015277"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:9967\", \"label\": \"RET\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:3468\", \"label\": \"ESR2\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:8031\", \"label\": \"NTRK1\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:9967\", \"label\": \"RET\"}}], \"total\": 4, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "RET"
+                ],
+                "agent_answer": [
+                    "RET",
+                    "ESR2",
+                    "NTRK1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

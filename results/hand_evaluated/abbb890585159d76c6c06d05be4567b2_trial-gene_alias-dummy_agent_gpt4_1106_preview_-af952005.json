@@ -1,0 +1,37 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of PTP-SL?",
+    "goldstandard": "PTPRR",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for PTP-SL is \"PTPRS\". PTPRS stands for \"Protein Tyrosine Phosphatase Receptor Type S\", and it is a member of the protein tyrosine phosphatase (PTP) family, which are known to be signaling molecules that regulate a variety of cellular processes including cell growth, differentiation, mitotic cycle, and oncogenic transformation. PTP-SL specifically refers to the receptor-type S subtype of these phosphatases.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "PTPRR",
+                "agent_answer": [
+                    "PTPRS"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

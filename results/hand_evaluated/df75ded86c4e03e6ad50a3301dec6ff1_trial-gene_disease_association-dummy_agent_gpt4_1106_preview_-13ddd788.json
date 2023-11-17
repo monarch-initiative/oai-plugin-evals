@@ -1,0 +1,51 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Liver failure?",
+    "goldstandard": "TRMU",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Liver failure can result from a variety of causes, and several genes have been implicated in increasing the risk of liver diseases that can lead to liver failure. Some of the genetic factors associated with liver failure include:\n\n1. **Wilson's Disease (ATP7B gene)**: Mutations in the ATP7B gene can cause Wilson's disease, a rare inherited disorder that causes copper to accumulate in the liver, brain, and other vital organs, leading to liver failure if not treated.\n\n2. **Alpha-1 Antitrypsin Deficiency (SERPINA1 gene)**: Mutations in the SERPINA1 gene can lead to alpha-1 antitrypsin deficiency, which can cause liver disease and liver failure, particularly in children and young adults.\n\n3. **Hereditary Hemochromatosis (HFE gene)**: Mutations in the HFE gene can cause hereditary hemochromatosis, a condition that leads to excessive iron accumulation in the body, including the liver, potentially resulting in liver cirrhosis and liver failure.\n\n4. **Alagille Syndrome (JAG1, NOTCH2 genes)**: Alagille syndrome is a genetic disorder that can affect the liver, heart, and other parts of the body. Mutations in the JAG1 or NOTCH2 genes are associated with this syndrome, which can lead to liver damage and failure.\n\n5. **Primary Biliary Cholangitis (several genes)**: This is an autoimmune disease of the liver that can lead to liver failure. Several genes have been associated with an increased risk of developing this condition, including HLA genes.\n\n6. **Non-alcoholic Fatty Liver Disease (PNPLA3, TM6SF2, MBOAT7, and GCKR genes)**: Certain genetic variants in these genes have been associated with an increased risk of developing non-alcoholic fatty liver disease (NAFLD) and its more severe form, non-alcoholic steatohepatitis (NASH), which can progress to liver failure.\n\n7. **Drug-induced Liver Injury (multiple genes)**: Genetic variations can influence how an individual metabolizes drugs, which can predispose them to drug-induced liver injury, a potential cause of liver failure. Genes involved in drug metabolism, such as those encoding cytochrome P450 enzymes, can be relevant.\n\n8. **Polycystic Liver Disease (PRKCSH, SEC63 genes)**: Mutations in these genes can cause polycystic liver disease, which can lead to liver enlargement and, in severe cases, liver failure.\n\n9. **Gilbert's Syndrome (UGT1A1 gene)**: A common genetic condition caused by a variation in the UGT1A1 gene. It typically results in mild jaundice but is not usually associated with liver failure.\n\nIt's important to note that liver failure is often multifactorial, meaning that it can result from a combination of genetic predispositions and environmental factors such as alcohol consumption, viral hepatitis, toxins, and other health conditions. Genetic testing and counseling can help determine an individual's risk for hereditary liver diseases. If you have concerns about liver failure or its genetic components, it is advisable to consult with a healthcare professional or a genetic counselor.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "TRMU"
+                ],
+                "agent_answer": [
+                    "ATP7B",
+                    "SERPINA1",
+                    "HFE",
+                    "JAG1",
+                    "NOTCH2",
+                    "HLA",
+                    "PNPLA3",
+                    "TM6SF2",
+                    "MBOAT7",
+                    "GCKR",
+                    "PRKCSH",
+                    "SEC63",
+                    "UGT1A1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

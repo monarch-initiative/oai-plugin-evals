@@ -3,8 +3,8 @@
     "question": "What are genes related to Holt-Oram syndrome?",
     "goldstandard": "TBX5",
     "agent_name": "Monarch Assistant GPT4",
-    "agent_answer": "Error in sending function or method call result to model: Request timed out: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=600)",
-    "agent_answer_num_function_calls": 1,
+    "agent_answer": "Holt-Oram syndrome, which is the most common form of heart-hand syndrome characterized by skeletal abnormalities of the upper limbs and mild-to-severe congenital cardiac defects, is related to the following gene:\n\n1. [TBX5](https://monarchinitiative.org/gene/HGNC:11604) - This gene has a causal relationship with Holt-Oram syndrome.\n\nPlease note that the relationship between a gene and a disease can be complex and multifactorial, and not all people with mutations in these genes will necessarily develop Holt-Oram syndrome.",
+    "agent_answer_num_function_calls": 2,
     "agent_answer_provenance": [
         {
             "role": "assistant",
@@ -27,6 +27,28 @@
             "func_name": "monarch-search_entity",
             "func_arguments": null,
             "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0007732"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:11604\", \"label\": \"TBX5\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:11604\", \"label\": \"TBX5\"}}], \"total\": 2, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
         }
     ],
     "eval_provenance": {
@@ -41,7 +63,9 @@
                 "goldstandard": [
                     "TBX5"
                 ],
-                "agent_answer": []
+                "agent_answer": [
+                    "TBX5"
+                ]
             },
             "finish_reason": null
         },
@@ -50,11 +74,11 @@
             "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
             "intended_recipient": "Disease Genes Eval Agent GPT4",
             "is_function_call": false,
-            "content": "0.0",
+            "content": "1.0",
             "func_name": "compute_score",
             "func_arguments": null,
             "finish_reason": null
         }
     },
-    "eval_valuation": 0.0
+    "eval_valuation": 1.0
 }

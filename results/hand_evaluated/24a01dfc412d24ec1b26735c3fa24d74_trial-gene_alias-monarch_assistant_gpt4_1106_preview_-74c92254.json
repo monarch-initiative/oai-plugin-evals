@@ -1,0 +1,62 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of CT116?",
+    "goldstandard": "LYPD6B",
+    "agent_name": "Monarch Assistant GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for \"CT116\" is not uniquely defined as it corresponds to two different genes:\n\n1. **LYPD6B** with the identifier [HGNC:27018](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:27018)\n2. **SPANXN1** with the identifier [HGNC:33174](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:33174)\n\nPlease provide more context or specify which gene you are referring to if you need more detailed information.",
+    "agent_answer_num_function_calls": 1,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "CT116",
+                "category": "biolink:Gene"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"HGNC:27018\", \"name\": \"LYPD6B\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:33174\", \"name\": \"SPANXN1\", \"categories\": [\"biolink:Gene\"], \"description\": null}], \"total\": 2}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "LYPD6B",
+                "agent_answer": [
+                    "LYPD6B",
+                    "SPANXN1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.5",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.5
+}

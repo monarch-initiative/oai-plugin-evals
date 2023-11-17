@@ -1,0 +1,37 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of C20orf195?",
+    "goldstandard": "FNDC11",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for C20orf195 is \"MFSD3,\" which stands for Major Facilitator Superfamily Domain Containing 3. This gene is located on chromosome 20, and as the name suggests, it is a member of the major facilitator superfamily (MFS) of transporter proteins. The MFS is a large and diverse group of secondary transporters that facilitate the movement of a wide range of substrates across cellular membranes.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "FNDC11",
+                "agent_answer": [
+                    "MFSD3"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

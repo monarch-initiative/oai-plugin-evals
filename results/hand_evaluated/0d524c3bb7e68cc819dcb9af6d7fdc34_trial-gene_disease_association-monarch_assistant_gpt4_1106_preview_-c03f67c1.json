@@ -1,0 +1,87 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Intracranial hemorrhage in brain cerebrovascular malformations?",
+    "goldstandard": "IL6",
+    "agent_name": "Monarch Assistant GPT4 (1106-preview)",
+    "agent_answer": "The following genes are associated with arteriovenous malformations of the brain, which can lead to intracranial hemorrhage:\n\n1. **KRAS** ([HGNC:6407](https://monarchinitiative.org/gene/HGNC:6407)) - This gene has a causal relationship with the condition.\n2. **IL6** ([HGNC:6018](https://monarchinitiative.org/gene/HGNC:6018)) - This gene is correlated with the condition.\n\nThese associations can be involved in the development of brain cerebrovascular malformations that may result in intracranial hemorrhage.",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Intracranial hemorrhage",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0005049\", \"name\": \"obsolete intracranial hemorrhage\", \"categories\": [\"biolink:Disease\"], \"description\": \"OBSOLETE. Bleeding within the cranium.\"}, {\"id\": \"MONDO:0016483\", \"name\": \"intracranial berry aneurysm\", \"categories\": [\"biolink:Disease\"], \"description\": \"An intracranial aneurysm with a characteristic rounded shape; the most common form of cerebral aneurysm.\"}, {\"id\": \"MONDO:0007111\", \"name\": \"aneurysm, intracranial berry type 1\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0007154\", \"name\": \"arteriovenous malformations of the brain\", \"categories\": [\"biolink:Disease\"], \"description\": \"Cerebral arteriovenous malformation (AVM) is a congenital malformative communication between the veins and the arteries in the brain in the form of a nidus, an anatomical structure composed of dilated and tangled supplying arterioles and drainage veins with no intervening capillary bed, that can be asymptomatic or cause, depending on the location and the size of the AVM, headaches of varying severity, generalized or focal seizures, focalneurological defects (weakness, numbness, speech difficulties, vision loss) or potentially fatal intracranial hemorrhage in case the AVM ruptures.\"}], \"total\": 4}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0007154"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:6407\", \"label\": \"KRAS\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:6018\", \"label\": \"IL6\"}}], \"total\": 2, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "IL6"
+                ],
+                "agent_answer": [
+                    "KRAS",
+                    "IL6"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0,
+    "hand_eval_valuation": 1.0
+}

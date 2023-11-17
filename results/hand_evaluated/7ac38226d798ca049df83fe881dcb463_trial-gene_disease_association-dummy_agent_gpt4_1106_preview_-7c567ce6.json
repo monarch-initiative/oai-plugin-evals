@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Trichoepithelioma?",
+    "goldstandard": "CYLD",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Trichoepithelioma is a benign skin tumor that primarily affects hair follicles. It is often associated with a genetic predisposition and can occur as a solitary lesion or as multiple lesions, which is known as multiple familial trichoepithelioma (MFT). The condition can be inherited in an autosomal dominant pattern.\n\nThe gene most commonly associated with familial trichoepithelioma is CYLD, which is located on chromosome 16q12-q13. Mutations in the CYLD gene are responsible for a condition known as Brooke-Spiegler syndrome, which can include multiple trichoepitheliomas, cylindromas, and spiradenomas. The CYLD gene encodes a deubiquitinating enzyme that plays a role in regulating cell proliferation and survival, and mutations in this gene can lead to the development of skin tumors.\n\nIn addition to CYLD, there may be other genetic factors that contribute to the development of trichoepithelioma, but CYLD is the primary gene known to be associated with this condition. Genetic testing can be used to confirm a diagnosis of familial trichoepithelioma, especially in cases where there is a family history of related skin tumors.\n\nIf you or someone you know is concerned about the risk of trichoepithelioma or any genetic conditions, it is important to consult with a healthcare provider or a genetic counselor for personalized advice and potential genetic testing.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "CYLD"
+                ],
+                "agent_answer": [
+                    "CYLD"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

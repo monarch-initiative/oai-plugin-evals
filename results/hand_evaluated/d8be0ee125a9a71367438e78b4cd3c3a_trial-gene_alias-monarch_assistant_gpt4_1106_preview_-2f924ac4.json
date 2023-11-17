@@ -1,0 +1,63 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of PTH1?",
+    "goldstandard": "PTH",
+    "agent_name": "Monarch Assistant GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for \"PTH1\" is not uniquely defined, as there are several genes with similar symbols. Here are a few possibilities:\n\n1. **PTH1R** - This is the official symbol for the Parathyroid Hormone 1 Receptor gene. [HGNC:9608](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9608)\n2. **PTH** - This is the official symbol for the Parathyroid Hormone gene. [HGNC:9606](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9606)\n3. **PTRH1** - This is the official symbol for the Peptidyl-tRNA Hydrolase 1 gene. [HGNC:27039](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:27039)\n\nIf you are referring to a gene in a specific organism other than humans, there are also genes named \"pth1\" in other databases, such as in yeast (SGD:S000001232) and in zebrafish (ZFIN:ZDB-GENE-040623-1 for \"pth1a\" and ZFIN:ZDB-GENE-040623-2 for \"pth1b\").\n\nPlease specify if you are looking for a gene in a particular organism or if you need more information about one of these genes.",
+    "agent_answer_num_function_calls": 1,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "PTH1",
+                "category": "biolink:Gene"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"SGD:S000001232\", \"name\": \"PTH1\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:9608\", \"name\": \"PTH1R\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"PomBase:SPBC2D10.15c\", \"name\": \"pth1\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:9606\", \"name\": \"PTH\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"HGNC:27039\", \"name\": \"PTRH1\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"ZFIN:ZDB-GENE-991123-8\", \"name\": \"pth1r\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"ZFIN:ZDB-GENE-040623-1\", \"name\": \"pth1a\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"ZFIN:ZDB-GENE-040623-2\", \"name\": \"pth1b\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"Xenbase:XB-GENE-957445\", \"name\": \"pth1r\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"Xenbase:XB-GENE-17333982\", \"name\": \"pth1r.L\", \"categories\": [\"biolink:Gene\"], \"description\": null}], \"total\": 21}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "PTH",
+                "agent_answer": [
+                    "PTH1R",
+                    "PTH",
+                    "PTRH1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.3333333333333333",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.3333333333333333
+}

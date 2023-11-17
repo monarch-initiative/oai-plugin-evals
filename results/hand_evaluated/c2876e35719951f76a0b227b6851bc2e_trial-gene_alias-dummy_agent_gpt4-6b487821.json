@@ -1,0 +1,40 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of PLK-5?",
+    "goldstandard": "PLK5",
+    "agent_name": "Dummy Agent GPT4",
+    "agent_answer": "I'm sorry for the confusion, but there is no official gene symbol for PLK-5. The Polo-like kinase (PLK) family in humans includes PLK1, PLK2, PLK3, and PLK4. There is no recognized PLK5 in the current human genome database. Please check the gene symbol again.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "PLK5",
+                "agent_answer": [
+                    "PLK1",
+                    "PLK2",
+                    "PLK3",
+                    "PLK4"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

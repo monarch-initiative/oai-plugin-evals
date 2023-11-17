@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Cleft palate with ankyloglossia?",
+    "goldstandard": "TBX22",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Cleft palate with ankyloglossia, also known as Van der Woude syndrome, is a genetic disorder characterized by a split or opening in the roof of the mouth (cleft palate) and a tongue that is fused to the floor of the mouth (ankyloglossia). \n\nThe most common genetic cause of Van der Woude syndrome is a mutation in the IRF6 gene. The IRF6 gene provides instructions for making a protein that is involved in the development and maintenance of the lips, palate, and other tissues in the head and face. Mutations in this gene can disrupt normal development, leading to the features of Van der Woude syndrome.\n\nIn addition to the IRF6 gene, other genes have also been associated with Van der Woude syndrome, including the GRHL3 gene and the PVRL1 gene. These genes are involved in the development and function of the oral cavity and may contribute to the development of cleft palate and ankyloglossia in some individuals.\n\nIt's important to note that Van der Woude syndrome is a complex disorder and can be caused by a combination of genetic and environmental factors. Genetic testing and consultation with a healthcare professional or genetic counselor are recommended for a comprehensive evaluation and diagnosis.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "TBX22"
+                ],
+                "agent_answer": [
+                    "IRF6",
+                    "GRHL3",
+                    "PVRL1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

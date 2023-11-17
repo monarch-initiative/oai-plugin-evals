@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Orofaciodigital syndrome XIV?",
+    "goldstandard": "C2CD3",
+    "agent_name": "Dummy Agent GPT4",
+    "agent_answer": "Orofaciodigital syndrome XIV, also known as Joubert syndrome 23, is a rare genetic disorder. It is primarily associated with the gene C2CD3. Mutations in this gene are known to cause the syndrome. The C2CD3 gene provides instructions for making a protein that is involved in the structure and function of cilia, which are small, finger-like projections on the surface of cells. When this gene is mutated, it can lead to the various symptoms associated with Orofaciodigital syndrome XIV.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "C2CD3"
+                ],
+                "agent_answer": [
+                    "C2CD3"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

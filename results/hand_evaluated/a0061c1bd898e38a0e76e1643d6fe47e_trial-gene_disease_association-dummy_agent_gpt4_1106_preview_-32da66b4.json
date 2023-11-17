@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Immunodeficiency due to defect in MAPBP-interacting protein?",
+    "goldstandard": "LAMTOR2",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Immunodeficiency due to a defect in MAPBP-interacting protein is a rare condition that can be caused by mutations in the gene encoding the MAPBP-interacting protein (MNPIP), also known as UFM1-specific ligase 1 (UFL1). The UFL1 gene is responsible for the synthesis of the UFL1 protein, which is involved in the ufmylation process, a post-translational modification that is important for a variety of cellular functions, including immune responses.\n\nThe ufmylation process involves the covalent attachment of the ubiquitin-like modifier UFM1 to target proteins, and UFL1 acts as an E3 ligase in this pathway. Defects in this process can lead to a range of cellular dysfunctions, including immunodeficiency.\n\nIt's important to note that genetic research is constantly evolving, and new genes and pathways may be discovered that contribute to immunodeficiency disorders. For the most up-to-date information, consulting a geneticist or a specialist in immunology, as well as accessing current genetic databases and scientific literature, would be necessary.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "LAMTOR2"
+                ],
+                "agent_answer": [
+                    "UFL1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Corneal fleck dystrophy?",
+    "goldstandard": "PIKFYVE",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Corneal fleck dystrophy is a rare genetic disorder characterized by the presence of small white or yellowish flecks on the cornea. The exact genes related to this condition are not well understood. However, some studies have suggested that mutations in the PRPH2 gene may be associated with corneal fleck dystrophy. PRPH2 is a gene that provides instructions for making a protein called peripherin-2, which is involved in the structure and function of photoreceptor cells in the retina. Mutations in this gene have been primarily associated with retinal dystrophies, but there have been a few reported cases of corneal fleck dystrophy associated with PRPH2 mutations. It is important to note that further research is needed to fully understand the genetic basis of corneal fleck dystrophy.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "PIKFYVE"
+                ],
+                "agent_answer": [
+                    "PRPH2"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

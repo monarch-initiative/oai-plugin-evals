@@ -1,0 +1,85 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Leukoencephalopathy with dystonia and motor neuropathy?",
+    "goldstandard": "SCP2",
+    "agent_name": "Monarch Assistant GPT4",
+    "agent_answer": "The disease \"Leukoencephalopathy with dystonia and motor neuropathy\", also known as \"sterol carrier protein 2 deficiency\", is associated with the gene SCP2 (HGNC:10606). This association is both causal and correlated. \n\nFor more information, you can visit the [Monarch Initiative page for SCP2](https://monarchinitiative.org/gene/HGNC:10606).",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Leukoencephalopathy with dystonia and motor neuropathy",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0013391\", \"name\": \"sterol carrier protein 2 deficiency\", \"categories\": [\"biolink:Disease\"], \"description\": \"A peroxisomal neurodegenerative disorder characterized by spasmodic torticollis, dystonic head tremor, intention tremor, nystagmus, hyposmia, and hypergonadotrophic hypogonadism with azoospermia. Slight cerebellar signs (left-sided intention tremor, balance and gait impairment) are also noted. Magnetic resonance imaging (MRI) shows bilateral hyperintense signals in the thalamus, butterfly-like lesions in the pons, and lesions in the occipital region, whereas nerve conduction studies of the lower extremities shows a predominantly motor and slight sensory neuropathy.\"}], \"total\": 1}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0013391"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:10606\", \"label\": \"SCP2\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:10606\", \"label\": \"SCP2\"}}], \"total\": 2, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "SCP2"
+                ],
+                "agent_answer": [
+                    "SCP2"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

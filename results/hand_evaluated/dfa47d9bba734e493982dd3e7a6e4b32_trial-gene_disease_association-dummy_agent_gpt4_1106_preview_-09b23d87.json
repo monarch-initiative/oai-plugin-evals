@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Hemolytic anemia due to phosphofructokinase deficiency?",
+    "goldstandard": "PFKL",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Hemolytic anemia due to phosphofructokinase (PFK) deficiency, also known as glycogen storage disease type VII (GSD VII) or Tarui disease, is a rare genetic disorder caused by mutations in the gene that encodes the muscle isoform of the enzyme phosphofructokinase. The gene associated with this condition is:\n\n**PFKM (Phosphofructokinase, Muscle)**\n\nThe PFKM gene is located on chromosome 12q13.3 and is responsible for producing the muscle isoform of phosphofructokinase, which is a key enzyme in the glycolytic pathway. This pathway is crucial for the breakdown of glucose to produce energy, particularly in muscle cells.\n\nMutations in the PFKM gene lead to a deficiency or dysfunction of the muscle isoform of phosphofructokinase, which impairs the ability of muscle cells to metabolize glucose properly. This can result in a buildup of intermediate compounds and a lack of energy in muscle cells, leading to muscle weakness, exercise intolerance, and hemolytic anemia. The anemia occurs because red blood cells also rely on glycolysis for energy, and when this pathway is disrupted, it can lead to the premature destruction of red blood cells.\n\nDiagnosis of PFK deficiency typically involves a combination of clinical symptoms, laboratory tests (including enzyme activity assays), and genetic testing to identify mutations in the PFKM gene. Treatment is usually supportive and focuses on managing symptoms, such as avoiding strenuous exercise and following dietary recommendations.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "PFKL"
+                ],
+                "agent_answer": [
+                    "PFKM"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

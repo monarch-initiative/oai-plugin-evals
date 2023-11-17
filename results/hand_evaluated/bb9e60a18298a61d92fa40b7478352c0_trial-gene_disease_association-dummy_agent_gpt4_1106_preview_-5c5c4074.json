@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Spinal muscular atrophy with congenital bone fractures?",
+    "goldstandard": "TRIP4, ASCC1",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Spinal muscular atrophy with congenital bone fractures (SMABF) is a rare genetic disorder characterized by reduced muscle tone (hypotonia), muscle weakness, and multiple bone fractures present at birth or occurring in the first few months of life. This condition is a subtype of spinal muscular atrophy (SMA), which is a group of hereditary diseases that progressively destroy motor neurons\u2014cells in the brain and spinal cord that control essential muscle activity such as speaking, walking, breathing, and swallowing, leading to muscle weakness and atrophy.\n\nThe primary gene associated with spinal muscular atrophy, including its subtype with congenital bone fractures, is the survival motor neuron 1 (SMN1) gene. Mutations or deletions in the SMN1 gene lead to a deficiency of the survival motor neuron (SMN) protein, which is critical for the maintenance of motor neurons. The severity of SMA, including SMABF, is often influenced by the number of copies of a second gene, SMN2, which can partially compensate for the loss of function of SMN1. However, SMN2 typically produces less functional protein, and its ability to compensate for SMN1 mutations is limited.\n\nIn the specific case of SMABF, there may be additional genetic factors at play that contribute to the bone fragility aspect of the disorder. However, as of my knowledge cutoff date in April 2023, the SMN1 gene remains the primary gene known to be associated with spinal muscular atrophy and its related conditions. If there have been any new discoveries or additional genes identified in relation to SMABF, it would be advisable to consult the latest scientific literature or a medical genetics professional for the most up-to-date information.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "TRIP4",
+                    "ASCC1"
+                ],
+                "agent_answer": [
+                    "SMN1",
+                    "SMN2"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

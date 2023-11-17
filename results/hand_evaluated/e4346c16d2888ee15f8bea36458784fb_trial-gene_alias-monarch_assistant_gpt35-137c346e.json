@@ -1,0 +1,61 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of PFDN3?",
+    "goldstandard": "VBP1",
+    "agent_name": "Monarch Assistant GPT35",
+    "agent_answer": "The official gene symbol for PFDN3 is VBP1.",
+    "agent_answer_num_function_calls": 1,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT35",
+            "intended_recipient": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "PFDN3",
+                "category": "biolink:Gene"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT35 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT35",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"HGNC:12662\", \"name\": \"VBP1\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"dictyBase:DDB_G0286473\", \"name\": \"pfdn3\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"FB:FBgn0264694\", \"name\": \"mgr\", \"categories\": [\"biolink:Gene\"], \"description\": null}], \"total\": 3}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "VBP1",
+                "agent_answer": [
+                    "VBP1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

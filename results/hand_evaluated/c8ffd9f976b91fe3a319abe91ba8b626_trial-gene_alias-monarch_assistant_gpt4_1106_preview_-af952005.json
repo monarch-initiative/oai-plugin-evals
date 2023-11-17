@@ -1,0 +1,65 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of PTP-SL?",
+    "goldstandard": "PTPRR",
+    "agent_name": "Monarch Assistant GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for PTP-SL is **PTPRR**. Here is the identifier for the human gene:\n\n- **Gene Symbol**: PTPRR\n- **Identifier**: [HGNC:9680](https://www.monarchinitiative.org/gene/HGNC:9680)\n\nThere are also entries for other species, such as the mouse gene symbol **Ptprr** with identifier [MGI:109559](https://www.monarchinitiative.org/gene/MGI:109559), and several entries for the Xenopus laevis (African clawed frog) gene symbols **ptprr**, **ptprr.L**, and **ptprr.S** with identifiers [Xenbase:XB-GENE-961693](https://www.monarchinitiative.org/gene/Xenbase:XB-GENE-961693), [Xenbase:XB-GENE-961697](https://www.monarchinitiative.org/gene/Xenbase:XB-GENE-961697), and [Xenbase:XB-GENE-17341973](https://www.monarchinitiative.org/gene/Xenbase:XB-GENE-17341973) respectively.",
+    "agent_answer_num_function_calls": 1,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "PTP-SL",
+                "category": "biolink:Gene"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"HGNC:9680\", \"name\": \"PTPRR\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"MGI:109559\", \"name\": \"Ptprr\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"Xenbase:XB-GENE-961693\", \"name\": \"ptprr\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"Xenbase:XB-GENE-961697\", \"name\": \"ptprr.L\", \"categories\": [\"biolink:Gene\"], \"description\": null}, {\"id\": \"Xenbase:XB-GENE-17341973\", \"name\": \"ptprr.S\", \"categories\": [\"biolink:Gene\"], \"description\": null}], \"total\": 5}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "PTPRR",
+                "agent_answer": [
+                    "PTPRR",
+                    "Ptprr",
+                    "ptprr",
+                    "ptprr.L",
+                    "ptprr.S"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.2",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.2
+}

@@ -1,0 +1,85 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Mitochondrial DNA depletion syndrome 4A Alpers type?",
+    "goldstandard": "POLG",
+    "agent_name": "Monarch Assistant GPT4",
+    "agent_answer": "The gene related to Mitochondrial DNA depletion syndrome 4A (Alpers type) is [POLG](https://monarchinitiative.org/gene/HGNC:9179). This gene has a causal relationship with the disease. \n\nPlease note that the information provided is based on the data available in the Monarch Initiative knowledge graph and may not include all possible genes related to this disease.",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Mitochondrial DNA depletion syndrome 4A Alpers type"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0008758\", \"name\": \"mitochondrial DNA depletion syndrome 4a\", \"categories\": [\"biolink:Disease\"], \"description\": \"Alpers Huttenlocher syndrome (AHS) is a cerebrohepatopathy and a rare and severe form of mitochondrial DNA (mtDNA) depletion syndrome characterized by the triad of progressive developmental regression, intractable seizures, and hepatic failure.\"}], \"total\": 1}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4",
+            "intended_recipient": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0008758"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:9179\", \"label\": \"POLG\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:9179\", \"label\": \"POLG\"}}], \"total\": 2, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "POLG"
+                ],
+                "agent_answer": [
+                    "POLG"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0,
+    "hand_eval_valuation": 1.0
+}

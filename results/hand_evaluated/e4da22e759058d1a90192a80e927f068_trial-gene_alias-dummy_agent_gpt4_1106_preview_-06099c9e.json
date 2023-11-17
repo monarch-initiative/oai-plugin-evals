@@ -1,0 +1,37 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of IMD20?",
+    "goldstandard": "FCGR3A",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for IMD20 is \"RAC2\". IMD20 stands for \"Immunodeficiency 20\", which is a condition caused by mutations in the RAC2 gene. The RAC2 gene encodes a protein that is part of the Rho GTPase family and plays a critical role in the signaling pathways that control the cytoskeleton and cell movement, which are important for the proper function of immune cells. Mutations in this gene can lead to various immune system disorders, including IMD20.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "FCGR3A",
+                "agent_answer": [
+                    "RAC2"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

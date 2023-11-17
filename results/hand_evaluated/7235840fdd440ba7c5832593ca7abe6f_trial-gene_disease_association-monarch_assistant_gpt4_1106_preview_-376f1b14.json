@@ -1,0 +1,93 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Proteasome-associated autoinflammatory syndrome?",
+    "goldstandard": "PSMB9, PSMG2, POMP, PSMB10",
+    "agent_name": "Monarch Assistant GPT4 (1106-preview)",
+    "agent_answer": "The following genes are related to Proteasome-associated autoinflammatory syndrome:\n\n1. [PSMB10 (HGNC:9538)](https://monarchinitiative.org/gene/HGNC:9538) - Causal relationship\n2. [PSMG2 (HGNC:24929)](https://monarchinitiative.org/gene/HGNC:24929) - Causal relationship\n3. [PSMB8 (HGNC:9545)](https://monarchinitiative.org/gene/HGNC:9545) - Causal relationship (listed twice, indicating multiple sources or studies supporting this association)\n4. [PSMB4 (HGNC:9541)](https://monarchinitiative.org/gene/HGNC:9541) - Causal relationship\n5. [PSMB9 (HGNC:9546)](https://monarchinitiative.org/gene/HGNC:9546) - Causal relationship\n6. [POMP (HGNC:20330)](https://monarchinitiative.org/gene/HGNC:20330) - Causal relationship\n\nThese genes have been identified as having a causal relationship with the syndrome, except for an additional correlation noted for PSMB8.",
+    "agent_answer_num_function_calls": 2,
+    "agent_answer_provenance": [
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-search_entity",
+            "func_arguments": {
+                "term": "Proteasome-associated autoinflammatory syndrome",
+                "category": "biolink:Disease"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-search_entity function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"results\": [{\"id\": \"MONDO:0030924\", \"name\": \"proteasome-associated autoinflammatory syndrome 5\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0030931\", \"name\": \"proteasome-associated autoinflammatory syndrome 4\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0054698\", \"name\": \"proteasome-associated autoinflammatory syndrome 1\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0054699\", \"name\": \"proteasome-associated autoinflammatory syndrome 3\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0054700\", \"name\": \"proteasome-associated autoinflammatory syndrome 2\", \"categories\": [\"biolink:Disease\"], \"description\": null}, {\"id\": \"MONDO:0009726\", \"name\": \"proteosome-associated autoinflammatory syndrome\", \"categories\": [\"biolink:Disease\"], \"description\": null}], \"total\": 6}",
+            "func_name": "monarch-search_entity",
+            "func_arguments": null,
+            "finish_reason": null
+        },
+        {
+            "role": "assistant",
+            "author": "Monarch Assistant GPT4 (1106-preview)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview) (monarch-get_disease_gene_associations function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": {
+                "disease_id": "MONDO:0009726"
+            },
+            "finish_reason": null
+        },
+        {
+            "role": "function",
+            "author": "Monarch Assistant GPT4 (1106-preview) (monarch-get_disease_gene_associations function)",
+            "intended_recipient": "Monarch Assistant GPT4 (1106-preview)",
+            "is_function_call": false,
+            "content": "{\"associations\": [{\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:9538\", \"label\": \"PSMB10\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:24929\", \"label\": \"PSMG2\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:9545\", \"label\": \"PSMB8\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:9541\", \"label\": \"PSMB4\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:9546\", \"label\": \"PSMB9\"}}, {\"metadata\": {\"relationship\": \"causal\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:20330\", \"label\": \"POMP\"}}, {\"metadata\": {\"relationship\": \"correlated\"}, \"publications\": [], \"gene\": {\"metadata\": {}, \"publications\": [], \"gene_id\": \"HGNC:9545\", \"label\": \"PSMB8\"}}], \"total\": 7, \"gene_url_template\": \"https://monarchinitiative.org/gene/{gene_id}\"}",
+            "func_name": "monarch-get_disease_gene_associations",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    ],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "PSMB9",
+                    "PSMG2",
+                    "POMP",
+                    "PSMB10"
+                ],
+                "agent_answer": [
+                    "PSMB10",
+                    "PSMG2",
+                    "PSMB8",
+                    "PSMB4",
+                    "PSMB9",
+                    "POMP"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

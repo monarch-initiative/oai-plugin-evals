@@ -1,0 +1,37 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of LMP10?",
+    "goldstandard": "PSMB10",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for LMP10 is PSMB8. This gene encodes a component of the immunoproteasome, which is a variant form of the proteasome. The proteasome is a large protein complex that degrades unneeded or damaged proteins by proteolysis, a chemical reaction that breaks peptide bonds. The immunoproteasome plays a crucial role in the immune system by generating peptides for presentation on major histocompatibility complex (MHC) class I molecules, which are important for the immune response to pathogens. PSMB8 specifically encodes the beta 5i subunit of the immunoproteasome, which is also known as LMP10 (low molecular mass polypeptide 10).",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "PSMB10",
+                "agent_answer": [
+                    "PSMB8"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

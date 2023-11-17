@@ -1,0 +1,37 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Orofaciodigital syndrome XIV?",
+    "goldstandard": "C2CD3",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "I'm sorry, but I don't have access to specific gene information related to Orofaciodigital syndrome XIV. However, you can try searching for this information in genetic databases or consulting with a geneticist or medical professional who specializes in this syndrome.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "C2CD3"
+                ],
+                "agent_answer": []
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

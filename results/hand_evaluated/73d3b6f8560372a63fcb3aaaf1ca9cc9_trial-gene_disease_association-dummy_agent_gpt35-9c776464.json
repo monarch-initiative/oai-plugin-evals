@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Holt-Oram syndrome?",
+    "goldstandard": "TBX5",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Holt-Oram syndrome is a genetic disorder that affects the development of the heart and upper limbs. It is caused by mutations in the TBX5 gene. The TBX5 gene provides instructions for making a protein that is involved in the development of the heart and upper limbs during embryonic development. Mutations in this gene can disrupt the normal development of these structures, leading to the characteristic features of Holt-Oram syndrome.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "TBX5"
+                ],
+                "agent_answer": [
+                    "TBX5"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

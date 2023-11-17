@@ -1,0 +1,48 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Sensorineural deafness with mild renal dysfunction?",
+    "goldstandard": "BSND",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Sensorineural deafness with mild renal dysfunction can be associated with several genetic conditions, where mutations in specific genes can lead to the development of both auditory and renal problems. Some of the genes that have been implicated in conditions that can present with these symptoms include:\n\n1. **MYO7A** - Mutations in this gene can cause Usher syndrome type 1B, which is characterized by congenital deafness, progressive vision loss due to retinitis pigmentosa, and sometimes, associated renal abnormalities.\n\n2. **COL4A3/COL4A4/COL4A5** - Mutations in these genes are associated with Alport syndrome, which can lead to progressive loss of kidney function along with sensorineural hearing loss and eye abnormalities.\n\n3. **SLC26A4 (Pendrin)** - Mutations in this gene can cause Pendred syndrome or DFNB4, both of which involve sensorineural hearing loss and can be associated with thyroid and sometimes renal problems.\n\n4. **GJB2 (Connexin 26)** - This gene is known for its role in nonsyndromic sensorineural deafness, and while it is not typically associated with renal dysfunction, it is a common cause of genetic hearing loss.\n\n5. **GJB6 (Connexin 30)** - Similar to GJB2, mutations in this gene can cause hearing loss, and while not commonly associated with renal dysfunction, it is included due to its role in hearing impairment.\n\n6. **OTOF** - Mutations in this gene can cause auditory neuropathy spectrum disorder, which can present with sensorineural hearing loss. Renal dysfunction is not a typical feature, but it is included here due to its relevance to hearing loss.\n\n7. **WFS1** - Mutations in this gene can cause Wolfram syndrome, which includes diabetes insipidus, diabetes mellitus, optic atrophy, and sensorineural deafness. Renal tract abnormalities can also occur.\n\n8. **MITF** - Mutations in this gene can lead to Waardenburg syndrome type 2, which includes sensorineural deafness and may have associated renal anomalies.\n\nIt is important to note that the relationship between these genes and the specific combination of sensorineural deafness with mild renal dysfunction can vary. Some of these genes are more commonly associated with syndromic forms of deafness, where hearing loss is just one of several clinical features, including renal dysfunction.\n\nFor an accurate diagnosis and understanding of the genetic basis of these conditions, genetic testing and consultation with a healthcare professional, such as a geneticist or a nephrologist, are recommended. They can provide personalized information based on an individual's medical history, family history, and the results of genetic tests.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "BSND"
+                ],
+                "agent_answer": [
+                    "MYO7A",
+                    "COL4A3",
+                    "COL4A4",
+                    "COL4A5",
+                    "SLC26A4",
+                    "GJB2",
+                    "GJB6",
+                    "OTOF",
+                    "WFS1",
+                    "MITF"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

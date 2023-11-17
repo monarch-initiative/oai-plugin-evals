@@ -1,0 +1,43 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Pigmented nodular adrenocortical disease?",
+    "goldstandard": "PRKAR1A, PDE11A, PDE8B",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Pigmented nodular adrenocortical disease, also known as primary pigmented nodular adrenocortical disease (PPNAD), is a rare cause of Cushing's syndrome. It is characterized by the presence of small, pigmented nodules in the adrenal cortex and can occur sporadically or as part of a familial syndrome. The most commonly associated genetic cause of PPNAD is mutations in the PRKAR1A gene, which encodes the type 1A regulatory subunit of protein kinase A (PKA).\n\nPPNAD can also be a component of Carney complex, a multiple neoplasia syndrome, which is also frequently associated with inactivating mutations in the PRKAR1A gene. Carney complex is inherited in an autosomal dominant manner, and individuals with this syndrome may have a variety of symptoms including cardiac myxomas, skin pigmentation abnormalities, and endocrine overactivity.\n\nIn addition to PRKAR1A, other genes that have been implicated in Carney complex and may be related to the development of PPNAD include:\n\n1. CNC2 (also known as PDE11A): Phosphodiesterase 11A gene mutations have been found in some patients with Carney complex.\n2. CNC1 (also known as PRKACB): Protein kinase cAMP-activated catalytic subunit beta gene mutations may also be involved in some cases.\n\nIt's important to note that genetic testing can confirm the diagnosis of Carney complex and help in the identification of PPNAD. Genetic counseling is recommended for individuals with a family history of Carney complex or PPNAD.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "PRKAR1A",
+                    "PDE11A",
+                    "PDE8B"
+                ],
+                "agent_answer": [
+                    "PRKAR1A",
+                    "PDE11A",
+                    "PRKACB"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.6666666666666666",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.6666666666666666
+}

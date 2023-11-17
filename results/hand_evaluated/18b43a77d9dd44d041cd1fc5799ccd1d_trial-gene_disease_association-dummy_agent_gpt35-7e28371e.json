@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Superoxide dismutase?",
+    "goldstandard": "SOD3",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Superoxide dismutase (SOD) is an enzyme that helps to protect cells from damage caused by reactive oxygen species, specifically superoxide radicals. There are three main types of SOD enzymes, each encoded by a different gene:\n\n1. SOD1 (Cu/Zn SOD): This gene encodes the cytoplasmic form of SOD, which contains both copper and zinc ions. Mutations in the SOD1 gene have been associated with familial amyotrophic lateral sclerosis (ALS), a progressive neurodegenerative disorder.\n\n2. SOD2 (Mn SOD): This gene encodes the mitochondrial form of SOD, which contains manganese ions. SOD2 plays a crucial role in protecting mitochondria from oxidative damage. Mutations in the SOD2 gene have been linked to various diseases, including cancer, neurodegenerative disorders, and cardiovascular diseases.\n\n3. SOD3 (EC-SOD): This gene encodes the extracellular form of SOD, which is found in the extracellular matrix and helps to protect tissues from oxidative stress. SOD3 is primarily expressed in the lungs, blood vessels, and other tissues exposed to high oxygen levels.\n\nThese three genes play important roles in maintaining cellular redox balance and protecting cells from oxidative damage. Mutations or dysregulation of these genes can lead to increased oxidative stress and contribute to the development of various diseases.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "SOD3"
+                ],
+                "agent_answer": [
+                    "SOD1",
+                    "SOD2",
+                    "SOD3"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

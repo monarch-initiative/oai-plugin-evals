@@ -1,0 +1,40 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Brody myopathy?",
+    "goldstandard": "ATP2A1",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Brody myopathy is a rare genetic disorder that affects muscle function. It is caused by mutations in the ATP2A1 gene. The ATP2A1 gene provides instructions for making a protein called sarco(endo)plasmic reticulum Ca2+ ATPase 1 (SERCA1). This protein is found in muscle cells and plays a critical role in muscle contraction and relaxation by regulating the levels of calcium ions within the muscle cells. Mutations in the ATP2A1 gene can disrupt the normal function of SERCA1, leading to muscle weakness and fatigue characteristic of Brody myopathy.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "ATP2A1"
+                ],
+                "agent_answer": [
+                    "ATP2A1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0,
+    "hand_eval_valuation": 1.0
+}

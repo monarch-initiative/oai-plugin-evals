@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Currarino syndrome?",
+    "goldstandard": "MNX1",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Currarino syndrome is a rare genetic disorder characterized by the presence of certain features including sacral agenesis (absence of the sacrum bone), anorectal malformations (imperforate anus or anal stenosis), and presacral mass (a mass in the area behind the rectum). \n\nCurrarino syndrome is primarily caused by mutations in the MNX1 gene (also known as HLXB9), which is located on chromosome 7. The MNX1 gene provides instructions for making a protein that is involved in the development of the spinal cord and other structures in the lower part of the body. Mutations in this gene can disrupt normal development, leading to the characteristic features of Currarino syndrome.\n\nIn some cases, Currarino syndrome may be caused by mutations in other genes, such as the FOXF1 gene or the ZFHX4 gene. However, these cases are less common.\n\nIt is important to note that not all individuals with Currarino syndrome have a mutation in one of these genes, suggesting that there may be other genetic and environmental factors that contribute to the development of the disorder. Genetic testing and consultation with a geneticist or genetic counselor can help determine the underlying cause of Currarino syndrome in an individual case.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "MNX1"
+                ],
+                "agent_answer": [
+                    "MNX1",
+                    "FOXF1",
+                    "ZFHX4"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

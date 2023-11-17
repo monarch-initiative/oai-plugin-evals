@@ -1,0 +1,47 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Achromatopsia?",
+    "goldstandard": "CNGA3, CNGB3, GNAT2, PDE6H, ATF6",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Achromatopsia is a rare genetic disorder that affects the ability to see colors. It is primarily caused by mutations in several genes that are involved in the function of cone cells in the retina. The genes associated with Achromatopsia include:\n\n1. CNGA3: This gene provides instructions for making a protein called cyclic nucleotide-gated channel alpha-3. Mutations in this gene can disrupt the function of cone cells, leading to Achromatopsia.\n\n2. CNGB3: This gene encodes a protein called cyclic nucleotide-gated channel beta-3. Mutations in CNGB3 can also impair the function of cone cells and cause Achromatopsia.\n\n3. GNAT2: This gene provides instructions for making a protein called guanine nucleotide-binding protein G(t) subunit alpha-2. Mutations in GNAT2 can affect the signaling pathway in cone cells, leading to Achromatopsia.\n\n4. PDE6C: This gene encodes an enzyme called phosphodiesterase 6C, which is involved in the visual signaling pathway in cone cells. Mutations in PDE6C can disrupt this pathway and cause Achromatopsia.\n\n5. PDE6H: This gene provides instructions for making a protein called phosphodiesterase 6H, which is also involved in the visual signaling pathway in cone cells. Mutations in PDE6H can lead to Achromatopsia.\n\nIt's important to note that Achromatopsia can be caused by mutations in any of these genes, and the specific gene involved can vary among individuals with the condition. Genetic testing is often necessary to determine the underlying genetic cause of Achromatopsia in an individual.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "CNGA3",
+                    "CNGB3",
+                    "GNAT2",
+                    "PDE6H",
+                    "ATF6"
+                ],
+                "agent_answer": [
+                    "CNGA3",
+                    "CNGB3",
+                    "GNAT2",
+                    "PDE6C",
+                    "PDE6H"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.8",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.8
+}

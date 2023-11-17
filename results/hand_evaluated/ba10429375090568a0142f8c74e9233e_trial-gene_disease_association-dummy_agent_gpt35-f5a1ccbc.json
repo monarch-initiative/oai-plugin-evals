@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Acrocallosal syndrome?",
+    "goldstandard": "KIF7",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Acrocallosal syndrome is a rare genetic disorder characterized by intellectual disability, physical abnormalities, and the absence or underdevelopment of the corpus callosum, which is the structure that connects the two hemispheres of the brain. The exact genes related to Acrocallosal syndrome are not fully understood, but mutations in the KIF7 gene have been found to be associated with this condition. KIF7 is involved in the development and functioning of the brain and other organs during embryonic development. Mutations in other genes may also contribute to the development of Acrocallosal syndrome, but further research is needed to fully understand the genetic basis of this disorder.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "KIF7"
+                ],
+                "agent_answer": [
+                    "KIF7"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

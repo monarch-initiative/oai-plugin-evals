@@ -1,0 +1,35 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of bMRP63?",
+    "goldstandard": "MRPL57",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for what is commonly referred to as \"bMRP63\" is not universally recognized in the scientific community because gene nomenclature is standardized by specific committees that assign official symbols based on established criteria. The \"bMRP63\" designation does not appear to correspond to a standard gene symbol.\n\nGene symbols are typically standardized by organizations such as the HUGO Gene Nomenclature Committee (HGNC) for human genes, or the Mouse Genome Informatics (MGI) database for mouse genes. These symbols are usually concise, unique identifiers for genes that are used across various databases and publications to ensure consistency and avoid confusion.\n\nIf \"bMRP63\" is a gene you are interested in, it may be a non-standard abbreviation or a symbol used in a specific study or by a particular research group. To find the official gene symbol, you would need to look up the gene's description in a reputable database such as those maintained by the National Center for Biotechnology Information (NCBI), the HGNC, or other organism-specific databases.\n\nIf you have more context or information about the gene in question, such as the species it belongs to or its function, I can try to help you find the official gene symbol.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "MRPL57",
+                "agent_answer": []
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

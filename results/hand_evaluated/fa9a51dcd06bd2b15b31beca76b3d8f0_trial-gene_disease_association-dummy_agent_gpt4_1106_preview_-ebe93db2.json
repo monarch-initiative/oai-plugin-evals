@@ -1,0 +1,39 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Ablepharon-macrostomia syndrome?",
+    "goldstandard": "TWIST2",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Ablepharon-macrostomia syndrome (AMS) is a rare genetic disorder characterized by a variety of physical abnormalities affecting the face, skin, fingers, and genitals. The condition is named for two of its most common features: ablepharon (underdeveloped or absent eyelids) and macrostomia (an unusually wide mouth).\n\nThe genetic basis of Ablepharon-macrostomia syndrome has been linked to mutations in the TWIST2 gene. The TWIST2 gene provides instructions for making a protein that is involved in the development of the skin, hair, and facial features. Mutations in this gene can disrupt the normal development of these structures, leading to the characteristic features of AMS.\n\nThe TWIST2 gene mutations that cause AMS are typically inherited in an autosomal dominant pattern, which means one copy of the altered gene in each cell is sufficient to cause the disorder. However, many cases of AMS occur in individuals with no history of the disorder in their family, suggesting that these cases may result from new (de novo) gene mutations.\n\nIt's important to note that genetic research is ongoing, and new insights into the causes of rare genetic disorders like AMS may emerge over time. For individuals with AMS or families with a history of the disorder, genetic counseling and testing are recommended to understand the inheritance patterns and risks for future children.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "TWIST2"
+                ],
+                "agent_answer": [
+                    "TWIST2"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "1.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 1.0
+}

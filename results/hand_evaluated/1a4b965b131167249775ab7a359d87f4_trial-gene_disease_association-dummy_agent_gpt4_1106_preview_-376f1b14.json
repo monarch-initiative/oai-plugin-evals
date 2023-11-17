@@ -1,0 +1,48 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Proteasome-associated autoinflammatory syndrome?",
+    "goldstandard": "PSMB9, PSMG2, POMP, PSMB10",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "Proteasome-associated autoinflammatory syndromes (PRAAS) are a group of rare genetic disorders characterized by inflammation affecting various organs and tissues in the body. These syndromes are caused by mutations in genes that encode components of the proteasome, a complex that degrades unneeded or damaged proteins within cells.\n\nThe main genes associated with PRAAS include:\n\n1. **PSMB8 (Proteasome Subunit Beta 8)**: Mutations in this gene are associated with conditions such as Nakajo-Nishimura syndrome, JMP syndrome, and chronic atypical neutrophilic dermatosis with lipodystrophy and elevated temperature (CANDLE) syndrome.\n\n2. **PSMB4 (Proteasome Subunit Beta 4)**: Mutations in PSMB4 have been identified in some patients with autoinflammatory phenotypes similar to those seen in PRAAS.\n\n3. **PSMB9 (Proteasome Subunit Beta 9)**: Also known as LMP2, mutations in this gene can lead to autoinflammatory symptoms.\n\n4. **PSMA3 (Proteasome Subunit Alpha 3)**: Mutations in this gene have been associated with PRAAS.\n\n5. **POMP (Proteasome Maturation Protein)**: Mutations in the POMP gene can cause proteasome-associated autoinflammatory syndromes.\n\n6. **PSMD12 (Proteasome 26S Subunit, Non-ATPase 12)**: This gene has also been linked to PRAAS.\n\nThese genes encode components of the immunoproteasome, a specialized form of the proteasome that plays a critical role in immune system function by degrading proteins that are involved in the immune response. Mutations in these genes can lead to the accumulation of damaged or misfolded proteins, triggering an inappropriate inflammatory response.\n\nIt's important to note that genetic research is ongoing, and new genes associated with PRAAS and related conditions may be identified over time. Genetic testing and consultation with a healthcare professional or genetic counselor can provide more specific information for individuals who may be affected by these syndromes.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "PSMB9",
+                    "PSMG2",
+                    "POMP",
+                    "PSMB10"
+                ],
+                "agent_answer": [
+                    "PSMB8",
+                    "PSMB4",
+                    "PSMB9",
+                    "PSMA3",
+                    "POMP",
+                    "PSMD12"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.5",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.5,
+    "hand_eval_valuation": 0.5
+}

@@ -1,0 +1,51 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Type diabetes mellitus?",
+    "goldstandard": "HNF1B, IL6, GPD2, HMGA1, IRS1, NEUROD1, IL6",
+    "agent_name": "Dummy Agent GPT4",
+    "agent_answer": "As an AI, I can provide some information on this topic. Several genes are associated with the risk of developing Type 2 diabetes mellitus. These include:\n\n1. **TCF7L2 (Transcription Factor 7 Like 2)**: Variations in this gene are considered to have the strongest link to type 2 diabetes risk. It plays a role in the regulation of blood sugar levels by affecting the production and functioning of insulin.\n\n2. **PPARG (Peroxisome Proliferator Activated Receptor Gamma)**: This gene is involved in the regulation of fatty acid storage and glucose metabolism. Variations in this gene can increase the risk of type 2 diabetes.\n\n3. **KCNJ11 (Potassium Voltage-Gated Channel Subfamily J Member 11)**: This gene helps regulate insulin production in the pancreas. Variations in this gene can affect the body's insulin production, increasing the risk of type 2 diabetes.\n\n4. **ABCC8 (ATP Binding Cassette Subfamily C Member 8)**: This gene is involved in the regulation of insulin, and mutations can lead to an increased risk of type 2 diabetes.\n\n5. **SLC30A8 (Solute Carrier Family 30 Member 8)**: This gene is involved in the process of insulin secretion, and variations can affect the risk of developing type 2 diabetes.\n\n6. **GCK (Glucokinase)**: This gene helps regulate insulin secretion and variations can increase the risk of type 2 diabetes.\n\n7. **IRS1 (Insulin Receptor Substrate 1)**: This gene plays a role in insulin signaling, and variations can affect the body's response to insulin.\n\nPlease note that while these genes are associated with an increased risk of type 2 diabetes, they are not the sole cause. Lifestyle factors such as diet, exercise, and weight also play a significant role in the development of this disease. It's also important to note that not everyone with these gene variations will develop type 2 diabetes. Genetics is just one piece of the puzzle.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "HNF1B",
+                    "IL6",
+                    "GPD2",
+                    "HMGA1",
+                    "IRS1",
+                    "NEUROD1",
+                    "IL6"
+                ],
+                "agent_answer": [
+                    "TCF7L2",
+                    "PPARG",
+                    "KCNJ11",
+                    "ABCC8",
+                    "SLC30A8",
+                    "GCK",
+                    "IRS1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.14285714285714285",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.14285714285714285
+}

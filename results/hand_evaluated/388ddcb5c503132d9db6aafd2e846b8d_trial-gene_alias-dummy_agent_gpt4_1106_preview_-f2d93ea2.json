@@ -1,0 +1,35 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of OR11-86?",
+    "goldstandard": "OR10A2",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for a gene is assigned by the HUGO Gene Nomenclature Committee (HGNC) for human genes or by other nomenclature committees for genes in other species. The gene symbol \"OR11-86\" seems to refer to a member of the olfactory receptor gene family, which is typically denoted by \"OR\" followed by a number.\n\nHowever, without additional context, such as the species you are referring to or a more specific identifier, it's challenging to provide the exact official gene symbol. The \"OR\" gene family is large and has many members with similar numbering across different species.\n\nIf you are referring to a human gene, you can search the HGNC database for the official gene symbol. If it's a gene from another species, you would need to refer to the appropriate nomenclature database for that organism.\n\nIf you can provide more context or specify the species, I can attempt to give you a more precise answer.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "OR10A2",
+                "agent_answer": []
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

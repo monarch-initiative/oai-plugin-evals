@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Otofaciocervical syndrome?",
+    "goldstandard": "EYA1, PAX1",
+    "agent_name": "Dummy Agent GPT4",
+    "agent_answer": "Otofaciocervical syndrome is a rare genetic condition. It is primarily associated with mutations in the EYA1 gene. This gene provides instructions for making a protein that is involved in early development, particularly of the ears, eyes, and neck. Mutations in the EYA1 gene disrupt the normal development of these structures, leading to the features of Otofaciocervical syndrome. \n\nIn some cases, Otofaciocervical syndrome does not appear to be caused by mutations in the EYA1 gene. In these instances, the cause of the condition is unknown. Other genes potentially related to this syndrome are yet to be identified. \n\nPlease consult with a healthcare professional or genetic counselor for more detailed information.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "EYA1",
+                    "PAX1"
+                ],
+                "agent_answer": [
+                    "EYA1"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.5",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.5,
+    "hand_eval_valuation": 0.5
+}

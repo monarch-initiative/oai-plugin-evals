@@ -1,0 +1,37 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of GCS1?",
+    "goldstandard": "MOGS",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for GCS1 can vary depending on the organism you are referring to. In humans, GCS1 is not a standard gene symbol. However, GCS1 might be used colloquially or in the literature to refer to a gene involved in a specific biological process, such as germ cell-specific gene 1 or a gene related to glucosidase activity.\n\nFor example, in the context of Arabidopsis thaliana (a model organism in plant biology), GCS1 (Generative Cell Specific 1) is a gene that is known to be important for male fertility and is expressed in the male generative cell.\n\nIn humans, if you are referring to the enzyme glucosidase, alpha; neutral C, which is involved in glycogen breakdown, the official gene symbol is GANAB.\n\nIt's important to use the correct and updated databases like NCBI Gene, HGNC (HUGO Gene Nomenclature Committee), or specific organism databases to find the accurate gene symbol for the gene of interest. If you provide more context or specify the organism, I can give you a more precise answer.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "MOGS",
+                "agent_answer": [
+                    "GANAB"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

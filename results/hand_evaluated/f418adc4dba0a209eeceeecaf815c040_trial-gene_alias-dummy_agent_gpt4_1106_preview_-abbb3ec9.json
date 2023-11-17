@@ -1,0 +1,37 @@
+{
+    "module": "Gene alias",
+    "question": "What is the official gene symbol of TSH2B?",
+    "goldstandard": "H2BC1",
+    "agent_name": "Dummy Agent GPT4 (1106-preview)",
+    "agent_answer": "The official gene symbol for what is commonly referred to as \"TSH2B\" is actually TSHB. TSHB stands for Thyroid Stimulating Hormone Beta, which is a subunit of the thyroid-stimulating hormone (TSH). TSH is a pituitary hormone that stimulates the thyroid gland to produce thyroxine (T4) and then triiodothyronine (T3), which stimulates the metabolism of almost every tissue in the body.\n\nIt's important to note that gene nomenclature can sometimes be confusing and may vary between different databases and research articles. However, the HUGO Gene Nomenclature Committee (HGNC) provides official symbols for human genes, and TSHB is the recognized symbol for the gene encoding the beta subunit of the thyroid-stimulating hormone. There is no official gene symbol as \"TSH2B\" in the standard nomenclature. If you are looking for information on a specific gene or protein, it's best to use databases like those provided by the National Center for Biotechnology Information (NCBI) or the HGNC for the most accurate and up-to-date information.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Gene Alias Eval Agent GPT4",
+            "intended_recipient": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": "H2BC1",
+                "agent_answer": [
+                    "TSHB"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Gene Alias Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Gene Alias Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

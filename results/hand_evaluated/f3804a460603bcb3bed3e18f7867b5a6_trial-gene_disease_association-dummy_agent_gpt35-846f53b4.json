@@ -1,0 +1,50 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Type diabetes mellitus?",
+    "goldstandard": "HNF1B, IL6, GPD2, HMGA1, IRS1, NEUROD1, IL6",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "There are several genes that have been found to be related to Type 1 and Type 2 diabetes mellitus. Here are some of the key genes associated with each type:\n\nType 1 Diabetes Mellitus:\n1. HLA-DQB1: This gene is part of the human leukocyte antigen (HLA) complex and plays a role in the immune system. Variations in this gene are associated with an increased risk of developing Type 1 diabetes.\n2. INS: The insulin gene is involved in the production of insulin, which is essential for regulating blood sugar levels. Mutations in this gene can lead to a decreased production of insulin and an increased risk of Type 1 diabetes.\n3. PTPN22: This gene is involved in regulating immune system function. Variations in this gene have been associated with an increased risk of autoimmune diseases, including Type 1 diabetes.\n\nType 2 Diabetes Mellitus:\n1. TCF7L2: This gene is involved in regulating the production of insulin and the processing of glucose in the body. Variations in this gene have been strongly associated with an increased risk of Type 2 diabetes.\n2. PPARG: The peroxisome proliferator-activated receptor gamma gene is involved in regulating glucose and lipid metabolism. Variations in this gene have been associated with an increased risk of Type 2 diabetes.\n3. KCNJ11: This gene is involved in the regulation of insulin secretion. Variations in this gene have been associated with an increased risk of Type 2 diabetes.\n\nIt's important to note that these genes are just a few examples and there are likely many other genes that contribute to the development of diabetes mellitus. Additionally, genetic factors alone do not determine the risk of developing diabetes, as lifestyle and environmental factors also play a significant role.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "HNF1B",
+                    "IL6",
+                    "GPD2",
+                    "HMGA1",
+                    "IRS1",
+                    "NEUROD1",
+                    "IL6"
+                ],
+                "agent_answer": [
+                    "HLA-DQB1",
+                    "INS",
+                    "PTPN22",
+                    "TCF7L2",
+                    "PPARG",
+                    "KCNJ11"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.0",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.0
+}

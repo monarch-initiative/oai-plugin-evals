@@ -1,0 +1,45 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Proteasome-associated autoinflammatory syndrome?",
+    "goldstandard": "PSMB9, PSMG2, POMP, PSMB10",
+    "agent_name": "Dummy Agent GPT35",
+    "agent_answer": "Proteasome-associated autoinflammatory syndrome (PRAAS) is a rare genetic disorder caused by mutations in the PSMB8 gene. The PSMB8 gene provides instructions for making a protein called beta-5 subunit of the 20S proteasome. Mutations in this gene can lead to abnormal functioning of the proteasome, which is responsible for breaking down proteins in cells.\n\nIn addition to the PSMB8 gene, mutations in other genes have also been associated with PRAAS. These include:\n\n1. PSMB4: Mutations in the PSMB4 gene, which codes for the beta-7 subunit of the 20S proteasome, have been found in some individuals with PRAAS.\n\n2. PSMA3: Mutations in the PSMA3 gene, which codes for the alpha-3 subunit of the 20S proteasome, have been identified in a few cases of PRAAS.\n\n3. PSMB9: Mutations in the PSMB9 gene, which codes for the beta-1i subunit of the immunoproteasome, have been associated with PRAAS in some individuals.\n\nIt's important to note that PRAAS is a complex disorder, and the exact genetic causes may vary among affected individuals. Genetic testing and consultation with a healthcare professional or geneticist are necessary to determine the specific genetic mutations associated with an individual's PRAAS.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "PSMB9",
+                    "PSMG2",
+                    "POMP",
+                    "PSMB10"
+                ],
+                "agent_answer": [
+                    "PSMB8",
+                    "PSMB4",
+                    "PSMA3",
+                    "PSMB9"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.25",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.25
+}

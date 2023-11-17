@@ -1,0 +1,41 @@
+{
+    "module": "Gene disease association",
+    "question": "What are genes related to Bile acid malabsorption?",
+    "goldstandard": "SLC10A2, SLC51B",
+    "agent_name": "Dummy Agent GPT4",
+    "agent_answer": "I'm sorry, but as an AI, I don't have the ability to access real-time medical databases or provide medical advice. However, I can tell you that bile acid malabsorption can be related to various conditions that affect the bile acid synthesis or transport. These conditions can be caused by mutations in several genes. For example, mutations in the genes SLC10A2 and SLC27A5 have been associated with bile acid malabsorption. Please consult a healthcare professional or a genetic counselor for more accurate information.",
+    "agent_answer_num_function_calls": 0,
+    "agent_answer_provenance": [],
+    "eval_provenance": {
+        "function_call": {
+            "role": "assistant",
+            "author": "Disease Genes Eval Agent GPT4",
+            "intended_recipient": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "is_function_call": true,
+            "content": null,
+            "func_name": "compute_score",
+            "func_arguments": {
+                "goldstandard": [
+                    "SLC10A2",
+                    "SLC51B"
+                ],
+                "agent_answer": [
+                    "SLC10A2",
+                    "SLC27A5"
+                ]
+            },
+            "finish_reason": null
+        },
+        "function_response": {
+            "role": "function",
+            "author": "Disease Genes Eval Agent GPT4 (compute_score function)",
+            "intended_recipient": "Disease Genes Eval Agent GPT4",
+            "is_function_call": false,
+            "content": "0.5",
+            "func_name": "compute_score",
+            "func_arguments": null,
+            "finish_reason": null
+        }
+    },
+    "eval_valuation": 0.5
+}
