@@ -1,0 +1,3 @@
+module	mean_score
+Gene alias	0.627666666666667
+Gene disease association	0.876190476190476

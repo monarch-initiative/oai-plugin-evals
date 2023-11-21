@@ -31,7 +31,7 @@ data_full %>%
 	select(`Module`, `Question`, `Gold Standard`, `Score, 4-1106 + Monarch`, `Answer Genes, 4-1106 + Monarch`, `Score, 3.5 + Monarch`, `Answer Genes, 3.5 + Monarch`) %>%
 	write.table(file = "table2_4-1106-Monarch_vs_3.5-Monarch.txt", row.names = FALSE, col.names = TRUE, sep = "\t", quote = FALSE)
 
-## Table 3 - Differences between 4-1106 + Monarch vs 4-1106 Base
+## Table (Supplement) - Differences between 4-1106 + Monarch vs 4-1106 Base
 
 data_full %>%
 	mutate(agent_name = factor(agent_name,
@@ -60,3 +60,17 @@ data_full %>%
 	arrange(desc(`Score, 4-1106 + Monarch` - `Score, 4-1106 Base`)) %>%
 	select(`Module`, `Question`, `Gold Standard`, `Score, 4-1106 + Monarch`, `Answer Genes, 4-1106 + Monarch`, `Score, 4-1106 Base`, `Answer Genes, 4-1106 Base`) %>%
 	write.table(file = "table3_4-1106-Monarch_vs_4-1106-Base.txt", row.names = FALSE, col.names = TRUE, sep = "\t", quote = FALSE)
+
+
+## Table 3, average scores for 4-1106 + Monarch on the two tasks
+
+data_full %>%
+	mutate(agent_name = factor(agent_name,
+														 levels = c("Dummy Agent GPT35", "Dummy Agent GPT4", "Dummy Agent GPT4 (1106-preview)", "Monarch Assistant GPT35", "Monarch Assistant GPT4", "Monarch Assistant GPT4 (1106-preview)"),
+														 labels = c("3.5 Base", "4 Base", "4-1106 Base", "3.5 + Monarch", "4 + Monarch", "4-1106 + Monarch"),
+														 ordered = TRUE)) %>%
+	filter(agent_name == c("4-1106 + Monarch")) %>%
+	group_by(module) %>%
+	summarize(mean_score = mean(eval_valuation)) %>%
+	write.table(file = "table3b_4-1106-Monarch_mean_scores.txt", row.names = FALSE, col.names = TRUE, sep = "\t", quote = FALSE)
+
