@@ -102,7 +102,7 @@ data_grouped2 <- data2 %>%
   complete(module, agent_name, eval_valuation_bin, fill = list(count = 0)) %>%
   arrange(agent_name, module) %>%
 	mutate(agent_name = factor(agent_name, 
-														 levels = c("4-1106 + Monarch", "4 + Monarch", "3.5 + Monarch", "4-1106 Base", "4 Base", "3.5 Base"),
+														 levels = c("4-1106 + Monarch", "4-1106 Base", "4 + Monarch", "4 Base", "3.5 + Monarch", "3.5 Base"),
 														 ordered = TRUE),
 				 module = factor(module, 
 				 								 levels = c("Gene disease association", "Gene alias"),
@@ -119,6 +119,40 @@ ggplot(data_grouped2, aes(x=eval_valuation_bin, y=count, fill=eval_valuation_bin
 	scale_y_continuous(limits = c(0, 50), name = "Count of Questions") +
 	scale_x_discrete(name = "Score") +
 	guides(fill = "none")
+
+
+library(ggpattern)
+
+data_grouped2 %>%
+	mutate(`Monarch Access` = grepl("Monarch", agent_name)) %>%
+	mutate(`Base Model` = case_when(grepl("4 ", agent_name) ~ "GPT 4",
+			 														grepl("4-1106", agent_name) ~ "GPT 4-1106",
+			 														grepl("3.5", agent_name) ~ "GPT 3.5")) %>% 
+	mutate(agent_name = factor(agent_name, 
+												     levels = c("4-1106 + Monarch", "4 + Monarch", "3.5 + Monarch", "4-1106 Base", "4 Base", "3.5 Base"),
+												     ordered = TRUE)) %>%
+	ggplot() +
+	  geom_bar_pattern(stat="identity", aes(x=eval_valuation_bin, 
+	  																			y=count, 
+	  																			fill=`Base Model`,
+	  																			pattern=`Monarch Access`,
+	  																			color = `Base Model`),
+	  								 pattern_density = 0.1,
+                     pattern_spacing = 0.025,
+	  								 #width = 1.0,
+	  								 position = position_dodge2(padding = 0.2, width = 1)) +
+	  facet_wrap(~ module, ncol = 1) +
+	  theme_minimal() +
+	  labs(title="Score distributions by task and agent type") +
+		scale_y_continuous(limits = c(0, 50), name = "Count of Questions") +
+		scale_x_discrete(name = "Score") +
+		#theme_bw(base_size = 11) + 
+		#theme(axis.text.x = element_text(angle = 30, hjust = 1, vjust = 1.0)) +
+  	scale_pattern_manual(values = c("stripe", "none")) #+
+		#scale_fill_manual(values = c("darkred", "orange", "yellow", "darkblue", "darkgreen", "purple")) +
+		#scale_linetype_manual(values = c("solid", "solid", "solid", "dashed", "dashed", "dashed")) +
+		#theme(aspect.ratio = 0.4)
+	#guides(fill = "none")
 ```
 
 Update: 4-1106 represents results for the [recently released](https://openai.com/blog/new-models-and-developer-products-announced-at-devday) `gpt-4-1106-preview` model. Results seem to be similar (if not slightly better) than GPT-4 with Monarch integration; there is a noticeable bump in accuracy for Gene-Disease Association for the new model on its own (4-1106 Base).
